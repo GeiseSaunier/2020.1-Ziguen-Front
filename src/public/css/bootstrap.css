@@ -153,8 +153,8 @@ sup {
 }
 
 a {
-  color: #007bff;
-  text-decoration: none;
+  color: rgb(70, 70, 70);
+  text-decoration: underline;
   background-color: transparent;
 }
 
@@ -2543,8 +2543,8 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: rgb(133, 190, 171);
+  border-color: rgb(133, 190, 171);
 }
 
 .btn-primary:hover {
@@ -2870,14 +2870,15 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-secondary {
-  color: #6c757d;
-  border-color: #6c757d;
+  color: rgb(70, 70, 70);
+  border-color: #3b5998;
+  vertical-align: middle;
 }
 
 .btn-outline-secondary:hover {
   color: #fff;
-  background-color: #6c757d;
-  border-color: #6c757d;
+  background-color: #3b5998;
+  border-color: #3b5998;
 }
 
 .btn-outline-secondary:focus, .btn-outline-secondary.focus {
@@ -2902,14 +2903,15 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-success {
-  color: #28a745;
-  border-color: #28a745;
+  color:rgb(70, 70, 70);
+  border-color: #717ff7;
+  vertical-align: middle;
 }
 
 .btn-outline-success:hover {
   color: #fff;
-  background-color: #28a745;
-  border-color: #28a745;
+  background-color: #717ff7;
+  border-color: #717ff7;
 }
 
 .btn-outline-success:focus, .btn-outline-success.focus {
@@ -4723,7 +4725,7 @@ input[type="button"].btn-block {
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgb(133, 190, 171);
-  border-radius: 0.25rem;
+  border-radius: 0.35rem;
 }
 
 .card > hr {
