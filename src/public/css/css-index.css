@@ -8,6 +8,12 @@
 	background-color: #508364;
 }
 
+.texto-seguimento {
+	display: flex;
+	align-items: center;
+	height: 30px;
+}
+
 .slide {
 	height: 400px;
 	background-color: #85BEAB;
