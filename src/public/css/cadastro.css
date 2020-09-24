@@ -1,8 +1,10 @@
-#background{
+#background {
     background-image: url("/src/public/img/slide-1-teste.jpg");
 }
 
 .card {
+    margin-top: 30px;
+    margin-bottom: 30px;
     padding: 30px;
 }
 
@@ -17,4 +19,5 @@
 
 #button-send {
     margin-top: 20px;
+    background-color: rgb(133, 190, 171)
 }

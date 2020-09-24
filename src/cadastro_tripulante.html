@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="public/css/bootstrap.min.css">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="public/css/cadastro.css">
     <title>Ziguen - Passagens Fluviais</title>
 </head>
+
 <body>
     <div id="background">
         <!--Menu-->
@@ -37,39 +39,90 @@
         </div>
 
         <!--Caixa de Cadastro-->
-        <div class = "row space"></div>
-        <div class = "row d-flex justify-content-center">
+
+        <div class="row d-flex justify-content-center">
             <form class="card" style="width: 25rem;">
                 <h5 class="title-form-cadastro">Crie seu cadastro</h5>
                 <p>
                     <label for="name"></label>
-                    <input id="name" name="name" required type = "text" placeholder = "Nome Completo"/>
+                    <input id="name" name="name" required type="text" placeholder="Nome Completo" />
                 </p>
                 <p>
                     <label for="cpf"></label>
-                    <input id="cpf" name="cpf" required type = "text" placeholder = "CPF"/>
+                    <input id="cpf" name="cpf" required type="text" placeholder="CPF" />
                 </p>
                 <p>
                     <label for="email"></label>
-                    <input id="email" name="email" required type = "text" placeholder = "E-mail"/>
+                    <input id="email" name="email" required type="text" placeholder="E-mail" />
                 </p>
                 <p>
                     <label for="password"></label>
-                    <input id="password" name="password" required type = "password" placeholder = "Senha"/>
+                    <input id="password" name="password" required type="password" placeholder="Senha" />
                 </p>
                 <p>
                     <label for="password"></label>
-                    <input id="password" name="password" required type = "password" placeholder = "Confirmar Senha"/>
+                    <input id="password2" name="password2" required type="password" placeholder="Confirmar Senha" />
                 </p>
                 <p>
-                    <input id="button-send" class="btn btn-primary" type="submit" value="Entrar" style="background-color: rgb(133, 190, 171);"> 
+                    <input id="button-send" class="btn btn-primary" type="submit" value="Entrar" onclick="return validarSenha()">
                 </p>
             </form>
         </div>
 
+        <!--Rodapé da Página-->
+        <div>
+            <div class="row rodape">
+                <div class="col-xl-12">
+                    <div class="row d-flex justify-content-center">
+                        <p class="texto-rodape">Barcos parceiros</p>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <p>&#128674</p>&nbsp&nbsp&nbsp&nbsp
+                        <p>&#128674</p>&nbsp&nbsp&nbsp&nbsp
+                        <p>&#128674</p>&nbsp&nbsp&nbsp&nbsp
+                        <p>&#128674</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row rodape">
+                <div class="col-xl-2"></div>
+                <div class="col-xl-8 rodape-linhas">
+                    <div class="row d-flex justify-content-center">
+                        <p class="texto-rodape">Nossa redes sociais</p>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <img src="public/img/icon-insta.png" class="icons">&nbsp&nbsp&nbsp&nbsp
+                        <img src="public/img/icon-face.png" class="icons">
+                    </div>
+                </div>
+                <div class="col-xl-2"></div>
+            </div>
+            <div class="row rodape d-flex justify-content-center align-items-center">
+                <p class="texto-rodape">© 2020 - Ziguen - Venda de Passagens de Barco</p><br>
+            </div>
+        </div>
+
     </div>
+
+    <script>
+
+        function validarSenha() {
+            senha = document.getElementsByName('password').value;
+            senha2 = document.getElementsByName('password2').value;
+
+            if (senha != senha2) { 
+                console.log("As senhas são diferentes.")
+                senha2.setCustomValidity("Senhas diferentes!");
+            } else {
+                console.log("As senhas são iguais.")
+                senha2.setCustomValidity('');
+            }
+            senha.onchange = validatePassword;
+            senha2.onkeyup = validatePassword;
+        }
+
+    </script>
+
 </body>
-
-
 
 </html>
