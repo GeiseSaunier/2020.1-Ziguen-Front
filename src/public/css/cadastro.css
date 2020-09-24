@@ -1,4 +1,20 @@
 #background{
+    background-image: url("/src/public/img/slide-1-teste.jpg");
+}
 
-    
+.card {
+    padding: 30px;
+}
+
+.card p, h5 {
+    display: flex;
+    justify-content: center;
+}
+
+.title-form-cadastro {
+    margin-bottom: 20px;
+}
+
+#button-send {
+    margin-top: 20px;
 }
