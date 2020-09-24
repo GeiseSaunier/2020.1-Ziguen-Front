@@ -111,12 +111,12 @@ $RECYCLE.BIN/
 
 
 ### Sass ###
-.sass-cache/
-*.css.map
+###.sass-cache/
+###*.css.map
 
 
 ### Less ###
-*.css
+###*.css
 
 
 ### grunt ###
