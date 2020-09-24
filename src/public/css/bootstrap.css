@@ -2873,7 +2873,7 @@ fieldset:disabled a.btn {
   color: rgb(70, 70, 70);
   border-color: #3b5998;
   border-radius: 8px;
-  position: fixed;
+  position: absolute;
   width: 15rem;
   height: 2.5rem;
 }
