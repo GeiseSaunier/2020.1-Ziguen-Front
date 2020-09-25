@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="public/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="public/css/css-index.css">
     <link rel="stylesheet" type="text/css" href="public/css/cadastro.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <title>Ziguen - Passagens Fluviais</title>
 </head>
 
@@ -43,6 +44,10 @@
         <div class="row d-flex justify-content-center">
             <form class="card" style="width: 25rem;">
                 <h5 class="title-form-cadastro">Crie seu cadastro</h5>
+
+                <!--Facebook-->
+                <button class="btn btn-primary fb-btn" (click)="fbLogin()"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i> Cadastrar Com Facebook</button><br>
+
                 <p>
                     <label for="name"></label>
                     <input id="name" name="name" required type="text" placeholder="Nome Completo" />
@@ -103,6 +108,7 @@
         </div>
 
     </div>
+    <div id="fb-root"></div>
 
     <script>
 
@@ -120,6 +126,8 @@
             senha.onchange = validatePassword;
             senha2.onkeyup = validatePassword;
         }
+
+        src="//connect.facebook.net/en_US/sdk.js"
 
     </script>
 
