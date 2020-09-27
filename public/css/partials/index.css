@@ -45,14 +45,14 @@
 }
 
 .texto-menu {
-	color: #508364;
+	color: #85BEAB;
 	font-size: 18px;
 	font-weight: bold;
 	font-family: 'Montserrat', sans-serif;
 }
 
 .texto-menu:hover {
-	color: #85BEAB;
+	color: #508364;
 	font-size: 18px;
 }
 

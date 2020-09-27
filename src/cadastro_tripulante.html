@@ -40,38 +40,36 @@
         </div>
 
         <!--Caixa de Cadastro-->
+        <div class="corpo">
+            <div class="row d-flex justify-content-center">
+                <form class="card" style="width: 30rem;">
+                    <h5 class="title-form-cadastro">Crie seu cadastro</h5>
 
-        <div class="row d-flex justify-content-center">
-            <form class="card" style="width: 25rem;">
-                <h5 class="title-form-cadastro">Crie seu cadastro</h5>
-
-                <!--Facebook-->
-                <button class="btn btn-primary fb-btn" (click)="fbLogin()"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i> Cadastrar Com Facebook</button><br>
-
-                <p>
-                    <label for="name"></label>
-                    <input id="name" name="name" required type="text" placeholder="Nome Completo" />
-                </p>
-                <p>
-                    <label for="cpf"></label>
-                    <input id="cpf" name="cpf" required type="text" placeholder="CPF" />
-                </p>
-                <p>
-                    <label for="email"></label>
-                    <input id="email" name="email" required type="text" placeholder="E-mail" />
-                </p>
-                <p>
-                    <label for="password"></label>
-                    <input id="password" name="password" required type="password" placeholder="Senha" />
-                </p>
-                <p>
-                    <label for="password"></label>
-                    <input id="password2" name="password2" required type="password" placeholder="Confirmar Senha" />
-                </p>
-                <p>
-                    <input id="button-send" class="btn btn-primary" type="submit" value="Entrar" onclick="return validarSenha()">
-                </p>
-            </form>
+                    <div>
+                        <label for="name">Nome Completo</label>
+                        <input id="name" name="name" required type="text"/>
+                    </div>
+                    <div>
+                        <label for="cpf">CPF</label>
+                        <input id="cpf" name="cpf" required type="text"/>
+                    </div>
+                    <div>
+                        <label for="email">E-mail</label>
+                        <input id="email" name="email" required type="text"/>
+                    </div>
+                    <div>
+                        <label for="password">Senha</label>
+                        <input id="password" name="password" required type="password"/>
+                    </div>
+                    <div>
+                        <label for="password">Confirmar Senha</label>
+                        <input id="password2" name="password2" required type="password"/>
+                    </div>
+                    <p>
+                        <input id="button-send" class="btn btn-primary" type="submit" value="Entrar" onclick="return validarSenha()">
+                    </p>
+                </form>
+            </div>
         </div>
 
         <!--Rodapé da Página-->

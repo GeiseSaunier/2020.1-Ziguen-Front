@@ -2,6 +2,38 @@
     background-image: url("/src/public/img/slide-1-teste.jpg");
 }
 
+.corpo {
+    background-color: rgb(238, 238, 238);
+}
+
+form h5 {
+    font-size: 2rem;
+}
+
+form label {
+    font-size: 1rem;
+}
+
+form input {
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 0.8rem;
+    border-radius: 0.8rem;
+    background: rgb(238, 238, 238);
+    border: 1px solid #FFFFFF;
+    outline: 0;
+    padding: 0 1.6rem;
+}
+
+
+form {
+    border-color: none;
+    position: relative;
+}
+
+
+
+
 .card {
     margin-top: 30px;
     margin-bottom: 30px;
