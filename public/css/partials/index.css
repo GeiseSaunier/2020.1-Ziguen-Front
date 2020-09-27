@@ -3,6 +3,10 @@
 	background-color: #ffffff;
 }
 
+#buttons-menu a {
+    text-decoration: none;
+}
+
 .menu-seguimento {
 	height: 30px;
 	background-color: #508364;
@@ -43,6 +47,7 @@
 .texto-menu {
 	color: #508364;
 	font-size: 18px;
+	font-weight: bold;
 	font-family: 'Montserrat', sans-serif;
 }
 
