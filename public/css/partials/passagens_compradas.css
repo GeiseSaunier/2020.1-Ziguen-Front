@@ -1,0 +1,7 @@
+.nome-cliente {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #508364;
+}
