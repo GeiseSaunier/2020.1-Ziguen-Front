@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="../public/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="../public/css/partials/index.css">
     <link rel="stylesheet" type="text/css" href="../public/css/partials/carrinho.css">
-    <title>Passagens Compradas</title>
+    <title>Meu Carrinho</title>
 </head>
 
 <body>
@@ -37,13 +37,72 @@
         </div>
 
         <!--Título do Carrinho-->
-        <div class="row d-flex justify-content-center">
-            <p class="carrinho-titulo">Meu Carrinho</p>
-        </div>
-        <div class="row space"></div>
-        <!--Carrinho-->
-        
+        <div class = "corpo-carrinho">
+            <div class="row d-flex justify-content-center">
+                <p class="carrinho-titulo">Meu Carrinho</p>
+            </div>
+        <div>
 
+        <!--Carrinho-->
+        <div class = "corpo-carrinho">
+            <div class="row d-flex justify-content-center">
+                <div class="card" style="width: 40rem; border: 1px solid #508364;">
+                    <div class = "card-body">
+                        <a href = "#"><img src="../public/img/barco-ilustracao.jpg" class="card-img-top" alt="..." style = "width: 170px; height: 140px; margin-top: 3%; margin-bottom: 3%;"></a>
+                        <div style = "margin-left: 32%; bottom: 14%; position:absolute">
+                            <table class="table-carrinho">
+                                <thead class="thead-light">
+                                <tr>
+                                    <th>Informações</th>
+                                    <th>Ingressos</th>
+                                    <th>Total</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr >
+                                    <td>Nome: Barco X</td>
+                                    <td rowspan="1">1</td>
+                                    <td>R$ 0,00</td>
+                                </tr>
+                                <tr>
+                                    <td>Origem: Maués</td>
+                                </tr>
+                                <tr>
+                                    <td>Destino: Parintins</td>
+                                </tr>
+                                <tr>
+                                    <td>Data: 01/01/21</td>
+                                </tr>
+                                <tr>
+                                    <td>Horário: 00:00</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row space row"></div>
+
+            <div class="row d-flex justify-content-center">
+                <div class="card" style="width: 40rem; border: 1px solid #508364;">
+                    <div class = "card-body">
+                        <p><b>Número de Ingressos: 1</b></p>
+                        <p style="text-align: right; bottom: 18%; position: relative;"><b>R$ 0,00</b></p>
+                        <div class = "hr-carrinho" style = "margin-top: -5%"></div>
+                        <div class="d-flex justify-content-center">
+                            <a href="#">Se ainda desejar comprar mais alguma passagem, clique aqui</a>
+                        </div>
+                        <div class="row space"></div>
+                        <div class = "row d-flex justify-content-center">
+                            <button type="button" class="btn btn-primary">Finalizar Compra</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row space"></div>
+        </div>
 
 
     <!--Rodapé da Página-->
