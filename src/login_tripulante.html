@@ -6,25 +6,31 @@
     <link rel="stylesheet" type="text/css" href="../public/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../public/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="../public/css/partials/index.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/partials/cadastro.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <title>Ziguen - Passagens Fluviais</title>
 </head>
 
 <body>
-    <!--Menu-->
-    <div class="container-fluid">
-        <div class="row menu">
-            <div class="col-xl-1"></div>
-            <div class="col-xl-5">
-                <img class="logo" src="../public/img/logo.png">
+    <div id="background">
+        <!--Menu-->
+        <div class="container-fluid">
+            <div class="row menu">
+                <div class="col-xl-1"></div>
+                <div class="col-xl-5">
+                    <img class="logo" src="../public/img/logo.png">
+                </div>
+                <div class="col-xl-5 d-flex justify-content-end align-items-center"  id="buttons-menu">
+                    <a href="../src/index.html" class="texto-menu">Página Inicial</a> &nbsp&nbsp&nbsp&nbsp&nbsp
+                    <a href="#" class="texto-menu">Mais vendidas</a> &nbsp&nbsp&nbsp&nbsp
+                    <!--<a href="../src/login_tripulante.html" class="texto-menu">Entrar</a> &nbsp&nbsp&nbsp&nbsp-->
+                    <a href="#" class="texto-menu">Sobre</a> &nbsp&nbsp&nbsp&nbsp
+                    <a href="#" class="texto-menu">Ajuda</a>
+                </div>
+                <div class="col-xl-1"></div>
             </div>
-            <div class="col-xl-5 d-flex justify-content-end align-items-center" id="buttons-menu">
-                <a href="../src/index.html" class="texto-menu">Página Inicial</a> &nbsp&nbsp&nbsp&nbsp&nbsp
-                <a href="#" class="texto-menu">Mais vendidas</a> &nbsp&nbsp&nbsp&nbsp&nbsp
-                <a href="#" class="texto-menu">Sobre</a> &nbsp&nbsp&nbsp&nbsp&nbsp
-                <a href="#" class="texto-menu">Ajuda</a>
-            </div>
-            <div class="col-xl-1"></div>
         </div>
+
         <!--Linha sobre nosso seguimento-->
         <div class="row menu-seguimento">
             <div class="col-xl-11 d-flex justify-content-end">
@@ -32,71 +38,69 @@
             </div>
             <div class="col-xl-1"></div>
         </div>
+
         <!--Caixa de Login-->
-        <div class="container">
-            <div class="row space"></div>
+        <div class="corpo">
             <div class="row d-flex justify-content-center">
-                <div class="card" style="width: 25rem">
-                    <div class="card-body">
-                        <h5 class="row d-flex justify-content-center" style="color: rgb(70, 70, 70);">Entrar</h5>
-                        <div class="row space"></div>
-                        <p class="row d-flex justify-content-center">
-                            <label for="email"></label>
-                            <input id="email" name="email" required="required" type="text" placeholder="E-mail" />
-                        </p>
-                        <p class="row d-flex justify-content-center">
-                            <label for="senha"></label>
-                            <input id="senha" name="senha" required="senha" type="password" placeholder="Senha" />
-                        </p>
-                        <p class="row d-flex justify-content-center">
-                            <input class="btn btn-primary" type="submit" value="Entrar">
-                        </p>
-                        <div class="d-flex justify-content-center">
-                            <a href="../src/cadastro_tripulante.html">Ainda não tem cadastro?</a>
-                        </div>
-                        <div class="row space"></div>
-                        <div class="d-flex justify-content-center">
-                            <button type="button" class="btn btn-outline-secondary">Entrar com o Facebook</button>
-                            <button type="button" class="btn btn-outline-success">Entrar com o Google</button>
-                        </div>
+                <form class="card" style="width: 30rem;">
+                    <h5 class="title-form-cadastro">Entrar</h5>
+                        
+                    <div>
+                        <label for="email">E-mail</label>
+                        <input id="email" name="email" required type="text"/>
+                    </div>
+                    <div>
+                        <label for="password">Senha</label>
+                        <input id="password" name="password" required type="password"/>
+                    </div>
+                    <div class="row space"></div>
+                    <div class="d-flex justify-content-center">
+                        <a href="../src/cadastro_tripulante.html">Ainda não tem cadastro?</a>
+                    </div>
+                    <div class="row space"></div>
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn btn-outline-secondary">Entrar com o Facebook</button>
+                        <button type="button" class="btn btn-outline-success">Entrar com o Google</button>
+                    </div>
+                </form>
+            </div>
+</div>
+
+        <!--Rodapé da Página-->
+        <div>
+            <div class="row rodape">
+                <div class="col-xl-12">
+                    <div class="row d-flex justify-content-center">
+                        <p class="texto-rodape">Barcos parceiros</p>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <p>&#128674</p>&nbsp&nbsp&nbsp&nbsp
+                        <p>&#128674</p>&nbsp&nbsp&nbsp&nbsp
+                        <p>&#128674</p>&nbsp&nbsp&nbsp&nbsp
+                        <p>&#128674</p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row space"></div>
-    </div>
-    <!--Rodapé da Página-->
-    <div>
-        <div class="row rodape">
-            <div class="col-xl-12">
-                <div class="row d-flex justify-content-center">
-                    <p class="texto-rodape">Barcos parceiros</p>
+            <div class="row rodape">
+                <div class="col-xl-2"></div>
+                <div class="col-xl-8 rodape-linhas">
+                    <div class="row d-flex justify-content-center">
+                        <p class="texto-rodape">Nossa redes sociais</p>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <img src="../public/img/icon-insta.png" class="icons">&nbsp&nbsp&nbsp&nbsp
+                        <img src="../public/img/icon-face.png" class="icons">
+                    </div>
                 </div>
-                <div class="row d-flex justify-content-center">
-                    <p>&#128674</p>&nbsp&nbsp&nbsp&nbsp
-                    <p>&#128674</p>&nbsp&nbsp&nbsp&nbsp
-                    <p>&#128674</p>&nbsp&nbsp&nbsp&nbsp
-                    <p>&#128674</p>
-                </div>
+                <div class="col-xl-2"></div>
+            </div>
+            <div class="row rodape d-flex justify-content-center align-items-center">
+                <p class="texto-rodape">© 2020 - Ziguen - Venda de Passagens de Barco</p><br>
             </div>
         </div>
-        <div class="row rodape">
-            <div class="col-xl-2"></div>
-            <div class="col-xl-8 rodape-linhas">
-                <div class="row d-flex justify-content-center">
-                    <p class="texto-rodape">Nossa redes sociais</p>
-                </div>
-                <div class="row d-flex justify-content-center">
-                    <img src="../public/img/icon-insta.png" class="icons">&nbsp&nbsp&nbsp&nbsp
-                    <img src="../public/img/icon-face.png" class="icons">
-                </div>
-            </div>
-            <div class="col-xl-2"></div>
-        </div>
-        <div class="row rodape d-flex justify-content-center align-items-center">
-            <p class="texto-rodape">© 2020 - Ziguen - Venda de Passagens de Barco</p><br>
-        </div>
+
     </div>
+    <div id="fb-root"></div>
 
     <script>
 
@@ -104,7 +108,7 @@
             senha = document.getElementsByName('password').value;
             senha2 = document.getElementsByName('password2').value;
 
-            if (senha != senha2) {
+            if (senha != senha2) { 
                 console.log("As senhas são diferentes.")
                 senha2.setCustomValidity("Senhas diferentes!");
             } else {
@@ -115,6 +119,10 @@
             senha2.onkeyup = validatePassword;
         }
 
+        src="//connect.facebook.net/en_US/sdk.js"
+
     </script>
+
 </body>
+
 </html>

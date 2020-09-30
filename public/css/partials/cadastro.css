@@ -4,6 +4,7 @@
 
 .corpo {
     background-color: rgb(238, 238, 238);
+    padding: 0%;
 }
 
 form h5 {
@@ -30,8 +31,6 @@ form {
     border-color: none;
     position: relative;
 }
-
-
 
 
 .card {
