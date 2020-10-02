@@ -1,0 +1,59 @@
+.menu {
+    height: 90px;
+    background-color: #ffffff;
+}
+
+.menu-seguimento {
+    height: 30px;
+    background-color: #508364;
+}
+
+.logo {
+    width: 25%;
+}
+
+.texto-menu {
+    color: #508364;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+.texto-menu:hover {
+    color: #85BEAB;
+    font-size: 18px;
+}
+
+.texto-seguimento {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 3.5px;
+}
+
+
+
+/*--------------Rodapé----------------*/
+.rodape {
+    height: 100px;
+    background-color: #508364;
+}
+.rodape-linhas {
+    border: 1px solid;
+    border-top-color: #ffffff;
+    border-left-color: #508364;
+    border-right-color: #508364;
+    border-bottom-color: #ffffff;
+}
+
+.texto-rodape {
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.icons {
+    width: 3%;
+    height: 3%;
+}
