@@ -32,7 +32,64 @@
     margin-top: 3.5px;
 }
 
+/*---------------Texto e imagens----------------*/
+.texto-proposito{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    color:  #6D6D6D;
+}
 
+.ilustracao{
+    width: 190px;
+    height: 180px;
+}
+
+/*---------------Caixa de Cadastro----------------*/
+
+.caixa-login {
+    margin-top: 15px;
+    width: 450px;
+    height: 450px;
+    border: 2px solid;
+    border-radius: 10px;
+    border-color: #85BEAB;
+}
+
+.input-login {
+    width: 300px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.texto-login {
+    font-family: 'Montserrat', sans-serif;
+    color: #6D6D6D;
+}
+
+h4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #6D6D6D;
+}
+.col-login {
+    border: 1px solid;
+    border-top-color: #ffffff;
+    border-bottom-color: #ffffff;
+    border-right-color: #ffffff;
+    border-left-color: #6D6D6D;
+}
+
+.botao {
+    margin-top: 20px;
+    background-color: #508364;
+    border-radius: 12px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    width: 200px;
+}
 
 /*--------------Rodapé----------------*/
 .rodape {
@@ -57,3 +114,7 @@
     width: 3%;
     height: 3%;
 }
+
+.space {
+    height: 50px;
+ }
