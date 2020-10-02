@@ -48,9 +48,8 @@
 /*---------------Caixa de Cadastro----------------*/
 
 .caixa-login {
-    margin-top: 15px;
     width: 450px;
-    height: 450px;
+    height: 480px;
     border: 2px solid;
     border-radius: 10px;
     border-color: #85BEAB;
@@ -79,6 +78,10 @@ h4 {
     border-bottom-color: #ffffff;
     border-right-color: #ffffff;
     border-left-color: #6D6D6D;
+}
+
+.link-cadastro {
+    margin-top: 40px;
 }
 
 .botao {
