@@ -26,10 +26,29 @@
   	overflow: visible;
 }
 
-.table-carrinho {
-	width: 150%;
-}
-
 .corpo-carrinho {
     background-color: rgb(238, 238, 238);
+}
+
+.card-ingressos {
+	margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.list-unstyled {
+	padding-left: 0;
+	list-style: none;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
 }
