@@ -22,7 +22,6 @@
                 <div class="col-xl-5 d-flex justify-content-end align-items-center"  id="buttons-menu">
                     <a href="../index.html" class="texto-menu">Página Inicial</a> &nbsp&nbsp&nbsp&nbsp&nbsp
                     <a href="#" class="texto-menu">Mais vendidas</a> &nbsp&nbsp&nbsp&nbsp
-                    <!--<a href="../src/login_tripulante.html" class="texto-menu">Entrar</a> &nbsp&nbsp&nbsp&nbsp-->
                     <a href="#" class="texto-menu">Sobre</a> &nbsp&nbsp&nbsp&nbsp
                     <a href="#" class="texto-menu">Ajuda</a>
                 </div>
@@ -39,33 +38,49 @@
             </div>
 
             <!--Caixa de Login-->
-            <div class="corpo">
-                <div class="row d-flex justify-content-center">
-                    <form class="card" style="width: 30rem;">
-                        <h5 class="title-form-cadastro">Entrar</h5>
-                            
-                        <div>
-                            <label for="email">E-mail</label>
-                            <input id="email" name="email" required type="text"/>
+            <div class="row" style="height: 40px"></div>
+            <div class="row">
+
+                <div class="col-xl-8 d-flex justify-content-center">
+                    <div style="height: 480px">
+                        <div style="width: 800px; margin-top: 50px">
+                            <p class="texto-proposito">Mover e acelerar pessoas para impulsionar o mundo de forma
+                                democrática, criativa e inovadora.</p>
                         </div>
-                        <div>
-                            <label for="password">Senha</label>
-                            <input id="password" name="password" required type="password"/>
+                        <div style="width: 800px; margin-top: 50px" class="d-flex justify-content-center">
+                            <img class="ilustracao" src="../../public/img/ilustração-barco.png">
+                            <img class="ilustracao" src="../../public/img/ilustração-inovação.png">
+                            <img class="ilustracao" src="../../public/img/ilustração-localização.png">
                         </div>
-                        <p>
-                            <input id="button-send" class="btn btn-primary" type="submit" value="Entrar" onclick="return validarSenha()">
-                        </p>
-                        <div class="d-flex justify-content-center">
-                            <a href="../user/cadastro_usuario.html">Ainda não tem cadastro?</a>
-                        </div>
-                        <div class="row space"></div>
-                        <div class="d-flex justify-content-center">
-                            <button type="button" class="btn btn-outline-secondary">Entrar com o Facebook</button>
-                            <button type="button" class="btn btn-outline-success">Entrar com o Google</button>
-                        </div>
-                    </form>
+                    </div>
                 </div>
 
+                <div class="col-xl-4 d-flex justify-content-center col-login">
+                    <div class="caixa-login" style="text-align: center">
+                        <h4>Entrar</h4>
+                        <form class="d-flex justify-content-center">
+                            <div class="form-group">
+                                <input type="email" class="form-control input-login" id="exampleFormControlInput1"
+                                    placeholder="E-mail">
+                                <input type="password" class="form-control input-login" id="exampleFormControlInput1"
+                                    placeholder="Senha">
+                                <button type="button" class="btn btn-light botao"onclick="return validarSenha()">Entrar</button>
+                            
+                                <div class="d-flex justify-content-center">
+                                    <a href="../user/cadastro_usuario.html">Ainda não possui cadastro?</a>
+                                </div>
+                                <div class="row space"></div>
+                                <div class="d-flex justify-content-center">
+                                    <button type="button" class="btn btn-outline-secondary">Entrar com o Facebook</button>
+                                    <button type="button" class="btn btn-outline-success">Entrar com o Google</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" style="height: 30px"></div>    
 
             <!--Rodapé da Página-->
             <div>
