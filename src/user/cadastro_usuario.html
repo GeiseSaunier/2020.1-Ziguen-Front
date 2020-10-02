@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="../public/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="../public/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../../public/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../../public/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="../../public/css/partials/user_css/cadastro_usuario.css">
 	<title>Cadastro</title>
 </head>
+
 <body>
 	<!--Menu-->
 	<div class="container-fluid">
-		<div class="row menu">
-			<div class="col-xl-1"></div>
-			<div class="col-xl-5">
-				<img class="logo" src="../public/img/logo.png">
-			</div>
-			<div class="col-xl-5 d-flex justify-content-end align-items-center">
-				<a href="#" class="texto-menu">Mais vendidas</a> &nbsp&nbsp&nbsp&nbsp
-				<a href="#" class="texto-menu">Iniciar sessão</a> &nbsp&nbsp&nbsp&nbsp
-				<a href="#" class="texto-menu">Sobre</a> &nbsp&nbsp&nbsp&nbsp
-				<a href="#" class="texto-menu">Ajuda</a>
-			</div>
-			<div class="col-xl-1"></div>
-		</div>
+        <div class="row menu">
+            <div class="col-xl-1"></div>
+            <div class="col-xl-5">
+                <img class="logo" src="../../public/img/logo.png">
+            </div>
+            <div class="col-xl-5 d-flex justify-content-end align-items-center">
+                <a href="#" class="texto-menu">Mais vendidas</a> &nbsp&nbsp&nbsp&nbsp
+                <a href="#" class="texto-menu">Iniciar sessão</a> &nbsp&nbsp&nbsp&nbsp
+                <a href="#" class="texto-menu">Sobre</a> &nbsp&nbsp&nbsp&nbsp
+                <a href="#" class="texto-menu">Ajuda</a>
+            </div>
+            <div class="col-xl-1"></div>
+        </div>
 		<!--Linha sobre nosso seguimento-->
 		<div class="row menu-seguimento">
 			<div class="col-xl-11 d-flex justify-content-end">
@@ -30,83 +32,94 @@
 			</div>
 			<div class="col-xl-1"></div>
 		</div>
-	
-	<!--Corpo da Página-->
 
-	<div class="row" style="height: 40px"></div>
+		<!--Corpo da Página-->
 
-	<div class="row">
-		<div class="col-xl-8 d-flex justify-content-center">
-			<div style="height: 480px">
-				<div style="width: 800px; margin-top: 50px">
-					<p class="texto-proposito">Mover e acelerar pessoas para impulsionar o mundo de forma democrática, criativa e inovadora.</p>
+		<div class="row" style="height: 40px"></div>
+
+		<div class="row">
+			<div class="col-xl-8 d-flex justify-content-center">
+				<div style="height: 480px">
+					<div style="width: 800px; margin-top: 50px">
+						<p class="texto-proposito">Mover e acelerar pessoas para impulsionar o mundo de forma
+							democrática, criativa e inovadora.</p>
+					</div>
+					<div style="width: 800px; margin-top: 50px" class="d-flex justify-content-center">
+						<img class="ilustracao" src="../../public/img/ilustração-barco.png">
+						<img class="ilustracao" src="../../public/img/ilustração-inovação.png">
+						<img class="ilustracao" src="../../public/img/ilustração-localização.png">
+					</div>
 				</div>
-				<div style="width: 800px; margin-top: 50px" class="d-flex justify-content-center">
-					<img class="ilustracao" src="../../public/img/ilustração-barco.png">
-					<img class="ilustracao" src="../../public/img/ilustração-inovação.png">
-					<img class="ilustracao" src="../../public/img/ilustração-localização.png">
+			</div>
+			<div class="col-xl-4 d-flex justify-content-center col-cadastro">
+				<div class="caixa-cadastro" style="text-align: center">
+					<h4>Cadastre-se</h4>
+					<form class="d-flex justify-content-center">
+						<div class="form-group">
+							<input type="text" class="form-control input-cadastro" id="exampleFormControlInput1"
+								placeholder="Nome">
+							<input type="email" class="form-control input-cadastro" id="exampleFormControlInput1"
+								placeholder="E-mail">
+							<input type="password" class="form-control input-cadastro" id="exampleFormControlInput1"
+								placeholder="Senha">
+							<input type="password" class="form-control input-cadastro" id="exampleFormControlInput1"
+								placeholder="Confirmar Senha">
+							<input type="text" class="form-control input-cadastro" id="exampleFormControlInput1"
+								placeholder="CPF">
+							<div class="form-inline d-flex justify-content-center" style="margin-top: 30px">
+								<div class="form-check form-check-inline">
+									<input class="form-check-input" type="checkbox" name="exampleRadios"
+										id="exampleRadios1" value="option1" checked>
+									<label class="form-check-label texto-cadastro"
+										for="exampleRadios1">Proprietário</label>
+								</div>
+							</div>
+							<button type="button" class="btn btn-light botao">Cadastrar</button>
+						</div>
+					</form>
 				</div>
-			</div>	
-		</div>
-		<div class="col-xl-4 d-flex justify-content-center col-cadastro">
-			<div class="caixa-cadastro" style="text-align: center">
-				<h4>Cadastre-se</h4>
-				<form class="d-flex justify-content-center">
-					<div class="form-group">
-				    	<input type="text" class="form-control input-cadastro" id="exampleFormControlInput1" placeholder="Nome">
-				    	<input type="email" class="form-control input-cadastro" id="exampleFormControlInput1" placeholder="E-mail">
-				    	<input type="password" class="form-control input-cadastro" id="exampleFormControlInput1" placeholder="Senha">
-				    	<input type="password" class="form-control input-cadastro" id="exampleFormControlInput1" placeholder="Confirmar Senha">
-				    	<input type="text" class="form-control input-cadastro" id="exampleFormControlInput1" placeholder="CPF">
-				    	<div class="form-inline d-flex justify-content-center" style="margin-top: 30px">
-						    <div class="form-check form-check-inline">
-						    	<input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-					   			 <label class="form-check-label texto-cadastro" for="exampleRadios1">Proprietário</label>
-						    </div>
-					    </div>
-						<button type="button" class="btn btn-light botao">Cadastrar</button>
-				    </div>
-				</form>
 			</div>
 		</div>
-	</div>
 
-	<div class="row" style="height: 60px"></div>
+		<div class="row" style="height: 60px"></div>
 
-	<!--Rodapé da Página-->
-	<div>
-		<div class="row rodape">
-			<div class="col-xl-12">
-				<div class="row d-flex justify-content-center">
+		<!--Rodapé da Página-->
+		<div>
+			<div class="row rodape">
+				<div class="col-xl-12">
+					<div class="row d-flex justify-content-center">
 						<p class="texto-rodape">Barcos parceiros</p>
-				</div>
-				<div class="row d-flex justify-content-center">
-					<p>&#128674</p>&nbsp&nbsp&nbsp&nbsp
-					<p>&#128674</p>&nbsp&nbsp&nbsp&nbsp
-					<p>&#128674</p>&nbsp&nbsp&nbsp&nbsp
-					<p>&#128674</p>
-				</div>
-			</div>
-		</div>
-		<div class="row rodape">
-			<div class="col-xl-2"></div>
-			<div class="col-xl-8 rodape-linhas">
-				<div class="row d-flex justify-content-center"><p class="texto-rodape">Nossa redes sociais</p></div>
-				<div class="row d-flex justify-content-center">
-					<img src="../public/img/icon-insta.png" class="icons">&nbsp&nbsp&nbsp&nbsp
-					<img src="../public/img/icon-face.png" class="icons">
+					</div>
+					<div class="row d-flex justify-content-center">
+						<p>&#128674</p>&nbsp&nbsp&nbsp&nbsp
+						<p>&#128674</p>&nbsp&nbsp&nbsp&nbsp
+						<p>&#128674</p>&nbsp&nbsp&nbsp&nbsp
+						<p>&#128674</p>
+					</div>
 				</div>
 			</div>
-			<div class="col-xl-2"></div>
+			<div class="row rodape">
+				<div class="col-xl-2"></div>
+				<div class="col-xl-8 rodape-linhas">
+					<div class="row d-flex justify-content-center">
+						<p class="texto-rodape">Nossa redes sociais</p>
+					</div>
+					<div class="row d-flex justify-content-center">
+						<img src="../public/img/icon-insta.png" class="icons">&nbsp&nbsp&nbsp&nbsp
+						<img src="../public/img/icon-face.png" class="icons">
+					</div>
+				</div>
+				<div class="col-xl-2"></div>
+			</div>
+			<div class="row rodape d-flex justify-content-center align-items-center">
+				<p class="texto-rodape">© 2020 - Ziguen - Venda de Passagens de Barco</p><br>
+			</div>
 		</div>
-		<div class="row rodape d-flex justify-content-center align-items-center">
-			<p class="texto-rodape">© 2020 - Ziguen - Venda de Passagens de Barco</p><br>
-		</div>
-	</div>
 	</div>
 	<footer>
 		<script type="text/javascript" src="../public/js/jquery.js"></script>
 		<script type="text/javascript" src="../public/js/bootstrap.bundle.min.js"></script>
 	</footer>
 </body>
+
 </html>
