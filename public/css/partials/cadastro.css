@@ -1,53 +1,120 @@
-#background {
-    background-image: url("/src/public/img/slide-1-teste.jpg");
+.menu {
+    height: 90px;
+    background-color: #ffffff;
 }
 
-.corpo {
-    background-color: rgb(238, 238, 238);
+.menu-seguimento {
+    height: 30px;
+    background-color: #508364;
 }
 
-form h5 {
-    font-size: 2rem;
+.logo {
+    width: 25%;
 }
 
-form label {
-    font-size: 1rem;
+.texto-menu {
+    color: #508364;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
 }
 
-form input {
-    width: 100%;
-    height: 3rem;
-    margin-bottom: 0.8rem;
-    border-radius: 0.8rem;
-    background: rgb(238, 238, 238);
-    border: 1px solid #FFFFFF;
-    outline: 0;
-    padding: 0 1.6rem;
+.texto-menu:hover {
+    color: #85BEAB;
+    font-size: 18px;
 }
 
-
-form {
-    border-color: none;
-    position: relative;
+.texto-seguimento {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 3.5px;
 }
 
-
-.card {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding: 30px;
+/*-------------------------------*/
+.texto-proposito{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    color:  #6D6D6D;
 }
 
-.card p, h5 {
-    display: flex;
-    justify-content: center;
+.ilustracao{
+    width: 190px;
+    height: 180px;
 }
 
-.title-form-cadastro {
-    margin-bottom: 20px;
+.caixa-cadastro {
+    width: 450px;
+    height: 480px;
+    border: 2px solid;
+    border-radius: 10px;
+    border-color: #85BEAB;
 }
 
-#button-send {
+.input-cadastro {
+    width: 300px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.texto-cadastro {
+    font-family: 'Montserrat', sans-serif;
+    color: #6D6D6D;
+}
+
+h4 {
     margin-top: 20px;
-    background-color: rgb(133, 190, 171)
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #6D6D6D;
 }
+.col-cadastro {
+    border: 1px solid;
+    border-top-color: #ffffff;
+    border-bottom-color: #ffffff;
+    border-right-color: #ffffff;
+    border-left-color: #6D6D6D;
+}
+
+.botao {
+    margin-top: 20px;
+    background-color: #508364;
+    border-radius: 12px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    width: 200px;
+}
+
+/*-------------------------------*/
+.rodape {
+    height: 100px;
+    background-color: #508364;
+}
+.rodape-linhas {
+    border: 1px solid;
+    border-top-color: #ffffff;
+    border-left-color: #508364;
+    border-right-color: #508364;
+    border-bottom-color: #ffffff;
+}
+
+.texto-rodape {
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.icons {
+    width: 3%;
+    height: 3%;
+}
+
+/* azul 85BEAB
+ verde 508364*/
+
+ .space {
+    height: 50px;
+ }
