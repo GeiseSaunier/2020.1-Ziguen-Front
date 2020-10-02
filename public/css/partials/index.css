@@ -3,19 +3,9 @@
 	background-color: #ffffff;
 }
 
-#buttons-menu a {
-    text-decoration: none;
-}
-
 .menu-seguimento {
 	height: 30px;
 	background-color: #508364;
-}
-
-.texto-seguimento {
-	display: flex;
-	align-items: center;
-	height: 30px;
 }
 
 .slide {
@@ -45,14 +35,13 @@
 }
 
 .texto-menu {
-	color: #85BEAB;
+	color: #508364;
 	font-size: 18px;
-	font-weight: bold;
 	font-family: 'Montserrat', sans-serif;
 }
 
 .texto-menu:hover {
-	color: #508364;
+	color: #85BEAB;
 	font-size: 18px;
 }
 
@@ -74,7 +63,6 @@
 	height: 100px;
 	background-color: #508364;
 }
-
 .rodape-linhas {
 	border: 1px solid;
 	border-top-color: #ffffff;
@@ -107,4 +95,3 @@
  .space {
  	height: 50px;
  }
- 
