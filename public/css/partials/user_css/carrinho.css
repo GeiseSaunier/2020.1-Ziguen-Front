@@ -1,5 +1,39 @@
 /* Header */
 
+.menu {
+    height: 90px;
+    background-color: #ffffff;
+}
+
+.menu-seguimento {
+    height: 30px;
+    background-color: #508364;
+}
+
+.logo {
+    width: 25%;
+}
+
+.texto-menu {
+    color: #508364;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+.texto-menu:hover {
+    color: #85BEAB;
+    font-size: 18px;
+}
+
+.texto-seguimento {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 3.5px;
+}
+
 /* Passagens e Total*/
 .carrinho-titulo {
     margin-top: 30px;
@@ -10,21 +44,29 @@
 	font-family: 'Montserrat', sans-serif;
 }
 
-.passagens, .total {
-    width: 600px; 
+.passagens {
     border: 2px solid #85BEAB;
+    width: 800px;
+    height: 125px;
+}
+
+.bloco + .bloco {
+    margin-top: 20px;
 }
 
 .card-img-top {
-    width: 170px;
-    height: 140px;
-    margin-top: 3%;
-    margin-::-webkit-inner-spin-buttonbottom: 3%;
+    width: 120px;
+    height: 90px;
+    margin-top: -5px;
 }
 
-.table-carrinho {
-    width: 160%;
-    column-gap: 30px;
+.total {
+    border: 2px solid #85BEAB;
+    width: 300px;
+}
+
+.space {
+    height: 30px;
 }
 
 .botao {
@@ -35,10 +77,6 @@
     color: #ffffff;
     font-weight: bolder;
     width: 250px;
-}
-
-.divider {
-    width: 50px;
 }
 
 
@@ -54,7 +92,8 @@
   	overflow: visible;
 }
 
-.card-cartao {
+.card-pagamento {
+    width: 600px;
 	margin-top: 30px;
     margin-bottom: 30px;
     padding: 30px;
@@ -95,4 +134,29 @@
     border: 2px solid;
     border-radius: 10px;
     border-color: #85BEAB;
+}
+
+/*---------Rodapé---------*/
+
+.rodape {
+    height: 100px;
+    background-color: #508364;
+}
+.rodape-linhas {
+    border: 1px solid;
+    border-top-color: #ffffff;
+    border-left-color: #508364;
+    border-right-color: #508364;
+    border-bottom-color: #ffffff;
+}
+
+.texto-rodape {
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.icons {
+    width: 3%;
+    height: 3%;
 }

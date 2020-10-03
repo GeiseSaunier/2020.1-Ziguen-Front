@@ -5,7 +5,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../../public/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../../public/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="../../public/css/partials/index.css">
     <link rel="stylesheet" type="text/css" href="../../public/css/partials/user_css/carrinho.css">
     <title>Meu Carrinho</title>
 </head>
@@ -38,66 +37,50 @@
 
         <!--Título do Carrinho-->
 
-        <div class = "corpo-carrinho">
-            <div class="row d-flex justify-content-center">
-                <h4 class="carrinho-titulo">Meu Carrinho</h4>
-            </div>
-        <div>
-
-        <!--Carrinho-->
         <div class="row d-flex justify-content-center">
-            <div class="card passagens">
-                <div class = "card-body">
-                    <img src="../../public/img/barco-ilustracao.jpg" class="card-img-top">
-                    <div style = "margin-left: 39%; bottom: 14%; position:absolute">
-                        <table class="table-carrinho">
-                            <thead class="thead-light">
-                                <tr>
-                                    <th>Informações</th>
-                                    <th>Preço</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Barco: X</td>
-                                    <td>R$ 0,00</td>
-                                </tr>
-                                <tr>
-                                    <td>Origem: Maués</td>
-                                </tr>
-                                <tr>
-                                    <td>Destino: Parintins</td>
-                                </tr>
-                                <tr>
-                                    <td>Data: 01/01/21</td>
-                                </tr>
-                                <tr>
-                                    <td>Horário: 00:00</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
+            <h4 class="carrinho-titulo">Meu Carrinho</h4>
         </div>
+        
+        <!--Carrinho-->
+        <div class="row">
+            <div class="col-xl-8 d-flex justify-content-center bloco">
+                <div class="card passagens">
+                    <div class = "card-body">
+                        <img src="../../public/img/barco-ilustracao.jpg" class="card-img-top">
+                        <div style = "margin-left: 20%; bottom: 10%; position: absolute;">
+                            <p>Origem: Maués</p>
+                            <p>Destino: Parintins</p>
+                        </div>
+                        <div style = "margin-left: 45%; bottom: 10%; position: absolute;">
+                            <p>Data: 10/10/2020</p>
+                            <p>Horário: 12:30</p>
+                        </div>
+                        <div style = "margin-left: 70%; bottom: 10%; position: absolute;">
+                            <p>Barco: Titanic</p>
+                            <p>Preço: R$ 100,00</p>
+                        </div>
+                    </div>
+                </div> 
+            </div>
 
             <div class = "row space"></div>
 
-            <div class="row d-flex justify-content-center">
+            <div class="col-xl-4 d-flex justify-content-center">
                 <div class="card total">
                     <div class = "card-body">
                         <p><b>Quantidade de Passagens: 1</b></p>
-                        <p style="text-align: right; bottom: 24%; position: relative;"><b>Total: R$ 0,00</b></p>
+                        <p><b>Total: R$ 0,00</b></p>
                         <div class = "hr-carrinho" style = "margin-top: -5%"></div>
                         <div class = "row d-flex justify-content-center botoes-carrinho">
                             <a href="#pagamento"><button type="button" class="btn btn-light botao">Finalizar Compra</button></a>
-                            <div class = "divider"></div>
+                            
                             <a href = "../index.html"><button type="button" class="btn btn-light botao">Continuar Comprando</button></a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row space"></div>
+        </div>
+        <div class="row space"></div>
 
         <!--Pagamento-->
         <div class = "hr-carrinho" id="pagamento"></div>
@@ -108,8 +91,11 @@
             </div>
 
             <div class="row formas-de-pagamento">
-                <div class="col-xl-6 d-flex justify-content-center">
-                    <div class = "card-cartao">
+                <div class="col-xl-12 d-flex justify-content-center">
+                    <div class = "card-pagamento">
+                        <h4>Boleto<button type="button" class="btn btn-light botao-pagamento">Gerar Boleto</button></h4>
+                        
+                        
                         <h4>Cartão</h4>
 					    <form class="d-flex justify-content-center">
                             <div class="cartao-campos">
@@ -130,12 +116,6 @@
                     </div>
                 </div>
 
-                <div class="col-xl-6 d-flex justify-content-center">
-                    <div class = "card-boleto">
-                        <h4>Boleto</h4>
-                        <button type="button" class="btn btn-light botao-pagamento">Gerar Boleto</button>
-                    </div>
-                </div>
             </div>
 
             <div class="row" style="height: 30px"></div>
