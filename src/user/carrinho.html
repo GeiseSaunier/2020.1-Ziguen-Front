@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="../../public/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../../public/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="../../public/css/partials/index.css">
-    <link rel="stylesheet" type="text/css" href="../../public/css/partials/carrinho.css">
+    <link rel="stylesheet" type="text/css" href="../../public/css/partials/user_css/carrinho.css">
     <title>Meu Carrinho</title>
 </head>
 
@@ -45,54 +45,88 @@
         <div class = "row space"></div>
 
         <!--Carrinho-->
-        <div class = "corpo-carrinho">
+        <div class="row d-flex justify-content-center">
+            <div class="card" style="width: 40rem; border: 1px solid #508364;">
+                <div class = "card-body">
+                    <a href = "#"><img src="../../public/img/barco-ilustracao.jpg" class="card-img-top" alt="..." style = "width: 170px; height: 140px; margin-top: 3%; margin-bottom: 3%;"></a>
+                    <div style = "margin-left: 32%; bottom: 14%; position:absolute">
+                        <table class="table-carrinho">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th>Informações</th>
+                                    <th>Preço</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Nome: Barco X</td>
+                                    <td>R$ 0,00</td>
+                                </tr>
+                                <tr>
+                                    <td>Origem: Maués</td>
+                                </tr>
+                                <tr>
+                                    <td>Destino: Parintins</td>
+                                </tr>
+                                <tr>
+                                    <td>Data: 01/01/21</td>
+                                </tr>
+                                <tr>
+                                    <td>Horário: 00:00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class = "row space"></div>
+
             <div class="row d-flex justify-content-center">
                 <div class="card" style="width: 40rem; border: 1px solid #508364;">
                     <div class = "card-body">
-                        <a href = "#"><img src="../../public/img/barco-ilustracao.jpg" class="card-img-top" alt="..." style = "width: 170px; height: 140px; margin-top: 3%; margin-bottom: 3%;"></a>
-                        <div style = "margin-left: 30%; bottom: 68%; position:absolute">
-                            <p>Título:</p>
+                        <p><b>Número de Ingressos: 1</b></p>
+                        <p style="text-align: right; bottom: 18%; position: relative;"><b>R$ 0,00</b></p>
+                        <div class = "hr-carrinho" style = "margin-top: -5%"></div>
+                        <div class = "row d-flex justify-content-center botoes-carrinho">
+                            <a href="#pagamento"><button type="button" class="btn btn-primary">Finalizar Compra</button></a>
+                            <div class = "divider"></div>
+                            <a href = "../index.html"><button type="button" class="btn btn-primary">Continuar Comprando</button></a>
                         </div>
-                        <div style = "margin-left: 30%; bottom: 60%; position:absolute">
-                            <p>Descrição da Passagem.</p>
-                        </div>
-                        <div style = "margin-left: 30%; bottom: 52%; position:absolute">
-                            <p>Avaliação: 4 estrelas.</p>
-                        </div>
-                        <div style = "margin-left: 30%; bottom: 40%; position:absolute">
-                            <p>Adulto:</p>
-                        </div>
-                        <div style = "margin-left: 30%; bottom: 30%; position:absolute">
-                            <p>R$ 00,00</p>
-                        </div>
-                        <div style = "margin-left: 30%; bottom: 18%; position:absolute">
-                            <p>Criança:</p>
-                        </div>
-                        <div style = "margin-left: 30%; bottom: 8%; position:absolute">
-                            <p>R$ 00,00</p>
-                        </div>
-                        <ul class="list-unstyled components">
-                            <li class="active">
-                                <a href="#adultos" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Adultos</a>
-                                <ul class="collapse list-unstyled" id="adultos">
-                                    <li>
-                                        <p>1</p>
-                                    </li>
-                                    <li>
-                                        <a href="../bem-vindos/apresentacao-modulos/index.html"><img src="../assets/icons/circulo2.svg"> Apresentação dos módulos</a>
-                                    </li>
-                                    <li>
-                                        <a href="../bem-vindos/apresentacao-institucional/index.html"><img src="../assets/icons/circulo2.svg"> Apresentação do conteúdo</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row space"></div>
+
+        <!--Pagamento-->
+        <div class = "hr-carrinho"></div>
+
+        <div class = "corpo-carrinho">
+            <div class="row d-flex justify-content-center" id="pagamento">
+                <h4 class="carrinho-titulo">Formas de Pagamento</h4>
+            </div>
+        <div>
+        <div class = "row space"></div>
+        
+            <div class="row">
+                <div class="col-xl-6 d-flex justify-content-center">
+                    <div class="row d-flex justify-content-center">
+                        
+                    </div>
+                </div>
+
+                <div class="col-xl-6 d-flex justify-content-center">
+                    <div class = "card-carrinho">
+                        <h5>Cartão</h5>
+                        <form>
+                            <input type="">
+                        </form>
                     </div>
                 </div>
             </div>
 
-            <div class = "row space"></div>
-
+            <div class="row" style="height: 30px"></div>
 
         <!--Rodapé da Página-->
         <div>
