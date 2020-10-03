@@ -37,19 +37,19 @@
         </div>
 
         <!--Título do Carrinho-->
+
         <div class = "corpo-carrinho">
             <div class="row d-flex justify-content-center">
                 <h4 class="carrinho-titulo">Meu Carrinho</h4>
             </div>
         <div>
-        <div class = "row space"></div>
 
         <!--Carrinho-->
         <div class="row d-flex justify-content-center">
-            <div class="card" style="width: 40rem; border: 1px solid #508364;">
+            <div class="card passagens">
                 <div class = "card-body">
-                    <a href = "#"><img src="../../public/img/barco-ilustracao.jpg" class="card-img-top" alt="..." style = "width: 170px; height: 140px; margin-top: 3%; margin-bottom: 3%;"></a>
-                    <div style = "margin-left: 32%; bottom: 14%; position:absolute">
+                    <img src="../../public/img/barco-ilustracao.jpg" class="card-img-top">
+                    <div style = "margin-left: 39%; bottom: 14%; position:absolute">
                         <table class="table-carrinho">
                             <thead class="thead-light">
                                 <tr>
@@ -59,7 +59,7 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Nome: Barco X</td>
+                                    <td>Barco: X</td>
                                     <td>R$ 0,00</td>
                                 </tr>
                                 <tr>
@@ -84,15 +84,15 @@
             <div class = "row space"></div>
 
             <div class="row d-flex justify-content-center">
-                <div class="card" style="width: 40rem; border: 1px solid #508364;">
+                <div class="card total">
                     <div class = "card-body">
-                        <p><b>Número de Ingressos: 1</b></p>
-                        <p style="text-align: right; bottom: 18%; position: relative;"><b>R$ 0,00</b></p>
+                        <p><b>Quantidade de Passagens: 1</b></p>
+                        <p style="text-align: right; bottom: 24%; position: relative;"><b>Total: R$ 0,00</b></p>
                         <div class = "hr-carrinho" style = "margin-top: -5%"></div>
                         <div class = "row d-flex justify-content-center botoes-carrinho">
-                            <a href="#pagamento"><button type="button" class="btn btn-primary">Finalizar Compra</button></a>
+                            <a href="#pagamento"><button type="button" class="btn btn-light botao">Finalizar Compra</button></a>
                             <div class = "divider"></div>
-                            <a href = "../index.html"><button type="button" class="btn btn-primary">Continuar Comprando</button></a>
+                            <a href = "../index.html"><button type="button" class="btn btn-light botao">Continuar Comprando</button></a>
                         </div>
                     </div>
                 </div>
@@ -100,28 +100,40 @@
             <div class="row space"></div>
 
         <!--Pagamento-->
-        <div class = "hr-carrinho"></div>
+        <div class = "hr-carrinho" id="pagamento"></div>
 
         <div class = "corpo-carrinho">
-            <div class="row d-flex justify-content-center" id="pagamento">
+            <div class="row d-flex justify-content-center">
                 <h4 class="carrinho-titulo">Formas de Pagamento</h4>
             </div>
-        <div>
-        <div class = "row space"></div>
-        
-            <div class="row">
+
+            <div class="row formas-de-pagamento">
                 <div class="col-xl-6 d-flex justify-content-center">
-                    <div class="row d-flex justify-content-center">
-                        
+                    <div class = "card-cartao">
+                        <h4>Cartão</h4>
+					    <form class="d-flex justify-content-center">
+                            <div class="cartao-campos">
+							    <input type="number" class="form-control input-cartao" id="exampleFormControlInput1"
+								    placeholder="Número do Cartão">
+							    <input type="text" class="form-control input-cartao" id="exampleFormControlInput1"
+                                    placeholder="Nome no Cartão">
+                                <input type="number" class="form-control input-cartao" id="exampleFormControlInput1"
+                                    placeholder="CPF">
+                                <input type="number" class="form-control input-cartao" id="exampleFormControlInput1"
+                                    placeholder="Data de Vencimento">
+                                <input type="number" class="form-control input-cartao" id="exampleFormControlInput1"
+                                    placeholder="Código de Segurança">
+                                
+                                <button type="button" class="btn btn-light botao-pagamento">Pagar</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
 
                 <div class="col-xl-6 d-flex justify-content-center">
-                    <div class = "card-carrinho">
-                        <h5>Cartão</h5>
-                        <form>
-                            <input type="">
-                        </form>
+                    <div class = "card-boleto">
+                        <h4>Boleto</h4>
+                        <button type="button" class="btn btn-light botao-pagamento">Gerar Boleto</button>
                     </div>
                 </div>
             </div>
@@ -147,7 +159,7 @@
                 <div class="col-xl-2"></div>
                 <div class="col-xl-8 rodape-linhas">
                     <div class="row d-flex justify-content-center">
-                        <p class="texto-rodape">Nossa redes sociais</p>
+                        <p class="texto-rodape">Nossas redes sociais</p>
                     </div>
                     <div class="row d-flex justify-content-center">
                         <img src="../../public/img/icon-insta.png" class="icons">&nbsp&nbsp&nbsp&nbsp
@@ -160,6 +172,7 @@
                 <p class="texto-rodape">© 2020 - Ziguen - Venda de Passagens de Barco</p><br>
             </div>
         <div/>
+
     </div>
 </body>
 

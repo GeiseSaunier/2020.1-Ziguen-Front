@@ -1,23 +1,48 @@
+/* Header */
+
+/* Passagens e Total*/
 .carrinho-titulo {
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     color: #508364;
 	font-size: 20px;
 	font-weight: bolder;
 	font-family: 'Montserrat', sans-serif;
 }
 
-.card-carrinho {
-	margin-top: 30px;
-    margin-bottom: 30px;
-    padding: 30px;
-    border: 2px solid;
-    border-radius: 10px;
-    border-color: #85BEAB;
+.passagens, .total {
+    width: 600px; 
+    border: 2px solid #85BEAB;
 }
 
-.tittle-card-carrinho {
-	margin-bottom: 20px;
+.card-img-top {
+    width: 170px;
+    height: 140px;
+    margin-top: 3%;
+    margin-::-webkit-inner-spin-buttonbottom: 3%;
 }
+
+.table-carrinho {
+    width: 160%;
+    column-gap: 30px;
+}
+
+.botao {
+    margin-top: 20px;
+    background-color: #508364;
+    border-radius: 12px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-weight: bolder;
+    width: 250px;
+}
+
+.divider {
+    width: 50px;
+}
+
+
+/* Formas de Pagamento */
 
 .hr-carrinho{
 	margin-top: 1rem;
@@ -29,17 +54,45 @@
   	overflow: visible;
 }
 
-.card-ingressos {
-	margin-top: 10px;
+.card-cartao {
+	margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 30px;
+    border: 2px solid;
+    border-radius: 10px;
+    border-color: #85BEAB;
+}
+
+.card-cartao h4 {
+    margin-bottom: 15px;
+}
+
+.cartao-campos input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.input-cartao {
+    width: 300px;
+    border-radius: 10px;
     margin-bottom: 10px;
-    padding: 10px;
 }
 
-.table-carrinho {
-    width: 160%;
-    column-gap: 30px;
+.botao-pagamento {
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: #508364;
+    border-radius: 12px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-weight: bolder;
+    width: 250px;
 }
 
-.divider {
-    width: 30px;
+.card-boleto {
+	margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 30px;
+    border: 2px solid;
+    border-radius: 10px;
+    border-color: #85BEAB;
 }
