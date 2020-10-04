@@ -45,7 +45,7 @@
         <div class="row">
             <div class="col-xl-8 d-flex justify-content-center bloco">
                 <div class="card passagens">
-                    <div class = "card-body">
+                    <div class = "card-body caixa-passagem">
                         <img src="../../public/img/barco-ilustracao.jpg" class="card-img-top">
                         <div style = "margin-left: 20%; bottom: 10%; position: absolute;">
                             <p>Origem: Maués</p>
@@ -63,7 +63,7 @@
                 </div> 
             </div>
 
-            <div class = "row space"></div>
+           
 
             <div class="col-xl-4 d-flex justify-content-center">
                 <div class="card total">
@@ -90,12 +90,15 @@
                 <h4 class="carrinho-titulo">Formas de Pagamento</h4>
             </div>
 
-            <div class="row formas-de-pagamento">
                 <div class="col-xl-12 d-flex justify-content-center">
-                    <div class = "card-pagamento">
-                        <h4>Boleto<button type="button" class="btn btn-light botao-pagamento">Gerar Boleto</button></h4>
-                        
-                        
+                    
+                    <div class="card-boleto d-flex justify-content-center">
+                        <h4>Boleto <button type="button" class="btn btn-light botao-pagamento">Gerar Boleto</button></h4>
+                    </div>
+                </div>
+                <div class="col-xl-12 d-flex justify-content-center">
+    
+                    <div class = "card-cartao"> 
                         <h4>Cartão</h4>
 					    <form class="d-flex justify-content-center">
                             <div class="cartao-campos">
@@ -105,18 +108,20 @@
                                     placeholder="Nome no Cartão">
                                 <input type="number" class="form-control input-cartao" id="exampleFormControlInput1"
                                     placeholder="CPF">
+                            </div>
+                            <div class="distance"></div>
+                            <div class="cartao-campos">
                                 <input type="number" class="form-control input-cartao" id="exampleFormControlInput1"
                                     placeholder="Data de Vencimento">
                                 <input type="number" class="form-control input-cartao" id="exampleFormControlInput1"
                                     placeholder="Código de Segurança">
-                                
-                                <button type="button" class="btn btn-light botao-pagamento">Pagar</button>
+                                <button type="button" class="btn btn-light botao-pagamento">Pagar Com Cartão</button>
                             </div>
                         </form>
                     </div>
                 </div>
 
-            </div>
+            
 
             <div class="row" style="height: 30px"></div>
 
