@@ -3,26 +3,27 @@ import Slider from '../components/slider'
 import Sugestoes from '../components/sugestoes'
 import Footer from '../components/footer'
 
+
 export default function Home() {
   return (
     <div>
       <Navbar />
       <Slider />
       <div>
-        <div className="container teste">
+        <div className="container">
           <div>
             <h3>Encontre suas passagens de barco.</h3>
             <div className="row">
               <div className="form-group col-md-3">
-                <label>Teste</label>
+                <label>Origem</label>
                 <input type="text" name="name" className="form-control" />
               </div>
               <div className="form-group col-md-3">
-                <label>Teste</label>
+                <label>Destino</label>
                 <input type="text" name="name" className="form-control" />
               </div>
               <div className="form-group col-md-3">
-                <label>Teste</label>
+                <label>Data de Ida</label>
                 <input type="text" name="name" className="form-control" />
               </div>
               <div className="form-group col-md-3">

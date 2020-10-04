@@ -1,7 +1,7 @@
 import { Navbar, Nav } from 'react-bootstrap'
 import Link from 'next/link'
 
-export default function teste() {
+export default function navbar() {
   return (
     <Navbar bg="light" expand="lg">
       <div className="container">
