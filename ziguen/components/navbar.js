@@ -15,9 +15,10 @@ export default function navbar() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
             <Nav.Link href="#home" id = "botao-nav">Mais Vendidas</Nav.Link>
-            <Nav.Link href="#link" id = "botao-nav">Iniciar Sessão</Nav.Link>
+            <Nav.Link href="/iniciarsessao" id = "botao-nav">Iniciar Sessão</Nav.Link>
             <Nav.Link href="/sobre" id = "botao-nav">Sobre</Nav.Link>
             <Nav.Link href="/ajuda" id = "botao-nav">Ajuda</Nav.Link>
+            
           </Nav>
         </Navbar.Collapse>
       </div>
