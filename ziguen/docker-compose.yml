@@ -1,0 +1,18 @@
+version: '3'
+services:
+  frontend: 
+    container_name: client
+    build: ./
+    ports:
+      - '3000:3000'
+    volumes:
+      - .:/app
+      - /app/node_modules
+    networks:
+      - network-api
+      
+networks:
+  network-api:
+    external:
+      name: network-api
+ 

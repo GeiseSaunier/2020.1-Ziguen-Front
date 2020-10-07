@@ -28,7 +28,7 @@ export default function Home() {
               </div>
               <div className="form-group col-md-3">
                 <label>&nbsp;</label>
-                <button className="btn btn-primary d-block">Buscar</button>
+                <a href="/sobres"><button className="btn btn-primary d-block">Buscar</button></a>
               </div>
             </div>
           </div>
