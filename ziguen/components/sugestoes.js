@@ -6,7 +6,9 @@ export default function Sugestoes() {
     <div className="container">
       <h3 className="text-center">Sugestões Para Você!</h3>
       <CardGroup>
-        <CardViagem />
+        <CardViagem>
+          <button>Comprar</button>
+        </CardViagem>
         <CardViagem />
         <CardViagem />
         <CardViagem />

@@ -1,4 +1,5 @@
 import { Card } from 'react-bootstrap'
+import Button from 'react-bootstrap/Button'
 
 export default function CardViagem() {
   return (
@@ -6,11 +7,11 @@ export default function CardViagem() {
       <Card>
         <Card.Img variant="top" src="/img/barco-ilustracao.jpg" />
         <Card.Body>
-          <Card.Title>Card title</Card.Title>
+          <Card.Title>Barco X</Card.Title>
           <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in to
-            additional content. This content is a little bit longer.
-      </Card.Text>
+            Origem, Destino, Data, Horário, Preço.
+          </Card.Text>
+          <Button variant="warning">Comprar</Button>{' '}
         </Card.Body>
       </Card>
     </div>

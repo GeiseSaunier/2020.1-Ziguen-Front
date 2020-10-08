@@ -9,7 +9,7 @@ export default function Home() {
     <div>
       <Navbar />
       <Slider />
-      <div>
+      <div className="search-bar">
         <div className="container">
           <div>
             <h3>Encontre suas passagens de barco.</h3>
@@ -28,7 +28,7 @@ export default function Home() {
               </div>
               <div className="form-group col-md-3">
                 <label>&nbsp;</label>
-                <button className="btn btn-primary d-block">Buscar</button>
+                <a href="/sobres"><button className="btn btn-primary d-block">Buscar</button></a>
               </div>
             </div>
           </div>
