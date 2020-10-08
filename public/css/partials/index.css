@@ -3,19 +3,9 @@
 	background-color: #ffffff;
 }
 
-#buttons-menu a {
-    text-decoration: none;
-}
-
 .menu-seguimento {
 	height: 30px;
 	background-color: #508364;
-}
-
-.texto-seguimento {
-	display: flex;
-	align-items: center;
-	height: 30px;
 }
 
 .slide {
@@ -45,20 +35,21 @@
 }
 
 .texto-menu {
-	color: #85BEAB;
+	color: #508364;
 	font-size: 18px;
-	font-weight: bold;
 	font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
 }
 
 .texto-menu:hover {
-	color: #508364;
+	color: #85BEAB;
 	font-size: 18px;
 }
 
 .texto-seguimento {
 	color: #ffffff;
-	font-size: 16px;
+	margin-top: 3.5px;
+	font-size: 15px;
 	font-weight: bolder;
 	font-family: 'Montserrat', sans-serif;
 }
@@ -70,11 +61,28 @@
 	font-family: 'Montserrat', sans-serif;
 }
 
+.botao-buscar {
+	height: 38px;
+}
+
+.input-busca {
+	height: 38px;
+	width: 500px;
+}
+
+.card {
+	border: 1px solid;
+	border-color: #6D6D6D;
+}
+
+.botao-card {
+	text-decoration: none;
+}
+
 .rodape {
 	height: 100px;
 	background-color: #508364;
 }
-
 .rodape-linhas {
 	border: 1px solid;
 	border-top-color: #ffffff;

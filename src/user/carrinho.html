@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../public/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../public/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../../public/css/partials/user_css/carrinho.css">
+    <title>Meu Carrinho</title>
+</head>
+
+<body>
+    <!--Menu-->
+    <div class="container-fluid">
+        <div class="row menu">
+            <div class="col-xl-1"></div>
+            <div class="col-xl-5">
+                <img class="logo" src="../../public/img/logo.png">
+            </div>
+            <div class="col-xl-6.7 d-flex justify-content-end align-items-center" id="buttons-menu">
+                <a href="../index.html" class="texto-menu">Página Inicial</a> &nbsp&nbsp&nbsp&nbsp&nbsp
+                <a href="#" class="texto-menu">Meu Perfil</a> &nbsp&nbsp&nbsp&nbsp&nbsp
+                <a href="../user/passagens_compradas.html" class="texto-menu">Minhas Passagens</a> &nbsp&nbsp&nbsp&nbsp&nbsp
+                <a href="#" class="texto-menu">Sair</a> &nbsp&nbsp&nbsp&nbsp&nbsp
+                <a href="#" class="texto-menu">Ajuda</a>
+            </div>
+            <div class="col-xl-1"></div>
+        </div>
+    
+        <!--Linha sobre nosso seguimento-->
+        <div class="row menu-seguimento">
+            <div class="col-xl-11 d-flex justify-content-end">
+                <p class="texto-seguimento">PASSAGENS FLUVIAIS</p>
+            </div>
+            <div class="col-xl-1"></div>
+        </div>
+
+        <!--Título do Carrinho-->
+
+        <div class="row d-flex justify-content-center">
+            <h4 class="carrinho-titulo">Meu Carrinho</h4>
+        </div>
+        
+        <!--Carrinho-->
+        <div class="row">
+            <div class="col-xl-8 d-flex justify-content-center bloco">
+                <div class="card passagens">
+                    <div class = "card-body caixa-passagem">
+                        <img src="../../public/img/barco-ilustracao.jpg" class="card-img-top">
+                        <div style = "margin-left: 20%; bottom: 10%; position: absolute;">
+                            <p>Origem: Maués</p>
+                            <p>Destino: Parintins</p>
+                        </div>
+                        <div style = "margin-left: 45%; bottom: 10%; position: absolute;">
+                            <p>Data: 10/10/2020</p>
+                            <p>Horário: 12:30</p>
+                        </div>
+                        <div style = "margin-left: 70%; bottom: 10%; position: absolute;">
+                            <p>Barco: Titanic</p>
+                            <p>Preço: R$ 100,00</p>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+           
+
+            <div class="col-xl-4 d-flex justify-content-center">
+                <div class="card total">
+                    <div class = "card-body">
+                        <p><b>Quantidade de Passagens: 1</b></p>
+                        <p><b>Total: R$ 0,00</b></p>
+                        <div class = "hr-carrinho" style = "margin-top: -5%"></div>
+                        <div class = "row d-flex justify-content-center botoes-carrinho">
+                            <a href="#pagamento"><button type="button" class="btn btn-light botao">Finalizar Compra</button></a>
+                            
+                            <a href = "../index.html"><button type="button" class="btn btn-light botao">Continuar Comprando</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row space"></div>
+
+        <!--Pagamento-->
+        <div class = "hr-carrinho" id="pagamento"></div>
+
+        <div class = "corpo-carrinho">
+            <div class="row d-flex justify-content-center">
+                <h4 class="carrinho-titulo">Formas de Pagamento</h4>
+            </div>
+
+                <div class="col-xl-12 d-flex justify-content-center">
+                    
+                    <div class="card-boleto d-flex justify-content-center">
+                        <h4>Boleto <button type="button" class="btn btn-light botao-pagamento">Gerar Boleto</button></h4>
+                    </div>
+                </div>
+                <div class="col-xl-12 d-flex justify-content-center">
+    
+                    <div class = "card-cartao"> 
+                        <h4>Cartão</h4>
+					    <form class="d-flex justify-content-center">
+                            <div class="cartao-campos">
+							    <input type="number" class="form-control input-cartao" id="exampleFormControlInput1"
+								    placeholder="Número do Cartão">
+							    <input type="text" class="form-control input-cartao" id="exampleFormControlInput1"
+                                    placeholder="Nome no Cartão">
+                                <input type="number" class="form-control input-cartao" id="exampleFormControlInput1"
+                                    placeholder="CPF">
+                            </div>
+                            <div class="distance"></div>
+                            <div class="cartao-campos">
+                                <input type="number" class="form-control input-cartao" id="exampleFormControlInput1"
+                                    placeholder="Data de Vencimento">
+                                <input type="number" class="form-control input-cartao" id="exampleFormControlInput1"
+                                    placeholder="Código de Segurança">
+                                <button type="button" class="btn btn-light botao-pagamento">Pagar Com Cartão</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            
+
+            <div class="row" style="height: 30px"></div>
+
+        <!--Rodapé da Página-->
+        <div>
+            <div class="row rodape">
+                <div class="col-xl-12">
+                    <div class="row d-flex justify-content-center">
+                            <p class="texto-rodape">Barcos parceiros</p>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <p>&#128674</p>&nbsp&nbsp&nbsp&nbsp
+                        <p>&#128674</p>&nbsp&nbsp&nbsp&nbsp
+                        <p>&#128674</p>&nbsp&nbsp&nbsp&nbsp
+                        <p>&#128674</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row rodape">
+                <div class="col-xl-2"></div>
+                <div class="col-xl-8 rodape-linhas">
+                    <div class="row d-flex justify-content-center">
+                        <p class="texto-rodape">Nossas redes sociais</p>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        <img src="../../public/img/icon-insta.png" class="icons">&nbsp&nbsp&nbsp&nbsp
+                        <img src="../../public/img/icon-face.png" class="icons">
+                    </div>
+                </div>
+                <div class="col-xl-2"></div>
+            </div>
+            <div class="row rodape d-flex justify-content-center align-items-center">
+                <p class="texto-rodape">© 2020 - Ziguen - Venda de Passagens de Barco</p><br>
+            </div>
+        <div/>
+
+    </div>
+</body>
+
+</html>

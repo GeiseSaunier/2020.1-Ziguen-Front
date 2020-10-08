@@ -1,0 +1,11 @@
+.logo {
+    width: 11%;
+}
+
+#botao-nav {
+    color: #508364;
+}
+
+#botao-nav:hover {
+    color:  #85BEAB;
+}
