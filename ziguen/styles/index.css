@@ -1,4 +1,9 @@
 .row {
-    height: 40px;
-    display: flex;	
+    height: 150px;
+    margin-left: 150px;
+}
+
+.ml-auto link {
+    display: flex;
+    margin-right: 30px;
 }
