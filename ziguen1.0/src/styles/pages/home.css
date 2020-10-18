@@ -1,0 +1,146 @@
+#home-page {
+    width: 100vw;
+    height: 100vh;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#home-page .top-bar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top-bar .field {
+    width: 100vw;
+    height: 40px;
+    background: #508364;
+}
+
+.top-bar .field p {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 13%;
+
+    font-size: 20px;
+    line-height: 238px;
+    color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: right;
+}
+
+.top-bar .img-logo {
+    height: 100px;
+    margin-right: 67%;
+}
+
+.top-bar .navbar .mais-vendidas-link {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 31%;
+
+    line-height: 128px;
+    color: mediumseagreen;
+    text-decoration: none;
+    font-size: 18px;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: right;
+}
+
+.top-bar .navbar .login-link {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 22%;
+
+    line-height: 128px;
+    color: mediumseagreen;
+    text-decoration: none;
+    font-size: 18px;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: right;
+}
+
+.top-bar .navbar .sobre-link {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 17%;
+
+    line-height: 128px;
+    color: mediumseagreen;
+    text-decoration: none;
+    font-size: 18px;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: right;
+}
+
+.top-bar .navbar .ajuda-link {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 12%;
+
+    line-height: 128px;
+    color: mediumseagreen;
+    text-decoration: none;
+    font-size: 18px;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: right;
+}
+
+.top-bar .search {
+    background-color: #23dba7;
+    width: 100vw;
+    height: 150px;
+}
+
+.top-bar .search p{
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.top-bar .search .input-block {
+    position: absolute;
+    color: #ffffff;
+    justify-content: left;
+    bottom: 67%;
+    left: 3%;
+}
+
+.top-bar .search .input-block1 {
+    position: absolute;
+    color: #ffffff;
+    justify-content: left;
+    bottom: 67%;
+    left: 30%;
+}
+
+.top-bar .search .input-block2 {
+    position: absolute;
+    color: #ffffff;
+    justify-content: left;
+    bottom: 67%;
+    left: 57%;
+}

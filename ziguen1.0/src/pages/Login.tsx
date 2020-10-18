@@ -10,7 +10,6 @@ function Login() {
             <div className="top-bar">
                 <header>
                     <img src={logoImg} alt="Logo" className="img-logo"/>
-
                     <div className="navbar">
                         <Link to="/" className="home-link">Página Inicial</Link>
                         <Link to="/" className="home-link">Página Inicial</Link>
