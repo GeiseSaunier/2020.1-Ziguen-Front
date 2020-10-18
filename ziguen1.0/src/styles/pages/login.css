@@ -1,0 +1,33 @@
+#login-page {
+    width: 100vw;
+    height: 100vh;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+
+    height: 120px;
+}
+
+.field {
+    width: 100vw;
+    height: 40px;
+    background: #508364;
+}
+
+.img-logo {
+    height: 100px;
+}
