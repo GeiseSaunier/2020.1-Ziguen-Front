@@ -1,6 +1,8 @@
 import React from 'react';
 import logoImg from '../images/logo.png';
 import { Link } from 'react-router-dom';
+import facebookImg from '../images/facebook.svg'
+import instagramImg from '../images/instagram.svg'
 
 import '../styles/pages/home.css'
 
@@ -32,7 +34,17 @@ function Home() {
                         <label htmlFor="day">Data de Ida</label>
                         <input id="origin" />
                     </div>
+                    <button>Buscar</button>
                 </div>
+                <h4>Mais Buscadas em sua região</h4>
+            </div>
+            <div className = "footer">
+                <p>Nossas redes sociais</p>
+                <img src={instagramImg} alt="Instagram" className = "instagram-logo"/>
+                <img src={facebookImg} alt="Facebook" className = "facebook-logo"/>
+                <p className = "hr"></p>
+                <p className = "space"></p>
+                <p>© 2020 - Ziguen - Vendas de Passagens Fluviais</p>
             </div>
         </div>
     )
