@@ -23,16 +23,16 @@ function Home() {
                 <div className="search">
                     <p>Encontre suas passagens de Barco:</p>
                     <div className="input-block">
-                        <label htmlFor="origin">Origem</label>
+                        <label htmlFor="origin">Origem </label>
                         <input id="origin" />
                     </div>
                     <div className="input-block1">
-                        <label htmlFor="destination">Destino</label>
+                        <label htmlFor="destination">Destino </label>
                         <input id="origin" />
                     </div>
                     <div className="input-block2">
-                        <label htmlFor="day">Data de Ida</label>
-                        <input id="origin" />
+                        <label htmlFor="day">Data de Ida </label>
+                        <input id="origin"/>
                     </div>
                     <button>Buscar</button>
                 </div>
