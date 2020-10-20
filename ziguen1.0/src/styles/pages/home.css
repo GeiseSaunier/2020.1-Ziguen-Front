@@ -1,9 +1,8 @@
 #home-page {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 
     position: relative;
-    display: flex;
     justify-content: center;
 }
 
@@ -108,89 +107,123 @@
     text-align: right;
 }
 
-.top-bar .search {
+#home-page .search {
     background-color: #85BEAB;
     width: 100vw;
     height: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
-.top-bar .search p {
+#home-page .search p {
     color: #ffffff;
     text-align: center;
     margin-top: 20px;
 
 }
 
-.top-bar .search .input-block {
+.carousel .carousel-provider .button-back {
+    position: absolute;
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 7px;
+    width: 2%;
+    height: 12%;
+    border: none;
+    font-size: 50px;
+    z-index: 1;
+    left: 3%;
+    top: 40%;
+    overflow: hidden;
+}
+
+.carousel .carousel-provider .button-next {
+    position: absolute;
+    background-color:transparent;
+    color: #ffffff;
+    border-radius: 7px;
+    width: 2%;
+    height: 12%;
+    border: none;
+    font-size: 50px;
+    z-index: 1;
+    left: 95%;
+    top: 40%;
+    overflow: hidden;
+}
+
+.search .input-block {
     position: absolute;
     color: #ffffff;
     justify-content: left;
-    bottom: 67%;
+    top: 65%;
     left: 18%;
 }
 
-.top-bar .search .input-block label {
+.search .input-block label {
     position: absolute;
     bottom: 110%;
     font-size: 16px;
 }
 
-.top-bar .search .input-block input {
+.search .input-block input {
     width: 80%;
 }
 
-.top-bar .search .input-block1 {
+.search .input-block1 {
     position: absolute;
     color: #ffffff;
     justify-content: left;
-    bottom: 67%;
+    top: 65%;
     left: 38%;
 }
 
-.top-bar .search .input-block1 label {
+.search .input-block1 label {
     position: absolute;
     bottom: 110%;
     font-size: 16px;
 }
 
-.top-bar .search .input-block1 input {
+.search .input-block1 input {
     width: 80%;
 }
 
-.top-bar .search .input-block2 {
+.search .input-block2 {
     position: absolute;
     color: #ffffff;
     justify-content: left;
-    bottom: 67%;
+    top: 65%;
     left: 58%;
 }
 
-.top-bar .search .input-block2 label {
+.search .input-block2 label {
     position: absolute;
     bottom: 110%;
     font-size: 16px;
 }
 
-.top-bar .search .input-block2 input {
+.search .input-block2 input {
     width: 60%;
 }
 
-.top-bar .search button {
+.search button {
     position: absolute;
     right: 22%;
-    bottom: 67%;
+    top: 65%;
     background-color: whitesmoke;
     border-radius: 7px;
     width: 6%;
-    height: 5%;
-    border: 1px solid transparent;
+    height: 8%;
+    border-color: transparent;
     color: grey;
     font-size: 16px;
 }
 
-.top-bar h4 {
+#home-page .cards {
     color: #508364;
     margin-top: 3%;
+    text-align: center;
 }
 
 #home-page .footer {
