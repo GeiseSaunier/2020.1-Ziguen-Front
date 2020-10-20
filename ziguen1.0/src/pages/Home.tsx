@@ -6,6 +6,7 @@ import instagramImg from '../images/instagram.svg'
 
 import '../styles/pages/home.css'
 
+
 function Home() {
     return (
         <div id="home-page">
@@ -32,18 +33,18 @@ function Home() {
                     </div>
                     <div className="input-block2">
                         <label htmlFor="day">Data de Ida </label>
-                        <input id="origin"/>
+                        <input id="origin" />
                     </div>
                     <button>Buscar</button>
                 </div>
                 <h4>Mais Buscadas em sua região</h4>
             </div>
-            <div className = "footer">
+            <div className="footer">
                 <p>Nossas redes sociais</p>
-                <img src={instagramImg} alt="Instagram" className = "instagram-logo"/>
-                <img src={facebookImg} alt="Facebook" className = "facebook-logo"/>
-                <p className = "hr"></p>
-                <p className = "space"></p>
+                <img src={instagramImg} alt="Instagram" className="instagram-logo" />
+                <img src={facebookImg} alt="Facebook" className="facebook-logo" />
+                <p className="hr"></p>
+                <p className="space"></p>
                 <p>© 2020 - Ziguen - Vendas de Passagens Fluviais</p>
             </div>
         </div>
