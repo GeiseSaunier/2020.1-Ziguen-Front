@@ -107,6 +107,36 @@
     text-align: right;
 }
 
+.carousel .carousel-provider .button-back {
+    position: absolute;
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 7px;
+    width: 2%;
+    height: 12%;
+    border: none;
+    font-size: 50px;
+    z-index: 1;
+    left: 3%;
+    top: 20%;
+    overflow: hidden;
+}
+
+.carousel .carousel-provider .button-next {
+    position: absolute;
+    background-color:transparent;
+    color: #ffffff;
+    border-radius: 7px;
+    width: 2%;
+    height: 12%;
+    border: none;
+    font-size: 50px;
+    z-index: 1;
+    left: 95%;
+    top: 20%;
+    overflow: hidden;
+}
+
 #home-page .search {
     background-color: #85BEAB;
     width: 100vw;
@@ -123,41 +153,11 @@
 
 }
 
-.carousel .carousel-provider .button-back {
-    position: absolute;
-    background-color: transparent;
-    color: #ffffff;
-    border-radius: 7px;
-    width: 2%;
-    height: 12%;
-    border: none;
-    font-size: 50px;
-    z-index: 1;
-    left: 3%;
-    top: 40%;
-    overflow: hidden;
-}
-
-.carousel .carousel-provider .button-next {
-    position: absolute;
-    background-color:transparent;
-    color: #ffffff;
-    border-radius: 7px;
-    width: 2%;
-    height: 12%;
-    border: none;
-    font-size: 50px;
-    z-index: 1;
-    left: 95%;
-    top: 40%;
-    overflow: hidden;
-}
-
 .search .input-block {
     position: absolute;
     color: #ffffff;
     justify-content: left;
-    top: 65%;
+    top: 47%;
     left: 18%;
 }
 
@@ -175,7 +175,7 @@
     position: absolute;
     color: #ffffff;
     justify-content: left;
-    top: 65%;
+    top: 47%;
     left: 38%;
 }
 
@@ -193,7 +193,7 @@
     position: absolute;
     color: #ffffff;
     justify-content: left;
-    top: 65%;
+    top: 47%;
     left: 58%;
 }
 
@@ -210,32 +210,74 @@
 .search button {
     position: absolute;
     right: 22%;
-    top: 65%;
+    top: 46.5%;
     background-color: whitesmoke;
     border-radius: 7px;
-    width: 6%;
-    height: 8%;
+    padding: 0.5%;
     border-color: transparent;
     color: grey;
     font-size: 16px;
 }
 
-#home-page .cards {
+.cards .space {
+    height: 30px;
+}
+
+#home-page .cards h3 {
     color: #508364;
     margin-top: 3%;
     text-align: center;
 }
 
+.cards .card {
+    width: 18%;
+    box-shadow: 5px 5px #85BEAB;
+    border-radius: 6px;
+    margin-left: 10%;
+    border: 1px solid #508364;
+}
+
+.cards .card h4 {
+    color: #508364;
+    text-align: center;
+}
+
+.cards .card .img-barco {
+    width: 100%;
+}
+
+.cards .card h5 {
+    color: #508364;
+    text-align: center;
+}
+
+.cards .card p {
+    font-size:14px;
+    text-align: center;
+}
+
+.cards .card button {
+    background-color: whitesmoke;
+    border-radius: 7px;
+    color: gray ;
+    font-size: 14px;
+    margin-left: 35.5%;
+    padding: 2%;
+}
+
+.cards .card .space {
+    height: 15px;
+}
+
 #home-page .footer {
-    margin-top: 1rem;
+    position: relative;
+    margin-top: 2rem;
     padding: 1rem;
     background-color: #508364;
-    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 25%;
-    
 }
 
 #home-page .footer p {

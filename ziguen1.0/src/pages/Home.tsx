@@ -4,14 +4,15 @@ import { Link } from 'react-router-dom';
 import facebookImg from '../images/facebook.svg'
 import instagramImg from '../images/instagram.svg'
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel'
+import { Card, Icon, Image } from 'semantic-ui-react';
+
 import 'pure-react-carousel/dist/react-carousel.es.css';
-
-
 import '../styles/pages/home.css'
 
 import slide1Img from '../images/slide-1-teste.jpg'
 import slide2Img from '../images/slide-2-teste.jpg'
 import slide3Img from '../images/slide-3-teste.jpg'
+import barcoImg from '../images/barco-ilustracao.jpg'
 
 function Home() {
     return (
@@ -28,7 +29,7 @@ function Home() {
                     <p>Passagens Fluviais</p>
                 </div>
             </div>
-            <div className = "carousel">
+            <div className="carousel">
                 <CarouselProvider className="carousel-provider"
                     naturalSlideWidth={480}
                     naturalSlideHeight={125}
@@ -60,17 +61,32 @@ function Home() {
                 <button>Buscar</button>
             </div>
             <div className="cards">
-                <h4>Mais Buscadas em sua região</h4>
+                <h3>Mais Buscadas em sua região</h3>
+                <div className = "space"></div>
+                <div className="card">
+                    <h4>Nome do barco</h4>
+                    <img src={barcoImg} className = "img-barco"/>
+                    <div className = "space"></div>
+                    <div className="container">
+                        <h5>Título:</h5>
+                        <p>Descrição da passagem.</p>
+                        <p>Ex: Preço e informações sobre o banco</p>
+                        <div className = "space"></div>
+                        <div className = "space"></div>
+                        <button>Comprar</button>
+                        <div className = "space"></div>
+                    </div>
+                </div>
             </div>
-            <div className="footer">
-                <p>Nossas redes sociais</p>
-                <img src={instagramImg} alt="Instagram" className="instagram-logo" />
-                <img src={facebookImg} alt="Facebook" className="facebook-logo" />
-                <p className="hr"></p>
-                <p className="space"></p>
-                <p>© 2020 - Ziguen - Vendas de Passagens Fluviais</p>
-            </div>
-        </div>
+                            <div className="footer">
+                                <p>Nossas redes sociais</p>
+                                <img src={instagramImg} alt="Instagram" className="instagram-logo" />
+                                <img src={facebookImg} alt="Facebook" className="facebook-logo" />
+                                <p className="hr"></p>
+                                <p className="space"></p>
+                                <p>© 2020 - Ziguen - Vendas de Passagens Fluviais</p>
+                            </div>
+                        </div>
     )
 }
 
