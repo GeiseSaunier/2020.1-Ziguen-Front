@@ -12,12 +12,12 @@
     color: #ffffff;
     border-radius: 7px;
     width: 2%;
-    height: 12%;
+    height: 6%;
     border: none;
     font-size: 50px;
     z-index: 1;
     left: 3%;
-    top: 20%;
+    top: 22%;
     overflow: hidden;
 }
 
@@ -27,12 +27,12 @@
     color: #ffffff;
     border-radius: 7px;
     width: 2%;
-    height: 12%;
+    height: 6%;
     border: none;
     font-size: 50px;
     z-index: 1;
     left: 95%;
-    top: 20%;
+    top: 22%;
     overflow: hidden;
 }
 
