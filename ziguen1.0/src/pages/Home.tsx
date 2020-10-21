@@ -35,9 +35,9 @@ function Home() {
                     totalSlides={3}
                 >
                     <Slider>
-                        <Slide index={0}><img src={slide1Img} /></Slide>
-                        <Slide index={1}><img src={slide2Img} /></Slide>
-                        <Slide index={2}><img src={slide3Img} /></Slide>
+                        <Slide index={0}><img src={slide1Img} alt="slide1"/></Slide>
+                        <Slide index={1}><img src={slide2Img} alt="slide2"/></Slide>
+                        <Slide index={2}><img src={slide3Img} alt="slide3"/></Slide>
                     </Slider>
                     <ButtonBack className="button-back">&#171;</ButtonBack>
                     <ButtonNext className="button-next">&#187;</ButtonNext>
@@ -64,7 +64,7 @@ function Home() {
                 <div className = "space"></div>
                 <div className="card">
                     <h4>Nome do barco</h4>
-                    <img src={barcoImg} className = "img-barco"/>
+                    <img src={barcoImg} className = "img-barco" alt = "barco"/>
                     <div className = "space"></div>
                     <div className="container">
                         <h5>Título:</h5>
