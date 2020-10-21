@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import facebookImg from '../images/facebook.svg'
 import instagramImg from '../images/instagram.svg'
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel'
-import { Card, Icon, Image } from 'semantic-ui-react';
 
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import '../styles/pages/home.css'
@@ -78,15 +77,15 @@ function Home() {
                     </div>
                 </div>
             </div>
-                            <div className="footer">
-                                <p>Nossas redes sociais</p>
-                                <img src={instagramImg} alt="Instagram" className="instagram-logo" />
-                                <img src={facebookImg} alt="Facebook" className="facebook-logo" />
-                                <p className="hr"></p>
-                                <p className="space"></p>
-                                <p>© 2020 - Ziguen - Vendas de Passagens Fluviais</p>
-                            </div>
-                        </div>
+            <div className="footer">
+                <p>Nossas redes sociais</p>
+                <img src={instagramImg} alt="Instagram" className="instagram-logo" />
+                <img src={facebookImg} alt="Facebook" className="facebook-logo" />
+                <p className="hr"></p>
+                <p className="space"></p>
+                <p>© 2020 - Ziguen - Vendas de Passagens Fluviais</p>
+            </div>
+        </div>
     )
 }
 
