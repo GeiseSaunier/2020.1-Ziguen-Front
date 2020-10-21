@@ -7,6 +7,7 @@ import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-re
 
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import '../styles/pages/home.css'
+import '../styles/pages/header.css'
 
 import slide1Img from '../images/slide-1-teste.jpg'
 import slide2Img from '../images/slide-2-teste.jpg'
