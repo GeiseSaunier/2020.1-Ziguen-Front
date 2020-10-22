@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../components/Form/Login';
 
 import logoImg from '../images/logo.png';
 import facebookImg from '../images/facebook.svg'
@@ -13,7 +14,7 @@ function Login() {
     return (
         <div id="login-page">
             <div className="top-bar">
-                <img src={logoImg} alt="Logo" className="img-logo"/>
+                <img src={logoImg} alt="Logo" className="img-logo" />
                 <div className="navbar">
                     <Link to="/" className="mais-vendidas-link">Página Inicial</Link>
                     <Link to="./Login" className="login-link">Cadastrar-se</Link>
@@ -25,6 +26,7 @@ function Login() {
                 </div>
             </div>
 
+            
 
             <div className="footer">
                 <p>Nossas redes sociais</p>
