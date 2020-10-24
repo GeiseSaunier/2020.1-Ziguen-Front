@@ -1,10 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../components/Form/Login';
+import Login_Form from '../components/Form/Login';
 
 import logoImg from '../images/logo.png';
 import facebookImg from '../images/facebook.svg'
 import instagramImg from '../images/instagram.svg'
+import ilustracaoBarco from '../images/ilustração-barco.png'
+import ilustracaoInov from '../images/ilustração-inovação.png'
+import ilustracaoLocal from '../images/ilustração-localização.png'
 
 import '../styles/pages/login.css'
 import '../styles/pages/header.css'
@@ -26,7 +29,19 @@ function Login() {
                 </div>
             </div>
 
-            
+            <div className="page_filling">
+                <div className="purpose">
+                    <p className="pupose-text">Mover e acelerar pessoas para impulsionar o mundo de forma democrática, criativa e inovadora</p>
+                    <div className="pupose-images">
+                        <img src={ilustracaoBarco} alt="Ilustração Barco"/>
+                        <img src={ilustracaoInov} alt="Ilustração Inovação"/>
+                        <img src={ilustracaoLocal} alt="Ilustração Localização"/>
+                    </div>
+                </div>
+                <div className="login_form">
+                    <Login_Form />
+                </div>
+            </div>
 
             <div className="footer">
                 <p>Nossas redes sociais</p>

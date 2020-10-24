@@ -5,7 +5,7 @@ import '../../styles/pages/login.css';
 import Input from '../../components/Form/input';
 
 
-function Login() {
+export default function Login() {
     function handleSubmit(data) {
         console.log(data);
     }
