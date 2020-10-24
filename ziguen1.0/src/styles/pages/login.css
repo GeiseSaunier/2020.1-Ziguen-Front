@@ -6,4 +6,16 @@
     justify-content: center;
 }
 
+.page_filling {
+    display: flex;
+    flex-direction: row;
+}
 
+.purpose p {
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.ilustration {
+    width: 270px;
+}

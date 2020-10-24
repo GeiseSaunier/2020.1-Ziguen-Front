@@ -33,9 +33,9 @@ function Login() {
                 <div className="purpose">
                     <p className="pupose-text">Mover e acelerar pessoas para impulsionar o mundo de forma democrática, criativa e inovadora</p>
                     <div className="pupose-images">
-                        <img src={ilustracaoBarco} alt="Ilustração Barco"/>
-                        <img src={ilustracaoInov} alt="Ilustração Inovação"/>
-                        <img src={ilustracaoLocal} alt="Ilustração Localização"/>
+                        <img className="ilustration" src={ilustracaoBarco} alt="Ilustração Barco"/>
+                        <img className="ilustration" src={ilustracaoInov} alt="Ilustração Inovação"/>
+                        <img className="ilustration" src={ilustracaoLocal} alt="Ilustração Localização"/>
                     </div>
                 </div>
                 <div className="login_form">
