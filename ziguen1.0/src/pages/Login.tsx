@@ -25,7 +25,7 @@ function Login() {
                     <Link to="/" className="ajuda-link">Ajuda</Link>
                 </div>
                 <div className="field">
-                    <p>Passagens Fluviais</p>
+                    <p>PASSAGENS FLUVIAIS</p>
                 </div>
             </div>
 
