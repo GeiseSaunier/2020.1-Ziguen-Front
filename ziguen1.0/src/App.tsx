@@ -1,26 +1,39 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Form } from '@unform/web';
+import './styles/pages/login.css';
+import Input from './components/Form/input';
+
+
+import Routes from './routes';
+
+import './styles/global.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes />
   );
+}
+
+function Login() {
+
+  function handleSubmit() {
+    console.log();
+}
+
+return (
+    <div className="Login">
+
+    <Form onSubmit={handleSubmit}>
+        <Input type="email" name="email"/>
+        <Input type="password" name = "password"/>
+
+        <button type="submit">Enviar</button>
+
+    </Form>
+
+    </div>
+  
+  )
 }
 
 export default App;
