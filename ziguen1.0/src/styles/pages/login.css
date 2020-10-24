@@ -7,7 +7,7 @@
 }
 
 .page_filling {
-    height: 600px;
+    height: 650px;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -35,7 +35,7 @@
 }
 
 .division-bar {
-    height: 560px;
+    height: 600px;
     margin-top: 32px;
     margin-right: 20px;
 

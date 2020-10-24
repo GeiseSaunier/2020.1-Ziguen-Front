@@ -19,8 +19,8 @@ export default function Login() {
             <div id="form">
                 <h1>Login</h1><br></br>
 
-                <Input className="input-box" type="email" name="email" placeholder="Email"/><br></br>
-                <Input className="input-box" type="password" name="password" placeholder="Senha"/><br></br>
+                <Input className="input-box" type="email" name="email" placeholder="   E-mail"/><br></br>
+                <Input className="input-box" type="password" name="password" placeholder="   Senha"/><br></br>
 
                 <button className="login-button" type="submit">Entrar</button><br></br>
 

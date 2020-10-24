@@ -4,7 +4,7 @@
     align-items: center;
 
     width: 520px;
-    height: 570px;
+    height: 600px;
     border: 3px solid;
     border-radius: 20px;
     border-color: #85BEAB;
@@ -25,24 +25,44 @@ h1{
     display: flex;
     justify-content: center;
 
+    font-weight: 500;
+    font-size: 21px;
+
     width: 350px;
-    height: 40px;
+    height: 50px;
     
+    border: 1px solid;
+    border-color: #d9d9d9;
     border-radius: 10px;
     margin-bottom: 10px;
+}
+
+.input-box:active{
+    border: blue;
 }
 
 .login-button {
     text-align: center;
 
     width: 350px;
-    height: 40px;
+    height: 50px;
 
-    margin-top: 20px;
+    margin-top: 0px;
     background-color: #508364;
-    border-radius: 12px;
+    border: #508364;
+    border-radius: 10px;
+
+    font-size: 22px;
     color: #ffffff;
     font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.login-button:hover {
+    background-color: #d9d9d9;
+    border: #d9d9d9;
+    color: #000000;
 }
 
 .cadastro-link {
@@ -50,18 +70,39 @@ h1{
     justify-content: center;
 
     color: #6D6D6D;
+    font-weight: 500;
+    font-size: 21px;
+
     margin-top: 30px;
+
+    transition: 0.2s;
+}
+
+.cadastro-link:hover {
+    color: #000000;
 }
 
 .login-with-button {
     text-align: center;
 
     width: 350px;
-    height: 40px;
+    height: 50px;
 
     margin-top: 20px;
     background-color: #FFF;
-    border-radius: 12px;
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: #508364;
     color: #6D6D6D;
-    font-weight: bold;
+    
+    font-size: 20px;
+    font-weight: 500;
+
+    transition: 0.2s;
+}
+
+.login-with-button:hover {
+    background-color: #d9d9d9;
+    color: #000000;
+    border: #d9d9d9;
 }
