@@ -38,6 +38,7 @@ function Login() {
                         <img className="ilustration" src={ilustracaoLocal} alt="Ilustração Localização"/>
                     </div>
                 </div>
+                <div className="division-bar"></div>
                 <div className="login_form">
                     <Login_Form />
                 </div>

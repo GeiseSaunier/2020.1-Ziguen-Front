@@ -33,3 +33,13 @@
     margin-top: 50px;
     width: 250px;
 }
+
+.division-bar {
+    height: 560px;
+    margin-top: 32px;
+    margin-right: 20px;
+
+    border: 1px solid;
+    border-color: #ffffff;
+    border-left-color: #6D6D6D;
+}
