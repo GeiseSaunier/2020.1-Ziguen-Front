@@ -1,0 +1,45 @@
+#login-page {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+    justify-content: center;
+}
+
+.page_filling {
+    height: 650px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.purpose {
+    padding: 50px;
+}
+
+.purpose-text {
+    font-size: 35px;
+    font-weight: normal;
+    text-align: center;
+    color:  #6D6D6D;
+}
+
+.purpose-images {
+    display: flex;
+    justify-content: center;
+}
+
+.ilustration {
+    margin-top: 50px;
+    width: 250px;
+}
+
+.division-bar {
+    height: 600px;
+    margin-top: 32px;
+    margin-right: 20px;
+
+    border: 1px solid;
+    border-color: #ffffff;
+    border-left-color: #6D6D6D;
+}

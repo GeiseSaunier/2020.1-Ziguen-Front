@@ -1,0 +1,71 @@
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top-bar .img-logo {
+    height: 100px;
+    margin-right: 70%;
+}
+
+.mais-vendidas-link, .login-link, .sobre-link, .ajuda-link {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 34%;
+
+    line-height: 100px;
+    color: #508364;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 25px;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: right;
+}
+
+.login-link {
+    margin-right: 22%;
+}
+
+.sobre-link {
+    margin-right: 15%;
+}
+
+.ajuda-link {
+    margin-right: 8%;
+}
+
+.mais-vendidas-link:hover,   
+.login-link:hover,
+.sobre-link:hover,
+.ajuda-link:hover {
+    text-decoration: underline;
+    color: #85BEAB;
+}
+
+.top-bar .field {
+    width: 100%;
+    height: 40px;
+    background: #508364;
+}
+
+.top-bar .field p {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 8%;
+
+    font-size: 20px;
+    line-height: 238px;
+    color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: right;
+}
