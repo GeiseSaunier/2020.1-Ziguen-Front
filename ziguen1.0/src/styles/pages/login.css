@@ -7,15 +7,29 @@
 }
 
 .page_filling {
+    height: 600px;
     display: flex;
+    align-items: center;
     flex-direction: row;
 }
 
-.purpose p {
-    font-size: 30px;
+.purpose {
+    padding: 50px;
+}
+
+.purpose-text {
+    font-size: 35px;
     font-weight: normal;
+    text-align: center;
+    color:  #6D6D6D;
+}
+
+.purpose-images {
+    display: flex;
+    justify-content: center;
 }
 
 .ilustration {
-    width: 270px;
+    margin-top: 50px;
+    width: 250px;
 }

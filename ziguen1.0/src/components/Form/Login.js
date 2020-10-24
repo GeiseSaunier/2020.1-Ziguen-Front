@@ -16,18 +16,20 @@ export default function Login() {
         <div className="App">
 
         <Form onSubmit={handleSubmit}>
-            <h1>Login</h1>
+            <div id="form">
+                <h1>Login</h1><br></br>
 
-            <Input type="email" name="email" placeholder="email"/>
-            <Input type="password" name="password" placeholder="email"/>
+                <Input className="input-box" type="email" name="email" placeholder="Email"/><br></br>
+                <Input className="input-box" type="password" name="password" placeholder="Senha"/><br></br>
 
-            <button type="submit">Entrar</button>
+                <button className="login-button" type="submit">Entrar</button><br></br>
 
-            <Link to="../" className="ajuda-link">Ainda não possui cadastro?</Link>
+                <Link to="../" className="cadastro-link">Ainda não possui cadastro?</Link><br></br>
 
-            <button type="button">Entrar com Facebook</button>
-            <button type="button">Entrar com Google</button>
+                <button className="login-with-button" type="button">Entrar com Facebook</button><br></br>
+                <button className="login-with-button" type="button">Entrar com Google</button>
 
+            </div>
         </Form>
 
         </div>

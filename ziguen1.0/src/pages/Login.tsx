@@ -31,8 +31,8 @@ function Login() {
 
             <div className="page_filling">
                 <div className="purpose">
-                    <p className="pupose-text">Mover e acelerar pessoas para impulsionar o mundo de forma democrática, criativa e inovadora</p>
-                    <div className="pupose-images">
+                    <p className="purpose-text">Mover e acelerar pessoas para impulsionar o mundo de forma democrática, criativa e inovadora</p>
+                    <div className="purpose-images">
                         <img className="ilustration" src={ilustracaoBarco} alt="Ilustração Barco"/>
                         <img className="ilustration" src={ilustracaoInov} alt="Ilustração Inovação"/>
                         <img className="ilustration" src={ilustracaoLocal} alt="Ilustração Localização"/>
