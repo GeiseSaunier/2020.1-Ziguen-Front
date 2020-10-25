@@ -17,7 +17,7 @@
     font-size: 50px;
     z-index: 1;
     left: 3%;
-    top: 22%;
+    top: 20%;
     overflow: hidden;
 }
 
@@ -32,7 +32,7 @@
     font-size: 50px;
     z-index: 1;
     left: 95%;
-    top: 22%;
+    top: 20%;
     overflow: hidden;
 }
 
@@ -56,7 +56,7 @@
     position: absolute;
     color: #ffffff;
     justify-content: left;
-    top: 47%;
+    top: 45%;
     left: 18%;
 }
 
@@ -74,7 +74,7 @@
     position: absolute;
     color: #ffffff;
     justify-content: left;
-    top: 47%;
+    top: 45%;
     left: 38%;
 }
 
@@ -92,7 +92,7 @@
     position: absolute;
     color: #ffffff;
     justify-content: left;
-    top: 47%;
+    top: 45%;
     left: 58%;
 }
 
@@ -109,7 +109,7 @@
 .search button {
     position: absolute;
     right: 22%;
-    top: 46.5%;
+    top: 44.5%;
     background-color: whitesmoke;
     border-radius: 7px;
     padding: 0.5%;
@@ -129,25 +129,30 @@
 }
 
 .cards .card {
-    width: 18%;
-    box-shadow: 5px 5px #85BEAB;
+    width: 20%;
     border-radius: 6px;
-    margin-left: 10%;
-    border: 1px solid #508364;
+    margin-left: 20.5%;
+    border: 1px solid#6D6D6D;
 }
 
 .cards .card h4 {
     color: #508364;
     text-align: center;
+    margin-top: 12px;
+    font-style: italic;
 }
 
 .cards .card .img-barco {
-    width: 100%;
+    width: 97%;
+    margin-left: 4.2px;
+    
 }
 
-.cards .card h5 {
-    color: #508364;
+.cards .card .container h3 {
+    color: #ffffff;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
 }
 
 .cards .card p {
@@ -156,15 +161,17 @@
 }
 
 .cards .card button {
-    background-color: whitesmoke;
+    background-color: #ffc107;
+    border-color: #ffc107;
     border-radius: 7px;
-    color: gray ;
+    color: #212529;
     font-size: 14px;
     margin-left: 35.5%;
-    padding: 2%;
+    padding: 3.5%;
 }
 
 .cards .card .space {
     height: 15px;
 }
+
 

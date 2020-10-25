@@ -1,4 +1,3 @@
-
 .top-bar {
     display: flex;
     align-items: center;
@@ -6,21 +5,21 @@
 }
 
 .top-bar .img-logo {
-    height: 100px;
-    margin-right: 70%;
+    width: 10%;
+    margin-right: 72%;
 }
 
-.mais-vendidas-link, .login-link, .sobre-link, .ajuda-link {
+.mais-vendidas-link, .login-link, .sobre-link, .ajuda-link, .pagina-inicial-link, .registration-link {
     position: absolute;
     right: 0;
     top: 0;
-    margin-right: 34%;
+    margin-right: 28%;
 
     line-height: 100px;
     color: #508364;
     text-decoration: none;
     font-weight: normal;
-    font-size: 25px;
+    font-size: 18px;
 
     display: flex;
     flex-direction: column;
@@ -28,12 +27,20 @@
     text-align: right;
 }
 
+.pagina-inicial-link {
+    margin-right: 27.3%;
+}
+
+.registration-link {
+    margin-right: 18%;
+}
+
 .login-link {
-    margin-right: 22%;
+    margin-right: 18%;
 }
 
 .sobre-link {
-    margin-right: 15%;
+    margin-right: 13%;
 }
 
 .ajuda-link {
@@ -50,7 +57,7 @@
 
 .top-bar .field {
     width: 100%;
-    height: 40px;
+    height: 28px;
     background: #508364;
 }
 
@@ -60,8 +67,8 @@
     top: 0;
     margin-right: 8%;
 
-    font-size: 20px;
-    line-height: 238px;
+    font-size: 15px;
+    line-height: 205px;
     color: #ffffff;
 
     display: flex;
