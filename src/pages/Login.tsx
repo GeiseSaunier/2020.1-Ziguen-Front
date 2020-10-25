@@ -19,8 +19,8 @@ function Login() {
             <div className="top-bar">
                 <img src={logoImg} alt="Logo" className="img-logo" />
                 <div className="navbar">
-                    <Link to="/" className="mais-vendidas-link">Página Inicial</Link>
-                    <Link to="./Login" className="login-link">Cadastrar-se</Link>
+                    <Link to="/" className="pagina-inicial-link">Página Inicial</Link>
+                    <Link to="./Registration" className="registration-link">Cadastrar-se</Link>
                     <Link to="/" className="sobre-link">Sobre</Link>
                     <Link to="/" className="ajuda-link">Ajuda</Link>
                 </div>
