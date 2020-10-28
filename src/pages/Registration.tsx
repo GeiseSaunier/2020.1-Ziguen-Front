@@ -20,15 +20,9 @@ function Registration() {
             <div className="top-bar">
                 <img src={logoImg} alt="Logo" className="img-logo" />
                 <div className="navbar">
-<<<<<<< HEAD
-                    <Link to="/" className="página-inicial-link">Página Inicial</Link>
-                    <Link to="/" className="cadastrar-se-link">Cadastrar-se</Link>
-                    <Link to="/" className="sobre-link">Sobre</Link>2
-=======
                     <Link to="/" className="pagina-inicial-link">Página Inicial</Link>
                     <Link to="./Login" className="registration-link">Iniciar Sessão</Link>
                     <Link to="/" className="sobre-link">Sobre</Link>
->>>>>>> 75c3bd7c1ceebe798e6535ffbce187820da902c2
                     <Link to="/" className="ajuda-link">Ajuda</Link>
                 </div>
                 <div className="field">
