@@ -19,7 +19,7 @@
     color: #508364;
     text-decoration: none;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 20px;
 
     display: flex;
     flex-direction: column;
@@ -47,10 +47,13 @@
     margin-right: 8%;
 }
 
-.mais-vendidas-link:hover,   
+.pagina-inicial-link:hover,
+.mais-vendidas-link:hover,
 .login-link:hover,
 .sobre-link:hover,
-.ajuda-link:hover {
+.ajuda-link:hover,
+.registration-link:hover
+{
     text-decoration: underline;
     color: #85BEAB;
 }
@@ -66,13 +69,13 @@
     right: 0;
     top: 0;
     margin-right: 8%;
+    margin-top: 13px;
 
-    font-size: 15px;
+    font-size: 16px;
     line-height: 205px;
     color: #ffffff;
 
     display: flex;
-    flex-direction: column;
-
+    
     text-align: right;
 }

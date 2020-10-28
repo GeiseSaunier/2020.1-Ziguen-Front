@@ -9,7 +9,7 @@ import ilustracaoBarco from '../images/ilustração-barco.png'
 import ilustracaoInov from '../images/ilustração-inovação.png'
 import ilustracaoLocal from '../images/ilustração-localização.png'
 
-import '../styles/pages/login.css'
+import '../styles/pages/login-registration.css'
 import '../styles/pages/header.css'
 import '../styles/pages/footer.css'
 
