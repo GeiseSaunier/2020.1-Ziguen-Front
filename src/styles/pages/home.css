@@ -31,9 +31,7 @@
 #home-page .search {
     background-color: #85BEAB;
     width: 100%;
-    height: 150px;
     display: flex;
-    align-items: center;
     flex-direction: column;
 }
 
@@ -44,33 +42,20 @@
     font-weight: bolder;
 }
 
-.search .input-block {
-    position: absolute;
-    color: #ffffff;
-    justify-content: left;
-    top: 45%;
-}
-
-.search .input-block label {
-    position: absolute;
-    bottom: 110%;
+.search .labels label {
     font-size: 16px;
+    color: #ffffff;
 }
 
-.search .input-block input {
-    width: 80%;
+.search .input-block {
+    color: #ffffff;
+    padding-left: 15%;
+    padding-top: 3%;
+    margin-bottom: 6%;
 }
 
-.search .input-block1 {
-    left: 18%;
-}
-
-.search .input-block2 {
-    left: 58%;
-}
-
-.search .input-block3 {
-    left: 38%;
+.search .input-block #destination, #day{
+    margin-left: 5%;
 }
 
 .input-block #origin::placeholder {
@@ -78,12 +63,10 @@
 }
 
 .search button {
-    position: absolute;
-    right: 22%;
-    top: 44.5%;
     background-color: whitesmoke;
     border-radius: 7px;
     padding: 0.5%;
+    margin-left: 2%;
     border-color: transparent;
     color: grey;
     font-size: 16px;
@@ -119,11 +102,10 @@
     
 }
 
-.cards .card .container h3 {
+.cards .card .container h5 {
     color: #ffffff;
-    text-align: center;
+    justify-content: left;
     font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
 }
 
 .cards .card p {

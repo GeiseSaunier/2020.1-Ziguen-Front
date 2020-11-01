@@ -46,19 +46,17 @@ function Home() {
             </div>
             <div className="search">
                 <b><p>Encontre suas passagens de Barco:</p></b>
-                <div className="input-block input-block1">
-                    <b><label htmlFor="origin">Origem </label></b>
+                <div className = "labels">
+                    <b><label>Origem</label></b>
+                    <b><label>Destino</label></b>
+                    <b><label>Data</label></b>
+                </div>
+                <div className="input-block">
                     <input id="origin" placeholder = "Cidade"/>
+                    <input id="destination" placeholder = "Cidade"/>
+                    <input id="day" placeholder = "dd/mm/aa" type = "date"/>
+                    <button>Buscar</button>
                 </div>
-                <div className="input-block input-block2">
-                    <b><label htmlFor="destination">Data </label></b>
-                    <input id="origin" placeholder = "dd/mm/aa" type = "date"/>
-                </div>
-                <div className="input-block input-block3">
-                    <b><label htmlFor="day">Destino </label></b>
-                    <input id="origin" placeholder = "Cidade"/>
-                </div>
-                <button>Buscar</button>
             </div>
             <div className="cards">
                 <h3>Sugestões para Você!</h3>
@@ -68,7 +66,7 @@ function Home() {
                     <div className = "space"></div>
                     <img src={barcoImg} className = "img-barco" alt = "barco"/>
                     <div className="container">
-                        <h3>Título</h3>
+                        <h5>Título</h5>
                         <div className = "space"></div>
                         <p>Descrição da passagem.</p>
                         <p>Ex: Preço e informações sobre o banco</p>
