@@ -26,7 +26,7 @@ function Home() {
                     <Link to="/" className="ajuda-link">Ajuda</Link>
                 </div>
                 <div className="field">
-                    <p>PASSAGENS FLUVIAIS</p>
+                    <b><p>PASSAGENS FLUVIAIS</p></b>
                 </div>
             </div>
             <div className="carousel">
@@ -40,23 +40,23 @@ function Home() {
                         <Slide index={1}><img src={slide2Img} alt="slide2"/></Slide>
                         <Slide index={2}><img src={slide3Img} alt="slide3"/></Slide>
                     </Slider>
-                    <ButtonBack className="button-back">&#171;</ButtonBack>
-                    <ButtonNext className="button-next">&#187;</ButtonNext>
+                    <ButtonBack className="button button-back">&#171;</ButtonBack>
+                    <ButtonNext className="button button-next">&#187;</ButtonNext>
                 </CarouselProvider>
             </div>
             <div className="search">
-                <p>Encontre suas passagens de Barco:</p>
-                <div className="input-block">
-                    <label htmlFor="origin">Origem </label>
-                    <input id="origin"/>
+                <b><p>Encontre suas passagens de Barco:</p></b>
+                <div className="input-block input-block1">
+                    <b><label htmlFor="origin">Origem </label></b>
+                    <input id="origin" placeholder = "Cidade"/>
                 </div>
-                <div className="input-block1">
-                    <label htmlFor="destination">Destino </label>
-                    <input id="origin" />
+                <div className="input-block input-block2">
+                    <b><label htmlFor="destination">Data </label></b>
+                    <input id="origin" placeholder = "dd/mm/aa" type = "date"/>
                 </div>
-                <div className="input-block2">
-                    <label htmlFor="day">Data de Ida </label>
-                    <input id="origin" />
+                <div className="input-block input-block3">
+                    <b><label htmlFor="day">Destino </label></b>
+                    <input id="origin" placeholder = "Cidade"/>
                 </div>
                 <button>Buscar</button>
             </div>
@@ -80,6 +80,9 @@ function Home() {
                 </div>
             </div>
             <div className="footer">
+                <p>Barcos Parceiros</p>
+                <p>&#128674; &#128674; &#128674; &#128674;</p>
+                <p className="hr"></p>
                 <p>Nossas redes sociais</p>
                 <img src={instagramImg} alt="Instagram" className="instagram-logo" />
                 <img src={facebookImg} alt="Facebook" className="facebook-logo" />

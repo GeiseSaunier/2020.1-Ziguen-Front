@@ -6,7 +6,7 @@
     justify-content: center;
 }
 
-.carousel .carousel-provider .button-back {
+.carousel .carousel-provider .button {
     position: absolute;
     background-color: transparent;
     color: #ffffff;
@@ -16,24 +16,16 @@
     border: none;
     font-size: 50px;
     z-index: 1;
-    left: 3%;
     top: 20%;
     overflow: hidden;
 }
 
+.carousel .carousel-provider .button-back {
+    left: 3%;
+}
+
 .carousel .carousel-provider .button-next {
-    position: absolute;
-    background-color:transparent;
-    color: #ffffff;
-    border-radius: 7px;
-    width: 2%;
-    height: 6%;
-    border: none;
-    font-size: 50px;
-    z-index: 1;
     left: 95%;
-    top: 20%;
-    overflow: hidden;
 }
 
 #home-page .search {
@@ -49,7 +41,7 @@
     color: #ffffff;
     text-align: center;
     margin-top: 20px;
-
+    font-weight: bolder;
 }
 
 .search .input-block {
@@ -57,7 +49,6 @@
     color: #ffffff;
     justify-content: left;
     top: 45%;
-    left: 18%;
 }
 
 .search .input-block label {
@@ -71,39 +62,19 @@
 }
 
 .search .input-block1 {
-    position: absolute;
-    color: #ffffff;
-    justify-content: left;
-    top: 45%;
-    left: 38%;
-}
-
-.search .input-block1 label {
-    position: absolute;
-    bottom: 110%;
-    font-size: 16px;
-}
-
-.search .input-block1 input {
-    width: 80%;
+    left: 18%;
 }
 
 .search .input-block2 {
-    position: absolute;
-    color: #ffffff;
-    justify-content: left;
-    top: 45%;
     left: 58%;
 }
 
-.search .input-block2 label {
-    position: absolute;
-    bottom: 110%;
-    font-size: 16px;
+.search .input-block3 {
+    left: 38%;
 }
 
-.search .input-block2 input {
-    width: 60%;
+.input-block #origin::placeholder {
+    color: grey !important;
 }
 
 .search button {
