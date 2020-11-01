@@ -1,14 +1,13 @@
 FROM node:10.16.3
 
-RUN mkdir -p /app
+RUN mkdir app
 
-WORKDIR  /app
+WORKDIR /app
 
-COPY . .
+ADD . /app
 
-RUN yarn install 
+RUN npm install
 
 EXPOSE 3000
 
-CMD ["yarn", "start"]
-
+CMD ["yarn","start"]

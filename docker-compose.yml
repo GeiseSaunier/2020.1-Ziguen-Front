@@ -1,11 +1,18 @@
-version:  "3"
-
+version: '3'
 services:
-
-  front:
+  frontend:
+    container_name: frontend
     build: ./
     ports:
-      - 3000:3000
+      - '3000:3000'
     volumes:
-        - .:/app
-        - /app/node_modules
+      - .:/app
+      - /app/node_modules
+    networks:
+      - network-api
+    tty: true
+
+networks:
+  network-api:
+    external:
+      name: network-api
