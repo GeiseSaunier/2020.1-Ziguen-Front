@@ -47,9 +47,9 @@ function Home() {
             <div className="search">
                 <b><p>Encontre suas passagens de Barco:</p></b>
                 <div className = "labels">
-                    <b><label>Origem</label></b>
-                    <b><label>Destino</label></b>
-                    <b><label>Data</label></b>
+                    <b><label id = "origin">Origem</label></b>
+                    <b><label id = "destination">Destino</label></b>
+                    <b><label id = "day">Data</label></b>
                 </div>
                 <div className="input-block">
                     <input id="origin" placeholder = "Cidade"/>

@@ -65,18 +65,9 @@
 }
 
 .top-bar .field p {
-    position: absolute;
-    right: 0;
-    top: 0;
-    margin-right: 8%;
-    margin-top: 13px;
-
     font-size: 16px;
     font-weight: bolder;
-    line-height: 205px;
     color: #ffffff;
-
-    display: flex;
-    
-    text-align: right;
+    margin-left: 79.6%;
+    margin-top: 0.4%;
 }
