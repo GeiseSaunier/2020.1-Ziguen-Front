@@ -17,6 +17,7 @@ import barcoImg from '../images/barco-ilustracao.jpg'
 function Home() {
     return (
         <div id="home-page">
+            {/*--------------- Top Bar ---------------*/}
             <div className="top-bar">
                 <img src={logoImg} alt="Logo" className="img-logo" />
                 <div className="navbar">
@@ -29,6 +30,7 @@ function Home() {
                     <b><p>PASSAGENS FLUVIAIS</p></b>
                 </div>
             </div>
+            {/*--------------- Carousel --------------*/}
             <div className="carousel">
                 <CarouselProvider className="carousel-provider"
                     naturalSlideWidth={480}
@@ -44,6 +46,7 @@ function Home() {
                     <ButtonNext className="button button-next">&#187;</ButtonNext>
                 </CarouselProvider>
             </div>
+            {/*--------------- Barra de Pesquisa ---------------*/}
             <div className="search">
                 <b><p>Encontre suas passagens de Barco:</p></b>
                 <div className = "labels">
@@ -55,9 +58,10 @@ function Home() {
                     <input id="origin" placeholder = "Cidade"/>
                     <input id="destination" placeholder = "Cidade"/>
                     <input id="day" placeholder = "dd/mm/aa" type = "date"/>
-                    <button>Buscar</button>
+                    <Link to = "/"><button>Buscar</button></Link>
                 </div>
             </div>
+            {/*--------------- Cards ---------------*/}
             <div className="cards">
                 <h3>Sugestões para Você!</h3>
                 <div className = "space"></div>
@@ -77,6 +81,7 @@ function Home() {
                     </div>
                 </div>
             </div>
+            {/*--------------- Footer ---------------*/}
             <div className="footer">
                 <p>Barcos Parceiros</p>
                 <p>&#128674; &#128674; &#128674; &#128674;</p>

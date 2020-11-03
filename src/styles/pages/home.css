@@ -1,4 +1,3 @@
-
 /*--------------- HOME PAGE ---------------*/
 
 #home-page {
@@ -57,7 +56,7 @@
 
 .search .labels {
     margin-top: 4%;
-    margin-left: 15%;
+    padding-left: 15%;
 }
 
 .search .labels label {
@@ -144,10 +143,10 @@
 }
 
 .cards .card button {
-    background-color: #ffc107;
-    border-color: #ffc107;
+    background-color:#21A780;
+    border-color:#21A780;
     border-radius: 7px;
-    color: #212529;
+    color: #ffffff;
     font-size: 14px;
     margin-left: 35.5%;
     padding: 3.5%;
