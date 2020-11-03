@@ -33,6 +33,10 @@
     left: 95%;
 }
 
+.carousel .carousel-provider .slider .slide img{
+    width: 100%;
+}
+
 /*--------------- SEARCH ----------------*/
 
 #home-page .search {
@@ -64,6 +68,8 @@
 .search .labels #destination, .search .labels #day {
     margin-left: 21.5%;
 }
+
+/*---------------- SEARCH INPUTS ---------------*/
 
 .search .input-block {
     color: #ffffff;

@@ -35,10 +35,10 @@ function Home() {
                     naturalSlideHeight={125}
                     totalSlides={3}
                 >
-                    <Slider>
-                        <Slide index={0}><img src={slide1Img} alt="slide1"/></Slide>
-                        <Slide index={1}><img src={slide2Img} alt="slide2"/></Slide>
-                        <Slide index={2}><img src={slide3Img} alt="slide3"/></Slide>
+                    <Slider className = "slider">
+                        <Slide index={0} className = "slide slide1"><img src={slide1Img} alt="slide1"/></Slide>
+                        <Slide index={1} className = "slide slide2"><img src={slide2Img} alt="slide2"/></Slide>
+                        <Slide index={2} className = "slide slide3"><img src={slide3Img} alt="slide3"/></Slide>
                     </Slider>
                     <ButtonBack className="button button-back">&#171;</ButtonBack>
                     <ButtonNext className="button button-next">&#187;</ButtonNext>
