@@ -46,7 +46,7 @@ function Home() {
                     <ButtonNext className="button button-next">&#187;</ButtonNext>
                 </CarouselProvider>
             </div>
-            {/*--------------- Barra de Pesquisa ---------------*/}
+            {/*--------------- Search ---------------*/}
             <div className="search">
                 <b><p>Encontre suas passagens de Barco:</p></b>
                 <div className = "labels">
