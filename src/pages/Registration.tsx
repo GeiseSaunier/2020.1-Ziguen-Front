@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Login_Form from '../components/Form/Login';
+import Registration_Form from '../components/Form/Registration';
 
 import logoImg from '../images/logo.png';
 import facebookImg from '../images/facebook.svg'
@@ -9,18 +9,19 @@ import ilustracaoBarco from '../images/ilustração-barco.png'
 import ilustracaoInov from '../images/ilustração-inovação.png'
 import ilustracaoLocal from '../images/ilustração-localização.png'
 
-import '../styles/pages/login-registration.css'
 import '../styles/pages/header.css'
 import '../styles/pages/footer.css'
+import '../styles/pages/login-registration.css'
 
-function Login() {
+
+function Registration() {
     return (
-        <div id="login-page">
+        <div id="registration-page">
             <div className="top-bar">
                 <img src={logoImg} alt="Logo" className="img-logo" />
                 <div className="navbar">
                     <Link to="/" className="pagina-inicial-link">Página Inicial</Link>
-                    <Link to="./Registration" className="registration-link">Cadastrar-se</Link>
+                    <Link to="./Login" className="registration-link">Iniciar Sessão</Link>
                     <Link to="/" className="sobre-link">Sobre</Link>
                     <Link to="/" className="ajuda-link">Ajuda</Link>
                 </div>
@@ -28,6 +29,7 @@ function Login() {
                     <b><p>PASSAGENS FLUVIAIS</p></b>
                 </div>
             </div>
+            
 
             <div className="page_filling">
                 <div className="purpose">
@@ -40,7 +42,7 @@ function Login() {
                 </div>
                 <div className="division-bar"></div>
                 <div className="login_form">
-                    <Login_Form />
+                    <Registration_Form />
                 </div>
             </div>
 
@@ -59,4 +61,4 @@ function Login() {
     )
 }
 
-export default Login;
+export default Registration;
