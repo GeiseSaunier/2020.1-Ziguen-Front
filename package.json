@@ -15,7 +15,7 @@
     "@unform/web": "^2.1.3",
     "formik": "^2.2.0",
     "pure-react-carousel": "^1.27.5",
-    "react": "^16.14.0",
+    "react": "^17.0.1",
     "react-dom": "^16.14.0",
     "react-native": "^0.63.3",
     "react-native-cards": "^1.1.4",
@@ -32,7 +32,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "quality-check": "npm run lint && CI=true npm test --watchAll"
   },
   "eslintConfig": {
     "extends": "react-app"

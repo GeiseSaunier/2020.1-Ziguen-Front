@@ -1,3 +1,5 @@
+/*--------------- HOME PAGE ---------------*/
+
 #home-page {
     width: 100%;
     height: 100%;
@@ -6,42 +8,39 @@
     justify-content: center;
 }
 
-.carousel .carousel-provider .button-back {
+/*--------------- CAROUSEL ---------------*/
+
+.carousel .carousel-provider .button {
     position: absolute;
     background-color: transparent;
     color: #ffffff;
-    border-radius: 7px;
     width: 2%;
     height: 6%;
-    border: none;
+    border: none !important;
     font-size: 50px;
     z-index: 1;
+    top: 17%;
+    outline-style: none;
+}
+
+.carousel .carousel-provider .button-back {
     left: 3%;
-    top: 20%;
-    overflow: hidden;
 }
 
 .carousel .carousel-provider .button-next {
-    position: absolute;
-    background-color:transparent;
-    color: #ffffff;
-    border-radius: 7px;
-    width: 2%;
-    height: 6%;
-    border: none;
-    font-size: 50px;
-    z-index: 1;
     left: 95%;
-    top: 20%;
-    overflow: hidden;
 }
+
+.carousel .carousel-provider .slider .slide img{
+    width: 100%;
+}
+
+/*--------------- SEARCH ----------------*/
 
 #home-page .search {
     background-color: #85BEAB;
     width: 100%;
-    height: 150px;
     display: flex;
-    align-items: center;
     flex-direction: column;
 }
 
@@ -49,74 +48,66 @@
     color: #ffffff;
     text-align: center;
     margin-top: 20px;
-
+    font-weight: bolder;
 }
+
+/*---------------- SEARCH LABELS ---------------*/
+
+.search .labels {
+    margin-top: 4%;
+    padding-left: 15%;
+}
+
+.search .labels label {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.search .labels #destination, .search .labels #day {
+    margin-left: 21.2%;
+}
+
+/*---------------- SEARCH INPUTS ---------------*/
 
 .search .input-block {
-    position: absolute;
     color: #ffffff;
-    justify-content: left;
-    top: 45%;
-    left: 18%;
-}
-
-.search .input-block label {
-    position: absolute;
-    bottom: 110%;
-    font-size: 16px;
+    padding-left: 13%;
+    padding-top: 5px;
+    margin-bottom: 4%;
 }
 
 .search .input-block input {
-    width: 80%;
+    border-radius: 8px;
+    border-color: transparent;
+    padding: 0.3%;
+    margin-left: 30px;
+    outline-style: none;
 }
 
-.search .input-block1 {
-    position: absolute;
-    color: #ffffff;
-    justify-content: left;
-    top: 45%;
-    left: 38%;
+.search .input-block #destination, #day{
+    margin-left: 4%;
 }
 
-.search .input-block1 label {
-    position: absolute;
-    bottom: 110%;
-    font-size: 16px;
+.input-block::placeholder {
+    color: grey;
 }
 
-.search .input-block1 input {
-    width: 80%;
-}
-
-.search .input-block2 {
-    position: absolute;
-    color: #ffffff;
-    justify-content: left;
-    top: 45%;
-    left: 58%;
-}
-
-.search .input-block2 label {
-    position: absolute;
-    bottom: 110%;
-    font-size: 16px;
-}
-
-.search .input-block2 input {
-    width: 60%;
-}
-
-.search button {
-    position: absolute;
-    right: 22%;
-    top: 44.5%;
+.search .input-block button {
     background-color: whitesmoke;
     border-radius: 7px;
     padding: 0.5%;
+    margin-left: 2%;
     border-color: transparent;
-    color: grey;
+    color: rgba(0, 0, 0, 0.707);
     font-size: 16px;
+    outline-style: none;
 }
+
+.search .input-block button:hover {
+    opacity: 0.7;
+}
+
+/*--------------- CARDS ---------------*/
 
 .cards .space {
     height: 30px;
@@ -148,26 +139,30 @@
     
 }
 
-.cards .card .container h3 {
-    color: #ffffff;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
+.cards .card h5 {
+    color: black;
+    text-align: left;
+    margin-top: 12px;
+    margin-left: 4%;
+    font-weight: lighter;
+    font-size: 14pt;
 }
 
 .cards .card p {
     font-size:14px;
-    text-align: center;
+    text-align: left;
+    margin-left: 4%;
 }
 
 .cards .card button {
-    background-color: #ffc107;
-    border-color: #ffc107;
+    background-color:#21A780;
+    border-color:#21A780;
     border-radius: 7px;
-    color: #212529;
+    color: #ffffff;
     font-size: 14px;
     margin-left: 35.5%;
     padding: 3.5%;
+    outline-style: none;
 }
 
 .cards .card .space {
