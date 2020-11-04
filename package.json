@@ -32,7 +32,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "quality-check": "npm run lint && CI=true npm test --watchAll"
   },
   "eslintConfig": {
     "extends": "react-app"
