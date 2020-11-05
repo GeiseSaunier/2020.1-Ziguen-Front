@@ -9,7 +9,7 @@
     margin-right: 72%;
 }
 
-.mais-vendidas-link, .login-link, .sobre-link, .ajuda-link, .pagina-inicial-link, .registration-link {
+.mais-vendidas-link, .login-link, .sobre-link, .ajuda-link, .pagina-inicial-link, .registration-link, .inicio-link, .sair-link {
     position: absolute;
     right: 0;
     top: 0;
@@ -29,6 +29,14 @@
 
 .pagina-inicial-link {
     margin-right: 27.3%;
+}
+
+.inicio-link {
+    margin-right: 17%;
+}
+
+.sair-link {
+    margin-right: 10%;
 }
 
 .registration-link {
