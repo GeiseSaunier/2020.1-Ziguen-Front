@@ -1,6 +1,6 @@
 import React from 'react';
 import { Form } from '@unform/web';
-import './styles/pages/login.css';
+import './styles/pages/login-registration.css';
 import Input from './components/Form/input';
 
 

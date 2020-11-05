@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Form } from '@unform/web';
-import '../../styles/pages/login-form.css';
+import '../../styles/pages/login-registration-form.css';
 
 import Input from '../../components/Form/input';
 
@@ -24,7 +24,7 @@ export default function Login() {
 
                 <button className="login-button" type="submit">Entrar</button><br></br>
 
-                <Link to="../" className="cadastro-link">Ainda não possui cadastro?</Link><br></br>
+                <Link to="../Registration" className="cadastro-link">Ainda não possui cadastro?</Link><br></br>
 
                 <button className="login-with-button" type="button">Entrar com Facebook</button><br></br>
                 <button className="login-with-button" type="button">Entrar com Google</button>
