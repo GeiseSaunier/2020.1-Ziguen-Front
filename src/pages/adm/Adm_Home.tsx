@@ -6,6 +6,7 @@ import '../../styles/pages/adm/adm_home.css'
 import logoImg from '../../images/logo.png';
 import facebookImg from '../../images/facebook.svg'
 import instagramImg from '../../images/instagram.svg'
+import barco1 from '../../images/barco-ilustracao.jpg'
 
 function Adm_Home() {
     return (
@@ -37,6 +38,22 @@ function Adm_Home() {
                 {/* Colocar barra de pesquisa  */}
             </div>
 
+            {/*---------Embarcação--------*/}
+            <div className="boats">
+                <div className="boat">
+                    <div className="num_identification">
+                        <strong>#0000</strong>
+                    </div>
+                    <img className="boat_photo" src={barco1} alt="Foto Barco"/>
+                    <strong>Embarcação / Proprietário</strong>
+
+                    <div className="buttons_boat">
+                        <button className="boat-trips-button" type="button">viagens</button>
+                        <button className="delete-boat-button" type="button">deletar</button>
+                        <button className="edit-boat-button" type="button">editar</button>
+                    </div>
+                </div>
+            </div>
 
             {/*--------------- Footer ---------------*/}
             <div className="footer">
