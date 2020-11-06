@@ -18,15 +18,15 @@
 .buttons-top .owner-button, .boat-button, .trip-button {
     text-align: center;
 
-    width: 200px;
-    height: 50px;
+    width: 150px;
+    height: 40px;
 
     margin-right: 20px;
     background-color: #85BEAB;
     border: #85BEAB;
     border-radius: 10px;
 
-    font-size: 22px;
+    font-size: 19px;
     color: #ffffff;
     font-weight: bold;
 
@@ -84,4 +84,25 @@
 .buttons-boat {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+}
+
+.boat-trips-button, .delete-boat-button, .edit-boat-button {
+    height: 60px;
+    width: 60px;
+
+    border: solid 2px;
+    border-color: #508364;
+    border-radius: 7px;
+
+    margin-left: 10px;
+}
+
+.boat-trips-button img, .delete-boat-button img, .edit-boat-button img {
+    height: 40px;
+}
+
+.boat-trips-button:hover, .delete-boat-button:hover, .edit-boat-button:hover { 
+    background-color:#d9d9d9;
+    opacity:0.8;
 }

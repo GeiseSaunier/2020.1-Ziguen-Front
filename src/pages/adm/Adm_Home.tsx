@@ -7,6 +7,9 @@ import logoImg from '../../images/logo.png';
 import facebookImg from '../../images/facebook.svg'
 import instagramImg from '../../images/instagram.svg'
 import barco1 from '../../images/barco-ilustracao.jpg'
+import tickets from '../../images/printer.png'
+import lixo from '../../images/trash-can.png'
+import lapis from '../../images/pencil.png'
 
 function Adm_Home() {
     return (
@@ -48,9 +51,9 @@ function Adm_Home() {
                     <strong>Embarcação / Proprietário</strong>
 
                     <div className="buttons_boat">
-                        <button className="boat-trips-button" type="button">viagens</button>
-                        <button className="delete-boat-button" type="button">deletar</button>
-                        <button className="edit-boat-button" type="button">editar</button>
+                        <button className="boat-trips-button" type="button"><img src={tickets} alt="Viagens"/></button>
+                        <button className="delete-boat-button" type="button"><img src={lixo} alt="Deletar"/></button>
+                        <button className="edit-boat-button" type="button"><img src={lapis} alt="Editar"/></button>
                     </div>
                 </div>
             </div>
