@@ -1,0 +1,10 @@
+
+.App {
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+
+.cadastro_viagem h1 {
+    margin-top: 10px;
+}

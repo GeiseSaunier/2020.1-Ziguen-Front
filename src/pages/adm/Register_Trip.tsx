@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Register_Trip from '../../components/Form/Register_Trip';
 
-import '../../styles/pages/adm/register_boat.css'
+import '../../styles/pages/adm/register_trip.css'
 
 import logoImg from '../../images/logo.png';
 import facebookImg from '../../images/facebook.svg'
@@ -25,6 +26,7 @@ function Register_Boat() {
             {/*------------- Form Viagem ------------*/}
             <div className="cadastro_viagem">
                 <h1>Cadastrar Viagem</h1>
+                <Register_Trip />
             </div>
 
 

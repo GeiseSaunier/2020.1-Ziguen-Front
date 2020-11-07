@@ -1,11 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Form } from '@unform/web';
 import '../../styles/pages/login-registration-form.css';
 
 import Input from '../../components/Form/input';
 
-export default function Regisgtration() {
+export default function Registration() {
     function handleSubmit(data) {
         console.log(data);
     }
