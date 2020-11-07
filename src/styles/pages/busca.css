@@ -82,71 +82,80 @@
 
 /*--------------- CARDS ---------------*/
 
-.cards .space {
-    height: 30px;
-}
-
 #busca .cards h3 {
     color: #508364;
     margin-top: 3%;
     text-align: center;
 }
 
-.cards .card {
+#busca .cards .card {
     width: 85%;
     border-radius: 6px;
     margin-left: 7.5%;
     border: 1px solid#6D6D6D;
 }
 
-.cards .card .container {
+#busca .cards .card .container {
     display: inline-flex;
-    margin-top: 2%;
     margin-bottom: 2%;
+    margin-top: 2%;
 }
 
-.cards .card .img-barco {
+#busca .cards .card .img-barco {
     width: 97%;
     margin-left: 4.2px;
     
 }
 
-.cards .card .container .titulo{
+#busca .cards .card .container .titulo {
     color: black;
     text-align: left;
     margin-left: 10%;
     font-weight: lighter;
     font-size: 14pt;
+    margin-top: -2.5%;
 }
 
-.cards .card .continer p {
+#busca .cards .card .container .titulo p {
+    margin-left: 5%;
+}
+
+#busca .cards .card .container h5 {
+    color: #508364;
+    font-weight: bold;
+    font-size: 85%;
+}
+
+#busca .cards .card .container p {
     font-size:14px;
     text-align: left;
     margin-left: 10%;
 }
 
-.cards .card .container .descricao {
-    margin-left: 10%;
+#busca .cards .card .container .preco {
+    margin-top: -2.5%;
+    margin-left: 270%;
 }
 
-.cards .card .container button {
+#busca .cards .card .container button {
     background-color:#21A780;
     border-color:#21A780;
     border-radius: 7px;
     color: #ffffff;
     font-size: 14px;
-    margin-left: 135%;
-    width: 20%;
+    margin-left: 30%;
+    width: 30%;
     height: 6%;
     outline-style: none;
+    margin-top: 5.5%;
 }
 
-.cards .card .container button:hover {
+#busca .cards .card .container button:hover {
     background-color: #d9d9d9;
     color: #000000;
     border-color: #d9d9d9;
 }
 
-.cards .card .space {
-    height: 15px;
+#busca .cards .card .space {
+    height: 10%;
 }
