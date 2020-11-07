@@ -6,6 +6,7 @@ import '../../styles/pages/adm/adm_home.css'
 import logoImg from '../../images/logo.png';
 import facebookImg from '../../images/facebook.svg'
 import instagramImg from '../../images/instagram.svg'
+import lupa from '../../images/lupa.jpg'
 import barco1 from '../../images/barco-ilustracao.jpg'
 import tickets from '../../images/printer.png'
 import lixo from '../../images/trash-can.png'
@@ -38,7 +39,10 @@ function Adm_Home() {
                     <button className="boat-button" type="button">Embarcações</button>
                     <button className="trip-button" type="button">Viagens</button>
                 </div>
-                {/* Colocar barra de pesquisa  */}
+                <form className="search-bar" action=" " method="post">
+                    <input type="search" id="busca" name="q" />
+                    <button type="submit"><img src={lupa} alt="Lupa"/></button>
+                </form>
             </div>
 
             {/*---------Embarcação--------*/}

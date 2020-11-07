@@ -39,6 +39,27 @@
     color: #000000;
 }
 
+/*------Barra de Busca------*/
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 90px;
+}
+
+.search-bar button {
+    background-color: white;
+    border: none;
+    margin-left: 10px;
+}
+.search-bar input {
+    width: 70%;
+}
+.search-bar img {
+    height: 30px;
+}
+
 
 /*------Card Embarcação------*/
 
