@@ -1,25 +1,23 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import Registration_Form from '../components/Form/Registration';
-
 import logoImg from '../images/logo.png';
+import { Link } from 'react-router-dom';
 import facebookImg from '../images/facebook.svg'
 import instagramImg from '../images/instagram.svg'
-import ilustracaoBarco from '../images/ilustração-barco.png'
-import ilustracaoInov from '../images/ilustração-inovação.png'
-import ilustracaoLocal from '../images/ilustração-localização.png'
+import barcoImg from '../images/barco-ilustracao.jpg'
 
+import 'pure-react-carousel/dist/react-carousel.es.css';
+import '../styles/pages/busca.css'
 import '../styles/pages/header.css'
-import '../styles/pages/footer.css'
 
 function Search() {
     return (
-        <div id="registration-page">
+        <div id="busca">
+            {/*--------------- Top Bar ---------------*/}
             <div className="top-bar">
                 <img src={logoImg} alt="Logo" className="img-logo" />
                 <div className="navbar">
-                    <Link to="/" className="pagina-inicial-link">Página Inicial</Link>
-                    <Link to="./Login" className="registration-link">Iniciar Sessão</Link>
+                    <Link to="/" className="mais-vendidas-link">Mais Vendidas</Link>
+                    <Link to="./Login" className="login-link">Iniciar Sessão</Link>
                     <Link to="/" className="sobre-link">Sobre</Link>
                     <Link to="/" className="ajuda-link">Ajuda</Link>
                 </div>
@@ -27,23 +25,37 @@ function Search() {
                     <b><p>PASSAGENS FLUVIAIS</p></b>
                 </div>
             </div>
-            
-
-            <div className="page_filling">
-                <div className="purpose">
-                    <p className="purpose-text">Mover e acelerar pessoas para impulsionar o mundo de forma democrática, criativa e inovadora</p>
-                    <div className="purpose-images">
-                        <img className="ilustration" src={ilustracaoBarco} alt="Ilustração Barco"/>
-                        <img className="ilustration" src={ilustracaoInov} alt="Ilustração Inovação"/>
-                        <img className="ilustration" src={ilustracaoLocal} alt="Ilustração Localização"/>
-                    </div>
+            {/*--------------- Search ---------------*/}
+            <div className="search">
+                <b><p>Encontre suas passagens de Barco:</p></b>
+                <div className = "labels">
+                    <b><label id = "origin">Origem</label></b>
+                    <b><label id = "destination">Destino</label></b>
+                    <b><label id = "day">Data</label></b>
                 </div>
-                <div className="division-bar"></div>
-                <div className="login_form">
-                    <Registration_Form />
+                <div className="input-block">
+                    <input id="origin" placeholder = "Cidade"/>
+                    <input id="destination" placeholder = "Cidade"/>
+                    <input id="day" placeholder = "dd/mm/aa" type = "date"/>
+                    <Link to = "/"><button>Buscar</button></Link>
                 </div>
             </div>
-
+            {/*--------------- Cards ---------------*/}
+            <div className="cards">
+                <div className = "space"></div>
+                <div className="card">
+                    <div className = "space"></div>
+                    <div className="container">
+                        <div className = "titulo"><h5>Título</h5></div>
+                        <div className = "space"></div>
+                        <div className = "descricao"><p>Descrição da passagem.</p></div>
+                        <div className = "preco"><p>Ex: Preço e informações sobre o banco</p></div>
+                        <button>Comprar</button>
+                        <div className = "space"></div>
+                    </div>
+                </div>
+            </div>
+            {/*--------------- Footer ---------------*/}
             <div className="footer">
                 <p>Barcos Parceiros</p>
                 <p>&#128674; &#128674; &#128674; &#128674;</p>
