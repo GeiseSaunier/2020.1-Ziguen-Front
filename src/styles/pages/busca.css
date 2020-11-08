@@ -28,7 +28,7 @@
 
 .search .labels {
     margin-top: 4%;
-    padding-left: 15.3%;
+    padding-left: 15%;
 }
 
 .search .labels label {
@@ -37,7 +37,7 @@
 }
 
 .search .labels #destination, .search .labels #day {
-    margin-left: 20.85%;
+    margin-left: 21.2%;
 }
 
 /*---------------- SEARCH INPUTS ---------------*/
@@ -82,22 +82,16 @@
 
 /*--------------- CARDS ---------------*/
 
-#busca .cards h3 {
-    color: #508364;
-    margin-top: 3%;
-    text-align: center;
-}
-
 #busca .cards .card {
-    width: 85%;
+    width: 55%;
     border-radius: 6px;
-    margin-left: 7.5%;
+    margin-left: 20%;
     border: 1px solid#6D6D6D;
 }
 
 #busca .cards .card .container {
     display: inline-flex;
-    margin-bottom: 2%;
+    margin-bottom: 3%;
     margin-top: 2%;
 }
 
@@ -110,9 +104,8 @@
 #busca .cards .card .container .titulo {
     color: black;
     text-align: left;
-    margin-left: 10%;
+    margin-left: 13%;
     font-weight: lighter;
-    font-size: 14pt;
     margin-top: -2.5%;
 }
 
@@ -120,21 +113,26 @@
     margin-left: 5%;
 }
 
-#busca .cards .card .container h5 {
-    color: #508364;
-    font-weight: bold;
-    font-size: 85%;
-}
-
-#busca .cards .card .container p {
-    font-size:14px;
-    text-align: left;
-    margin-left: 10%;
+#busca .cards .card .container .informacoes {
+    margin-top: -2.5%;
+    margin-left: 13%;
 }
 
 #busca .cards .card .container .preco {
     margin-top: -2.5%;
-    margin-left: 270%;
+    margin-left: 13%;
+}
+
+#busca .cards .card .container h5 {
+    color: #508364;
+    font-weight: bold;
+    font-size: 95%;
+}
+
+#busca .cards .card .container p {
+    font-size: 16px;
+    text-align: left;
+    margin-left: 10%;
 }
 
 #busca .cards .card .container button {
@@ -143,11 +141,11 @@
     border-radius: 7px;
     color: #ffffff;
     font-size: 14px;
-    margin-left: 30%;
-    width: 30%;
-    height: 6%;
+    margin-left: 25%;
+    width: 20%;
     outline-style: none;
-    margin-top: 5.5%;
+    margin-top: 5%;
+    margin-bottom: 2%;
 }
 
 #busca .cards .card .container button:hover {

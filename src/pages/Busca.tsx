@@ -46,14 +46,20 @@ function Search() {
                 <div className="card">
                     <div className="container">
                         <div className = "titulo">
-                            <h5>Título:</h5>
+                            <h5>Nome da Embarcação:</h5>
+                            <div className = "space"></div>
+                            <p>Nome</p>
+                        </div>
+                        <div className = "informacoes">
+                            <h5>Informações da Viagem:</h5>
                             <div className = "space"></div>
                             <p>Descrição da passagem.</p>
-                            </div>
+                        </div>
                         <div className = "preco">
                             <h5>Preço:</h5>
                             <div className = "space">
-                            </div><p>R$00,00</p></div>
+                            </div><p>R$00,00</p>
+                        </div>
                         <button>Comprar</button>
                     </div>
                 </div>
