@@ -5,12 +5,12 @@ import facebookImg from '../images/facebook.svg'
 import instagramImg from '../images/instagram.svg'
 
 import 'pure-react-carousel/dist/react-carousel.es.css';
-import '../styles/pages/busca.css'
+import '../styles/pages/busca-indisponivel.css'
 import '../styles/pages/header.css'
 
-function Search() {
+function UnavailableSearch() {
     return (
-        <div id="busca">
+        <div id="busca-indisponivel">
             {/*--------------- Top Bar ---------------*/}
             <div className="top-bar">
                 <img src={logoImg} alt="Logo" className="img-logo" />
@@ -39,29 +39,11 @@ function Search() {
                     <Link to = "/"><button>Buscar</button></Link>
                 </div>
             </div>
-            {/*--------------- Cards ---------------*/}
-            <div className="cards">
-                <div className = "space"></div>
-                <div className="card">
-                    <div className="container">
-                        <div className = "titulo">
-                            <h5>Nome da Embarcação:</h5>
-                            <div className = "space"></div>
-                            <p>Nome</p>
-                        </div>
-                        <div className = "informacoes">
-                            <h5>Informações da Viagem:</h5>
-                            <div className = "space"></div>
-                            <p>Descrição da passagem.</p>
-                        </div>
-                        <div className = "preco">
-                            <h5>Preço:</h5>
-                            <div className = "space">
-                            </div><p>R$00,00</p>
-                        </div>
-                        <button>Comprar</button>
-                    </div>
-                </div>
+            {/*--------------- Text Message ---------------*/}
+            <div className = "unavailable">
+                <p>Não encontramos passagens disponíveis para sua busca.</p>
+                <p>Tente Novamente.</p>
+                <p><Link to = "/"></Link></p>
             </div>
             {/*--------------- Footer ---------------*/}
             <div className="footer">
@@ -79,4 +61,4 @@ function Search() {
     )
 }
 
-export default Search;
+export default UnavailableSearch;

@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import Registration from './pages/Registration';
 import Search from './pages/Busca';
+import UnavailableSearch from './pages/Busca-Indisponivel'
 
 function Routes() {
     return ( 
@@ -14,6 +15,7 @@ function Routes() {
                 <Route path="/login" component={Login} />
                 <Route path="/registration" component={Registration} />
                 <Route path="/busca" component={Search} />
+                <Route path="/busca-indisponivel" component={UnavailableSearch} />
             </Switch>
         </BrowserRouter>
     );

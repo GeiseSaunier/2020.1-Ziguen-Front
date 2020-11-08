@@ -1,6 +1,6 @@
 /*--------------- SEARCH PAGE ---------------*/
 
-#busca {
+#busca-indisponivel {
     width: 100%;
     height: 100%;
 
@@ -80,80 +80,15 @@
     opacity: 0.7;
 }
 
-/*--------------- CARDS ---------------*/
+/*---------------- TEXT MESSAGE ---------------*/
 
-#busca .cards .card {
-    width: 55%;
-    border-radius: 6px;
-    margin-left: 20%;
-    border: 1px solid#6D6D6D;
-}
-
-#busca .cards .card .container {
-    display: inline-flex;
-    margin-bottom: 3%;
-    margin-top: 2%;
-}
-
-#busca .cards .card .img-barco {
-    width: 97%;
-    margin-left: 4.2px;
-    
-}
-
-#busca .cards .card .container .titulo {
-    color: black;
-    text-align: left;
-    margin-left: 13%;
-    font-weight: lighter;
-    margin-top: -2.5%;
-}
-
-#busca .cards .card .container .titulo p {
-    margin-left: 5%;
-}
-
-#busca .cards .card .container .informacoes {
-    margin-top: -2.5%;
-    margin-left: 13%;
-}
-
-#busca .cards .card .container .preco {
-    margin-top: -2.5%;
-    margin-left: 13%;
-}
-
-#busca .cards .card .container h5 {
-    color: #508364;
+.unavailable {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-size: larger;
     font-weight: bold;
-    font-size: 95%;
-}
-
-#busca .cards .card .container p {
-    font-size: 16px;
-    text-align: left;
-    margin-left: 10%;
-}
-
-#busca .cards .card .container button {
-    background-color:#21A780;
-    border-color:#21A780;
-    border-radius: 7px;
-    color: #ffffff;
-    font-size: 14px;
-    margin-left: 25%;
-    width: 20%;
-    outline-style: none;
-    margin-top: 5%;
-    margin-bottom: 2%;
-}
-
-#busca .cards .card .container button:hover {
-    background-color: #d9d9d9;
-    color: #000000;
-    border-color: #d9d9d9;
-}
-
-#busca .cards .card .space {
-    height: 10%;
+    color: rgb(130, 129, 129);
 }
