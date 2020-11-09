@@ -17,12 +17,12 @@ export default function Registration() {
             <div id="form">
                 <h1>Cadastro</h1><br></br>
 
-                <Input className="input-box" type="email" name="email" placeholder="   E-mail"/><br></br>
                 <Input className="input-box" type="name" name="name" placeholder="   Nome Completo"/><br></br>
+                <Input className="input-box" type="cpf" name="cpf" placeholder="   CPF"/><br></br>
+                <Input className="input-box" type="email" name="email" placeholder="   E-mail"/><br></br>
                 <Input className="input-box" type="password" name="password" placeholder="   Senha"/><br></br>
                 <Input className="input-box" type="password" name="password" placeholder="   Confirmar Senha"/><br></br>
-                <Input className="input-box" type="cpf" name="cpf" placeholder="   CPF"/><br></br>
-
+               
                 <button className="login-button" type="submit">Entrar</button><br></br>
 
             </div>
