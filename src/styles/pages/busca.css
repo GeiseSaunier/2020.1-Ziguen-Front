@@ -8,84 +8,14 @@
     justify-content: center;
 }
 
-/*--------------- SEARCH ----------------*/
-
-.search {
-    background-color: #85BEAB;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.search p {
-    color: #ffffff;
-    text-align: center;
-    margin-top: 20px;
-    font-weight: bolder;
-}
-
-/*---------------- SEARCH LABELS ---------------*/
-
-.labels {
-    margin-top: 4%;
-    padding-left: 15%;
-}
-
-.search .labels label {
-    font-size: 16px;
-    color: #ffffff;
-}
-
-.search .labels #destination, .search .labels #day {
-    margin-left: 21.2%;
-}
-
-/*---------------- SEARCH INPUTS ---------------*/
-
-.search .input-block {
-    color: #ffffff;
-    padding-left: 13%;
-    padding-top: 5px;
-    margin-bottom: 4%;
-}
-
-.search .input-block input {
-    border-radius: 8px;
-    border-color: transparent;
-    padding: 0.3%;
-    margin-left: 30px;
-    outline-style: none;
-}
-
-.search .input-block #destination, #day{
-    margin-left: 4%;
-}
-
-.input-block::placeholder {
-    color: grey;
-}
-
-.search .input-block button {
-    background-color: whitesmoke;
-    border-radius: 7px;
-    padding: 0.5%;
-    margin-left: 2%;
-    border-color: transparent;
-    color: rgba(0, 0, 0, 0.707);
-    font-size: 16px;
-    outline-style: none;
-}
-
-.search .input-block button:hover {
-    opacity: 0.7;
-}
-
 /*--------------- CARDS ---------------*/
 
 #busca .cards .card {
     width: 55%;
     border-radius: 6px;
     margin-left: 20%;
+    margin-top: 3%;
+    margin-bottom: 3%;
     border: 1px solid#6D6D6D;
 }
 
@@ -98,7 +28,6 @@
 #busca .cards .card .img-barco {
     width: 97%;
     margin-left: 4.2px;
-    
 }
 
 #busca .cards .card .container .titulo {

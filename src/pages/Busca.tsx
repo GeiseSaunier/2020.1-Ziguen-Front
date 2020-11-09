@@ -7,6 +7,7 @@ import instagramImg from '../images/instagram.svg'
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import '../styles/pages/busca.css'
 import '../styles/pages/header.css'
+import '../styles/pages/home.css'
 
 function Search() {
     return (
