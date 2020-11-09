@@ -16,12 +16,12 @@ export default function Register_Trip() {
         <Form onSubmit={handleSubmit}>
             <div id="form">
 
-                <Input className="input-box" type="name" name="origem" placeholder=""/>Origem:<br></br>
-                <Input className="input-box" type="name" name="destino" placeholder=""/>Destino:<br></br>
-                <Input className="input-box" type="name" name="embarcacao" placeholder=""/>Número da Embarcação:<br></br>
-                <Input className="input-box" type="name" name="data" placeholder=""/>Data:<br></br>
-                <Input className="input-box" type="name" name="hora" placeholder=""/>Hora:<br></br>
-                <Input className="input-box" type="name" name="preco" placeholder=""/>Preço:<br></br>
+                <Input className="input-box" type="name" name="origem" placeholder=" Origem"/><br></br>
+                <Input className="input-box" type="name" name="destino" placeholder=" Destino"/><br></br>
+                <Input className="input-box" type="name" name="embarcacao" placeholder=" Número da Embarcação"/><br></br>
+                <Input className="input-box" type="name" name="data" placeholder=" Data"/><br></br>
+                <Input className="input-box" type="name" name="hora" placeholder=" Hora"/><br></br>
+                <Input className="input-box" type="name" name="preco" placeholder=" Preço"/><br></br>
 
                 <button className="login-button" type="submit">Cadastrar</button><br></br>
 
