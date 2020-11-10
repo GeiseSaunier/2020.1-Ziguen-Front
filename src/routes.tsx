@@ -7,6 +7,7 @@ import Registration from './pages/Registration';
 import Adm_Home from './pages/adm/Adm_Home'
 import Register_Trip from './pages/adm/Register_Trip'
 import Adm_Owner from './pages/adm/Adm_Owner'
+import Listed_Trips from './pages/adm/Listed_Trips'
 
 function Routes() {
     return ( 
@@ -20,6 +21,7 @@ function Routes() {
                 <Route path="/adm_home" component={Adm_Home} />
                 <Route path="/register_trip" component={Register_Trip} />
                 <Route path="/adm_owner" component={Adm_Owner} />
+                <Route path="/listed_trips" component={Listed_Trips} />
             </Switch>
         </BrowserRouter>
     );
