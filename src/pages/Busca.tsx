@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import facebookImg from '../images/facebook.svg'
 import instagramImg from '../images/instagram.svg'
 
-import 'pure-react-carousel/dist/react-carousel.es.css';
 import '../styles/pages/busca.css'
 import '../styles/pages/header.css'
 import '../styles/pages/home.css'

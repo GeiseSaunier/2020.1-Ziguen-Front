@@ -9,7 +9,7 @@
     margin-right: 72%;
 }
 
-.mais-vendidas-link, .login-link, .sobre-link, .ajuda-link, .pagina-inicial-link, .registration-link {
+.mais-vendidas-link, .login-link, .sobre-link, .ajuda-link, .pagina-inicial-link, .registration-link, .logout-link {
     position: absolute;
     right: 0;
     top: 0;

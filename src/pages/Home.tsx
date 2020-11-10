@@ -52,11 +52,11 @@ function Home() {
                 <div className="input-block">
                     <div className="input-block1">
                         <b><label id="origin">Origem</label></b>
-                        <input id="origin" placeholder="Cidade" />
+                        <input id="origin" placeholder="Cidade" type = "search"/>
                     </div>
                     <div className="input-block2">
                         <b><label id="destination">Destino</label></b>
-                        <input id="destination" placeholder="Cidade" />
+                        <input id="destination" placeholder="Cidade" type = "search"/>
                     </div>
                     <div className="input-block3">
                         <b><label id="day">Data</label></b>

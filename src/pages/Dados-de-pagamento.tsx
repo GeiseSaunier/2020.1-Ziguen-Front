@@ -1,22 +1,24 @@
 import React from 'react';
 import logoImg from '../images/logo.png';
 import { Link } from 'react-router-dom';
+import PaymentData_Form from '../components/Form/Dados-de-pagamento';
+
 import facebookImg from '../images/facebook.svg'
 import instagramImg from '../images/instagram.svg'
 
-import '../styles/pages/busca-indisponivel.css'
+import '../styles/pages/busca.css'
 import '../styles/pages/header.css'
-import '../styles/pages/home.css'
+import '../styles/pages/dados-de-pagamento.css'
 
-function UnavailableSearch() {
+function PaymentData() {
     return (
-        <div id="busca-indisponivel">
+        <div id="payment-data">
             {/*--------------- Top Bar ---------------*/}
             <div className="top-bar">
                 <img src={logoImg} alt="Logo" className="img-logo" />
                 <div className="navbar">
                     <Link to="/" className="pagina-inicial-link">Página Inicial</Link>
-                    <Link to="./Login" className="login-link">Iniciar Sessão</Link>
+                    <Link to="/" className="login-link">Iniciar Sessão</Link>
                     <Link to="/" className="sobre-link">Sobre</Link>
                     <Link to="/" className="ajuda-link">Ajuda</Link>
                 </div>
@@ -24,31 +26,11 @@ function UnavailableSearch() {
                     <b><p>PASSAGENS FLUVIAIS</p></b>
                 </div>
             </div>
-            {/*--------------- Search ---------------*/}
-            <div className="search">
-                <b><p>Encontre suas passagens de Barco:</p></b>
-                <div className="input-block">
-                    <div className="input-block1">
-                        <b><label id="origin">Origem</label></b>
-                        <input id="origin" placeholder="Cidade" />
-                    </div>
-                    <div className="input-block2">
-                        <b><label id="destination">Destino</label></b>
-                        <input id="destination" placeholder="Cidade" />
-                    </div>
-                    <div className="input-block3">
-                        <b><label id="day">Data</label></b>
-                        <input id="day" placeholder="dd/mm/aa" type="date" />
-                    </div>
-                    <Link to="/"><button>Buscar</button></Link>
-                </div>
+
+            <div className="paymentdata_form">
+                    <PaymentData_Form />
             </div>
-            {/*--------------- Text Message ---------------*/}
-            <div className = "unavailable">
-                <p>Não encontramos passagens disponíveis para sua busca.</p>
-                <p>Tente Novamente.</p>
-                <p><Link to = "/"></Link></p>
-            </div>
+
             {/*--------------- Footer ---------------*/}
             <div className="footer">
                 <p>Barcos Parceiros</p>
@@ -65,4 +47,4 @@ function UnavailableSearch() {
     )
 }
 
-export default UnavailableSearch;
+export default PaymentData;

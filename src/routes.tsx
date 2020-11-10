@@ -6,6 +6,7 @@ import Login from './pages/Login';
 import Registration from './pages/Registration';
 import Search from './pages/Busca';
 import UnavailableSearch from './pages/Busca-Indisponivel'
+import PaymentData from './pages/Dados-de-pagamento'
 
 function Routes() {
     return ( 
@@ -16,6 +17,7 @@ function Routes() {
                 <Route path="/registration" component={Registration} />
                 <Route path="/busca" component={Search} />
                 <Route path="/busca-indisponivel" component={UnavailableSearch} />
+                <Route path="/dados-de-pagamento" component={PaymentData} />
             </Switch>
         </BrowserRouter>
     );
