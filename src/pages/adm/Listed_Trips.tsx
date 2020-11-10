@@ -5,7 +5,6 @@ import logoImg from '../../images/logo.png';
 import facebookImg from '../../images/facebook.svg'
 import instagramImg from '../../images/instagram.svg'
 
-import tickets from '../../images/printer.png'
 import lixo from '../../images/trash-can.png'
 import lapis from '../../images/pencil.png'
 
@@ -45,6 +44,23 @@ function Listed_Trips() {
                     <input type="search" id="busca" name="q" />
                     <button type="submit"><img src={lupa} alt="Lupa"/></button>
                 </form>
+
+                {/*--------------- Viagens listadas ---------------*/}
+                <div className="boats">
+                <div className="boat">
+                    <div className="num_identification">
+                        <strong>#0000</strong>
+                    </div>
+        
+                    <strong>Origem</strong> <strong>Data</strong>  <strong>Valor</strong> 
+                    <strong>Destino</strong> <strong>Horário</strong> <strong>Passagens disponíveis</strong>
+
+                    <div className="buttons_boat">
+                        <button className="delete-boat-button" type="button"><img src={lixo} alt="Deletar"/></button>
+                        <button className="edit-boat-button" type="button"><img src={lapis} alt="Editar"/></button>
+                    </div>
+                </div>
+            </div>
 
             {/*--------------- Footer ---------------*/}
             <div className="footer">
