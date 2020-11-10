@@ -11,18 +11,21 @@
 /*--------------- CARDS ---------------*/
 
 #busca .cards .card {
-    width: 55%;
+    width: 50%;
     border-radius: 6px;
-    margin-left: 20%;
+    margin-left: 25%;
     margin-top: 3%;
     margin-bottom: 3%;
     border: 1px solid#6D6D6D;
+    display: flex;
+    justify-content: center;
 }
 
 #busca .cards .card .container {
     display: inline-flex;
+    justify-content: center;
     margin-bottom: 3%;
-    margin-top: 2%;
+    margin-top: 4%;
 }
 
 #busca .cards .card .img-barco {
@@ -33,7 +36,6 @@
 #busca .cards .card .container .titulo {
     color: black;
     text-align: left;
-    margin-left: 13%;
     font-weight: lighter;
     margin-top: -2.5%;
 }
@@ -71,10 +73,10 @@
     color: #ffffff;
     font-size: 14px;
     margin-left: 25%;
-    width: 20%;
+    padding: 2%;
     outline-style: none;
-    margin-top: 5%;
-    margin-bottom: 2%;
+    margin-top: 4%;
+    margin-bottom: 4.5%;
 }
 
 #busca .cards .card .container button:hover {

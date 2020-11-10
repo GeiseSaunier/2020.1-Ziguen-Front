@@ -16,7 +16,7 @@ function UnavailableSearch() {
             <div className="top-bar">
                 <img src={logoImg} alt="Logo" className="img-logo" />
                 <div className="navbar">
-                    <Link to="/" className="mais-vendidas-link">Mais Vendidas</Link>
+                    <Link to="/" className="pagina-inicial-link">Página Inicial</Link>
                     <Link to="./Login" className="login-link">Iniciar Sessão</Link>
                     <Link to="/" className="sobre-link">Sobre</Link>
                     <Link to="/" className="ajuda-link">Ajuda</Link>
@@ -28,16 +28,20 @@ function UnavailableSearch() {
             {/*--------------- Search ---------------*/}
             <div className="search">
                 <b><p>Encontre suas passagens de Barco:</p></b>
-                <div className = "labels">
-                    <b><label id = "origin">Origem</label></b>
-                    <b><label id = "destination">Destino</label></b>
-                    <b><label id = "day">Data</label></b>
-                </div>
                 <div className="input-block">
-                    <input id="origin" placeholder = "Cidade"/>
-                    <input id="destination" placeholder = "Cidade"/>
-                    <input id="day" placeholder = "dd/mm/aa" type = "date"/>
-                    <Link to = "/"><button>Buscar</button></Link>
+                    <div className="input-block1">
+                        <b><label id="origin">Origem</label></b>
+                        <input id="origin" placeholder="Cidade" />
+                    </div>
+                    <div className="input-block2">
+                        <b><label id="destination">Destino</label></b>
+                        <input id="destination" placeholder="Cidade" />
+                    </div>
+                    <div className="input-block3">
+                        <b><label id="day">Data</label></b>
+                        <input id="day" placeholder="dd/mm/aa" type="date" />
+                    </div>
+                    <Link to="/"><button>Buscar</button></Link>
                 </div>
             </div>
             {/*--------------- Text Message ---------------*/}

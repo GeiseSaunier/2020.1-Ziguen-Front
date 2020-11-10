@@ -37,10 +37,10 @@ function Home() {
                     naturalSlideHeight={125}
                     totalSlides={3}
                 >
-                    <Slider className = "slider">
-                        <Slide index={0} className = "slide slide1"><img src={slide1Img} alt="slide1"/></Slide>
-                        <Slide index={1} className = "slide slide2"><img src={slide2Img} alt="slide2"/></Slide>
-                        <Slide index={2} className = "slide slide3"><img src={slide3Img} alt="slide3"/></Slide>
+                    <Slider className="slider">
+                        <Slide index={0} className="slide slide1"><img src={slide1Img} alt="slide1" /></Slide>
+                        <Slide index={1} className="slide slide2"><img src={slide2Img} alt="slide2" /></Slide>
+                        <Slide index={2} className="slide slide3"><img src={slide3Img} alt="slide3" /></Slide>
                     </Slider>
                     <ButtonBack className="button button-back">&#171;</ButtonBack>
                     <ButtonNext className="button button-next">&#187;</ButtonNext>
@@ -49,35 +49,39 @@ function Home() {
             {/*--------------- Search ---------------*/}
             <div className="search">
                 <b><p>Encontre suas passagens de Barco:</p></b>
-                <div className = "labels">
-                    <b><label id = "origin">Origem</label></b>
-                    <b><label id = "destination">Destino</label></b>
-                    <b><label id = "day">Data</label></b>
-                </div>
                 <div className="input-block">
-                    <input id="origin" placeholder = "Cidade"/>
-                    <input id="destination" placeholder = "Cidade"/>
-                    <input id="day" placeholder = "dd/mm/aa" type = "date"/>
-                    <Link to = "/"><button>Buscar</button></Link>
+                    <div className="input-block1">
+                        <b><label id="origin">Origem</label></b>
+                        <input id="origin" placeholder="Cidade" />
+                    </div>
+                    <div className="input-block2">
+                        <b><label id="destination">Destino</label></b>
+                        <input id="destination" placeholder="Cidade" />
+                    </div>
+                    <div className="input-block3">
+                        <b><label id="day">Data</label></b>
+                        <input id="day" placeholder="dd/mm/aa" type="date" />
+                    </div>
+                    <Link to="/"><button>Buscar</button></Link>
                 </div>
             </div>
             {/*--------------- Cards ---------------*/}
             <div className="cards">
                 <h3>Sugestões para Você!</h3>
-                <div className = "space"></div>
+                <div className="space"></div>
                 <div className="card">
                     <h4>Nome do barco</h4>
-                    <div className = "space"></div>
-                    <img src={barcoImg} className = "img-barco" alt = "barco"/>
+                    <div className="space"></div>
+                    <img src={barcoImg} className="img-barco" alt="barco" />
                     <div className="container">
                         <h5>Título</h5>
-                        <div className = "space"></div>
+                        <div className="space"></div>
                         <p>Descrição da passagem.</p>
                         <p>Ex: Preço e informações sobre o banco</p>
-                        <div className = "space"></div>
-                        <div className = "space"></div>
+                        <div className="space"></div>
+                        <div className="space"></div>
                         <button>Comprar</button>
-                        <div className = "space"></div>
+                        <div className="space"></div>
                     </div>
                 </div>
             </div>

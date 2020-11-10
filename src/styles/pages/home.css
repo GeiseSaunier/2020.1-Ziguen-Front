@@ -53,31 +53,20 @@
 
 /*---------------- SEARCH LABELS ---------------*/
 
-.search .labels {
+.search .input-block label{
     margin-top: 4%;
-    margin-right: 50.6%;
-    display: flex;
-    justify-content: center;
-}
-
-.search .labels label {
+    margin-bottom: 1%;
     font-size: 16px;
     color: #ffffff;
-}
-
-.search .labels #destination {
-    margin-left: 445%;
-}
-
-.search .labels #day {
-    margin-left: 1442%;
+    display: flex;
+    justify-content: center;
 }
 
 /*---------------- SEARCH INPUTS ---------------*/
 
 .search .input-block {
-    color: #ffffff;
     padding-top: 5px;
+    margin-top: 2%;
     margin-bottom: 4%;
     display: flex;
     justify-content: center;
@@ -86,13 +75,9 @@
 .search .input-block input {
     border-radius: 8px;
     border-color: transparent;
-    padding: 0.3%;
+    padding: 0.5%;
     margin-left: 30px;
     outline-style: none;
-}
-
-.search .input-block #destination, .search .input-block #day{
-    margin-left: 4%;
 }
 
 .input-block::placeholder {
@@ -103,7 +88,7 @@
     background-color: whitesmoke;
     border-radius: 7px;
     padding: 8%;
-    margin-top: 6%;
+    margin-top: 39%;
     margin-left: 100%;
     border-color: transparent;
     color: rgba(0, 0, 0, 0.707);
