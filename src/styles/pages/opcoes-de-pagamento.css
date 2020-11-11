@@ -60,6 +60,7 @@ h1 {
 }
 
 #opcoes-de-pagamento .formas-de-pagamento .division-bar {
+    position: absolute;
     height: 400px;
     margin-top: 32px;
 
