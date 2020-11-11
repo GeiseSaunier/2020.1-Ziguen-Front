@@ -7,6 +7,7 @@ import Registration from './pages/Registration';
 import Search from './pages/Busca';
 import UnavailableSearch from './pages/Busca-Indisponivel'
 import PaymentData from './pages/Dados-de-pagamento'
+import Payment from './pages/Opcoes-de-pagamento'
 
 function Routes() {
     return ( 
@@ -18,6 +19,7 @@ function Routes() {
                 <Route path="/busca" component={Search} />
                 <Route path="/busca-indisponivel" component={UnavailableSearch} />
                 <Route path="/dados-de-pagamento" component={PaymentData} />
+                <Route path="/pagamento" component={Payment} />
             </Switch>
         </BrowserRouter>
     );
