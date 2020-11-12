@@ -45,7 +45,7 @@ function Payment() {
                 </div>
                 <div className="division-bar"></div>
                 <div className = "boleto-bancario">
-                   <div>
+                    <div>
                         <input type = 'radio' name = "pagamento"/>
                         <label htmlFor=""> Boleto Bancário</label>
                     </div>
