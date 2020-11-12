@@ -17,7 +17,7 @@ Verifique sua versão
 
 2- Faça o clone do projeto
 
-       git clone https://github.com/fga-eps-mds/2020-1-Ziguen.git
+       git clone https://github.com/fga-eps-mds/2020.1-Ziguen-Front.git
        
 3- Crie uma conexao local do docker na sua máquina para que o docker do front e backend possam se comunicar.
 
