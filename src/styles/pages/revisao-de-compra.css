@@ -1,0 +1,132 @@
+#revisao-de-passagem {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+    justify-content: center;
+}
+
+h1 {
+    margin-bottom: 3%;
+}
+
+/*--------------- CARDS ---------------*/
+
+#revisao-de-passagem .cards .card {
+    width: 50%;
+    border-radius: 6px;
+    margin-left: 25%;
+    border: 1px solid#6D6D6D;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#revisao-de-passagem .cards .card h5 {
+    color: #508364;
+    font-weight: bold;
+    font-size: 95%;
+}
+
+#revisao-de-passagem .cards .card .container {
+    display: inline-flex;
+    justify-content: center;
+    margin-bottom: 3%;
+    margin-top: 4%;
+    margin-left: 12%;
+}
+
+#revisao-de-passagem .cards .card .container .qr-code img {
+    width: 30%;
+    margin-left: 15%;
+}
+
+
+#revisao-de-passagem .cards .card .container .pdf img {
+    width: 90%;
+    margin-right: 15%;
+}
+
+#revisao-de-passagem .cards .card .container1 {
+    display: inline-flex;
+    justify-content: center;
+    margin-bottom: 6%;
+    margin-top: 7%;
+}
+
+#revisao-de-passagem .cards .card .container .titulo, .container1 .saida-chegada, .container1 .horario, .container1 .cidade, .container1 .id {
+    color: black;
+    text-align: left;
+    font-weight: lighter;
+    margin-top: -2.5%;
+}
+
+#revisao-de-passagem .cards .card .container .titulo {
+    margin-top: 0%;
+}
+
+#revisao-de-passagem .cards .card .container .titulo h5{
+    font-size: 120%;
+}
+
+#revisao-de-passagem .cards .card .container .titulo p {
+    margin-left: 5%;
+    font-size: 22px;
+}
+
+#revisao-de-passagem .cards .card .container .informacoes, .container img, .container1 .horario, .container1 .cidade, .container1 .id {
+    margin-top: -2.5%;
+    margin-left: 13%;
+}
+
+#revisao-de-passagem .cards .card .container p, .container1 p {
+    font-size: 16px;
+    text-align: left;
+    margin-left: 10%;
+}
+
+#revisao-de-passagem .cards .card .container button {
+    background-color:transparent;
+    border-color:#85BEAB;
+    border-radius: 8px;
+    padding: 6%;
+    width: 110%;
+    outline-style: none;
+    margin-top: 4%;
+    margin-bottom: 4.5%;
+    display: flex;
+    justify-content: center;
+    margin-left: -90%;
+}
+
+#revisao-de-passagem .cards .card .container button:hover {
+    opacity: 0.5;
+}
+
+#revisao-de-passagem .botoes {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin-top: 2%;
+}
+
+#revisao-de-passagem .botoes button {
+    background-color:#21A780;
+    border-color:#21A780;
+    border-radius: 7px;
+    color: #ffffff;
+    font-size: 14px;
+    margin-left: 2%;
+    padding: 1%;
+    outline-style: none;
+}
+
+#revisao-de-passagem .botoes button:hover {
+    background-color: #d9d9d9;
+    color: #000000;
+    border-color: #d9d9d9;
+}
+
+#revisao-de-passagem .cards .card .space {
+    height: 10%;
+}

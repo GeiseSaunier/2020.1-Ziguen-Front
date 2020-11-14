@@ -3,8 +3,10 @@ import logoImg from '../images/logo.png';
 import { Link } from 'react-router-dom';
 import facebookImg from '../images/facebook.svg'
 import instagramImg from '../images/instagram.svg'
+import qrcodeImg from '../images/qr-code.png'
+import pdfImg from '../images/pdf.png'
 
-import '../styles/pages/busca.css'
+import '../styles/pages/revisao-de-compra.css'
 import '../styles/pages/header.css'
 import '../styles/pages/home.css'
 
@@ -24,6 +26,7 @@ function ReviewTicket() {
                     <b><p>PASSAGENS FLUVIAIS</p></b>
                 </div>
             </div>
+            <h1>Detalhes da Compra</h1>
             {/*--------------- Cards ---------------*/}
             <div className="cards">
                 <div className = "space"></div>
@@ -34,20 +37,48 @@ function ReviewTicket() {
                             <div className = "space"></div>
                             <p>Nome</p>
                         </div>
-                        <div className = "informacoes">
-                            <h5>Informações da Viagem:</h5>
+                        <div className = "qr-code">
+                            <img src={qrcodeImg} alt="QR Code"/>
+                        </div>
+                        <div className = "pdf">
+                            <button><img src={pdfImg} alt="Gerar PDF"/></button>
+                        </div>
+                    </div>
+                    <div className = "container1">
+                        <div className = "saida-chegada">
+                            <h5>Saída:</h5>
+                            <p>00/00/00</p>
                             <div className = "space"></div>
-                            <p>Descrição da passagem.</p>
+                            <h5>Chegada:</h5>
+                            <p>00/00/00</p>
                         </div>
-                        <div className = "preco">
-                            <h5>Preço:</h5>
-                            <div className = "space">
-                            </div><p>R$00,00</p>
+                        <div className = "horario">
+                            <h5>Horário:</h5>
+                            <p>00:00</p>
+                            <div className = "space"></div>
+                            <h5>Horário:</h5>
+                            <p>00:00</p>
                         </div>
-                        <button>Comprar</button>
+                        <div className = "cidade">
+                            <h5>Origem:</h5>
+                            <p>Cidade</p>
+                            <div className = "space"></div>
+                            <h5>Destino:</h5>
+                            <p>Cidade</p>
+                        </div>
+                        <div className = "id">
+                            <h5>ID:</h5>
+                            <p>0XOOXX</p>
+                        </div>
                     </div>
                 </div>
             </div>
+            {/*--------------- Botões ---------------*/}
+            <div className = "botoes">
+                <button>Cancelar Compra</button>
+                <button>Finalizar Compra</button>
+            </div>
+
             {/*--------------- Footer ---------------*/}
             <div className="footer">
                 <p>Barcos Parceiros</p>
