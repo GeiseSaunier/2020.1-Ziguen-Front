@@ -5,7 +5,7 @@ import logoImg from '../images/logo.png';
 import facebookImg from '../images/facebook.svg'
 import instagramImg from '../images/instagram.svg'
 import cartaoImg from '../images/cartao-de-credito.png'
-import boletoImg from '../images/boleto-bancario.png'
+import boletoImg from '../images/boleto-bancario.jpg'
 
 import '../styles/pages/opcoes-de-pagamento.css'
 import '../styles/pages/header.css'
@@ -49,7 +49,7 @@ function Payment() {
                         <input type = 'radio' name = "pagamento"/>
                         <label htmlFor=""> Boleto Bancário</label>
                     </div>
-                    <img src={boletoImg} alt="boleto"/>
+                    <img src = {boletoImg} alt="boleto"/>
                     <button>Gerar Boleto e Finalizar Compra</button>
                 </div>
             </div>
