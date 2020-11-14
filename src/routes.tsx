@@ -8,6 +8,8 @@ import Search from './pages/Busca';
 import UnavailableSearch from './pages/Busca-Indisponivel'
 import PaymentData from './pages/Dados-de-pagamento'
 import Payment from './pages/Opcoes-de-pagamento'
+import EditProfile from './pages/Editar-perfil'
+import ReviewTicket from './pages/Revisao-de-compra'
 
 function Routes() {
     return ( 
@@ -20,6 +22,8 @@ function Routes() {
                 <Route path="/busca-indisponivel" component={UnavailableSearch} />
                 <Route path="/dados-de-pagamento" component={PaymentData} />
                 <Route path="/pagamento" component={Payment} />
+                <Route path="/editar-perfil" component={EditProfile} />
+                <Route path="/revisao-de-compra" component={ReviewTicket} />
             </Switch>
         </BrowserRouter>
     );
