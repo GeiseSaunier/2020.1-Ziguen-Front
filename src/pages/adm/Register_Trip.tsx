@@ -26,9 +26,12 @@ function Register_Boat() {
             {/*------------- Form Viagem ------------*/}
             <div className="cadastro_viagem">
                 <h1>Cadastrar Viagem</h1>
-                <Register_Trip />
-            </div>
+                
+                <div className="form-cadastro-viagem">
+                    <Register_Trip />
+                </div>
 
+            </div>
 
             {/*--------------- Footer ---------------*/}
             <div className="footer">
