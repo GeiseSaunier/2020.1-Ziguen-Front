@@ -1,0 +1,43 @@
+.owners {
+    display: flex;
+    justify-content: center;
+}
+
+.owner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 1000px;
+    height: 100px;
+    padding: 20px;
+    
+    border: solid 2px;
+    border-color: #508364;
+    border-radius: 10px;
+
+    margin-top: 20px;
+
+    color: #508364;
+}
+
+.owner strong {
+    display: flex;
+    flex-direction: row;
+}
+
+.owner p{
+    color: black;
+    font-weight: lighter;
+    margin-left: 10px;
+}
+
+.owner_name {
+    border: solid 2px;
+    border-color: #508364;
+    border-radius: 7px;
+    padding: 25px;
+
+    color: #508364;
+}
