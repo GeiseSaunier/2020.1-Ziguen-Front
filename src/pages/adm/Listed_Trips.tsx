@@ -58,9 +58,19 @@ function Listed_Trips() {
                     <div className="num_identification">
                         <strong>#0000</strong>
                     </div>
-        
-                    <strong>Origem</strong> <strong>Data</strong>  <strong className="valor">Valor</strong>
-                    <strong>Destino</strong> <strong>Horário</strong> <strong>Passagens disponíveis</strong>
+
+                    <div className="data-trip">
+                        <strong>Origem: <p> Maués</p></strong>
+                        <strong>Destino: <p> Parintins</p></strong>
+                    </div>
+                    <div className="data-trip">
+                        <strong>Data: <p>10/10/2021</p></strong>
+                        <strong>Horário: <p>12:00</p></strong>
+                    </div>
+                    <div className="data-trip">
+                        <strong>Valor: <p>R$ 50,00</p></strong>
+                        <strong>Passagens disponíveis: <p>45</p></strong>
+                    </div>
 
                     <div className="buttons_boat">
                         <button className="delete-boat-button" type="button"><img src={lixo} alt="Deletar"/></button>

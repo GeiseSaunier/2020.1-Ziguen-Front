@@ -37,3 +37,13 @@
     display: flex;
     justify-content: space-between;
 }
+
+.data-trip strong{  
+    color: #508364;
+}
+
+.data-trip p {
+    color: black;
+    font-weight: lighter;
+    margin-left: 10px;
+}
