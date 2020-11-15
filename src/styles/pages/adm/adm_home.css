@@ -108,7 +108,7 @@
     align-items: center;
 }
 
-.boat-trips-button, .delete-boat-button, .edit-boat-button {
+.boat-trips-button, .delete-boat-button, .edit-boat-button, .trips-button {
     height: 60px;
     width: 60px;
 
@@ -119,11 +119,11 @@
     margin-left: 10px;
 }
 
-.boat-trips-button img, .delete-boat-button img, .edit-boat-button img {
+.boat-trips-button img, .delete-boat-button img, .edit-boat-button img, .trips-button img {
     height: 40px;
 }
 
-.boat-trips-button:hover, .delete-boat-button:hover, .edit-boat-button:hover { 
+.boat-trips-button:hover, .delete-boat-button:hover, .edit-boat-button:hover, .trips-button:hover { 
     background-color:#d9d9d9;
     opacity:0.8;
 }

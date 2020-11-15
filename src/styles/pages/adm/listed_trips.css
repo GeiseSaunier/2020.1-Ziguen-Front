@@ -1,0 +1,39 @@
+
+.boat-info {
+    width: 1000px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.boat-image img {
+    width: 120px;
+    border-radius: 7px;
+}
+
+.boat-name {
+    display: flex;
+    align-items: center;
+    color: #508364;
+}
+
+.boat-trips-info {
+    background-color: #508364;
+    border-radius: 7px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.boat-trips-info strong {
+    color: white;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+
+.saudacao {
+    display: flex;
+    justify-content: space-between;
+}

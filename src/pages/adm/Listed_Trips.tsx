@@ -4,10 +4,11 @@ import { Link } from 'react-router-dom';
 import logoImg from '../../images/logo.png';
 import facebookImg from '../../images/facebook.svg'
 import instagramImg from '../../images/instagram.svg'
-
 import lixo from '../../images/trash-can.png'
 import lapis from '../../images/pencil.png'
+import Barco from '../../images/barco-ilustracao.jpg'
 
+import '../../styles/pages/adm/listed_trips.css'
 
 import lupa from '../../images/lupa.jpg'
 
@@ -27,32 +28,38 @@ function Listed_Trips() {
             </div>
 
             <div className="boats">
-                <div className="boat">
-                    <div className="num_identification">
-                        <strong>#0000</strong>    
+                <div className="boat-info">
+                    <div className="boat-image">
+                            <img src={Barco} alt="Foto Barco"/>   
                     </div>
-                    <strong>Barco: Ziguen x</strong>
-                    <strong>Total de viagens: 100 Viagens Viagens passadas: 200 Viagens futuras: 800</strong>
+                    <div className="boat-name">
+                        <strong>Barco: <br /> Ziguen x</strong>
+                    </div>
+                    <div className="boat-trips-info">
+                        <strong>Total de viagens: 100 </strong>
+                        <strong>Viagens passadas: 200 </strong>
+                        <strong>Viagens futuras: 800 </strong>
+                    </div>
                 </div>
             </div>
 
-             {/*--------------- Viagens ---------------*/}
-             <div className="saudacao">
+            {/*--------------- Viagens ---------------*/}
+            <div className="saudacao">
                 <h1>Viagens</h1>
-            </div>
+            
                 <form className="search-bar" action=" " method="post">
                     <input type="search" id="busca" name="q" />
                     <button type="submit"><img src={lupa} alt="Lupa"/></button>
                 </form>
-
+            </div>
                 {/*--------------- Viagens listadas ---------------*/}
-                <div className="boats">
+            <div className="boats">
                 <div className="boat">
                     <div className="num_identification">
                         <strong>#0000</strong>
                     </div>
         
-                    <strong>Origem</strong> <strong>Data</strong>  <strong>Valor</strong> 
+                    <strong>Origem</strong> <strong>Data</strong>  <strong className="valor">Valor</strong>
                     <strong>Destino</strong> <strong>Horário</strong> <strong>Passagens disponíveis</strong>
 
                     <div className="buttons_boat">
