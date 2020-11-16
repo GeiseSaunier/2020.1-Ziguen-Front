@@ -8,11 +8,11 @@ import lixo from '../../images/trash-can.png'
 import lapis from '../../images/pencil.png'
 import lupa from '../../images/lupa.jpg'
 
-import '../../styles/pages/adm/adm_owner.css'
+import '../../styles/pages/adm/listed_owners.css'
 
-function Adm_Owner() {
+function Listed_Owners() {
     return (
-        <div id="adm_owner">
+        <div id="listed_owners">
             {/*--------------- Top Bar ---------------*/}
             <div className="top-bar">
                 <img src={logoImg} alt="Logo" className="img-logo" />
@@ -65,4 +65,4 @@ function Adm_Owner() {
         </div>
     )
 }
-export default Adm_Owner;
+export default Listed_Owners;
