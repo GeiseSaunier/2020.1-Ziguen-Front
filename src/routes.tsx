@@ -8,6 +8,7 @@ import Adm_Home from './pages/adm/Adm_Home'
 import Register_Trip from './pages/adm/Register_Trip'
 import Adm_Owner from './pages/adm/Adm_Owner'
 import Listed_Trips from './pages/adm/Listed_Trips'
+import Register_Owner from './pages/adm/Register_Owner';
 
 function Routes() {
     return ( 
@@ -20,6 +21,7 @@ function Routes() {
                 {/*-------ADM------*/}
                 <Route path="/adm_home" component={Adm_Home} />
                 <Route path="/register_trip" component={Register_Trip} />
+                <Route path="/register_owner" component={Register_Owner} />
                 <Route path="/adm_owner" component={Adm_Owner} />
                 <Route path="/listed_trips" component={Listed_Trips} />
             </Switch>

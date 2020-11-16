@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Register_Trips from '../../components/Form/Register_Trip';
+import Register_Owners from '../../components/Form/Register_Owner';
 
 import '../../styles/pages/adm/register_trip.css'
 
@@ -8,7 +8,7 @@ import logoImg from '../../images/logo.png';
 import facebookImg from '../../images/facebook.svg'
 import instagramImg from '../../images/instagram.svg'
 
-function Register_Trip() {
+function Register_Owner() {
     return (
         <div id="adm_home">
             {/*--------------- Top Bar ---------------*/}
@@ -25,10 +25,10 @@ function Register_Trip() {
 
             {/*------------- Form Viagem ------------*/}
             <div className="cadastro_viagem">
-                <h1>Cadastrar Viagem</h1>
+                <h1>Cadastrar Proprietário</h1>
                 
                 <div className="form-cadastro-viagem">
-                    <Register_Trips />
+                    <Register_Owners />
                 </div>
 
             </div>
@@ -45,4 +45,4 @@ function Register_Trip() {
         </div>
     )
 }
-export default Register_Trip;
+export default Register_Owner;
