@@ -66,6 +66,7 @@
 .boat_photo {
     width: 120px;
     margin-left: 0px;
+    border-radius: 7px;
 }
 
 .boat strong {

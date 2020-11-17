@@ -30,7 +30,7 @@ function Listed_Owners() {
             <div className="saudacao">
                 <div className="title">
                     <h1>Proprietários</h1>
-                    <Link to="/register_owner" className="register-button"><img src={plus} alt="Cadastrar Proprietário"/></Link>
+                    <button className="register-button" type="button"><img src={plus} alt="Cadastrar Proprietário"/></button>
                 </div>
 
                 <form className="search-bar" action=" " method="post">
