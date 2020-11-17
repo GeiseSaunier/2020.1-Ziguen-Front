@@ -7,7 +7,6 @@ import pdfImg from '../images/pdf.png'
 
 import '../styles/pages/passagens-cliente.css'
 import '../styles/pages/header.css'
-import '../styles/pages/home.css'
 
 function ClientTicket() {
     return (
@@ -21,9 +20,16 @@ function ClientTicket() {
                     <Link to="/" className="sobre-link">Sobre</Link>
                     <Link to="/" className="ajuda-link">Ajuda</Link>
                 </div>
+                
                 <div className="field">
                     <b><p>PASSAGENS FLUVIAIS</p></b>
                 </div>
+            </div>
+            
+
+            <div className="info">
+                <h1>Olá fulano de tal!!</h1>
+                <p>Estas são suas passagens compradas por ordem de última compra.</p>
             </div>
             {/*--------------- Cards ---------------*/}
             <div className="cards">
@@ -56,6 +62,7 @@ function ClientTicket() {
                         </div>
                     </div>
                 </div>
+                <button>Detail</button>
             </div>
             {/*--------------- Footer ---------------*/}
             <div className="footer">
