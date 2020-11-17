@@ -28,8 +28,8 @@ function ClientTicket() {
             
 
             <div className="info">
-                <h1>Olá fulano de tal!!</h1>
-                <p>Estas são suas passagens compradas por ordem de última compra.</p>
+                <h1>Olá, Pessoa!</h1>
+                <p>Veja sua lista de passagens</p>
             </div>
             {/*--------------- Cards ---------------*/}
             <div className="cards">
@@ -61,8 +61,8 @@ function ClientTicket() {
                             <button><img src={pdfImg} alt="Gerar PDF" /></button>
                         </div>
                     </div>
+                    <button>Ver mais</button>
                 </div>
-                <button>Detail</button>
             </div>
             {/*--------------- Footer ---------------*/}
             <div className="footer">
