@@ -1,0 +1,80 @@
+#passagens-cliente {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+    justify-content: center;
+}
+
+/*--------------- CARDS ---------------*/
+
+#passagens-cliente .cards .card {
+    width: 50%;
+    border-radius: 6px;
+    margin-left: 25%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border: 1px solid#6D6D6D;
+    display: flex;
+    justify-content: center;
+}
+
+#passagens-cliente .cards .card .passagem {
+    display: inline-flex;
+    justify-content: space-evenly;
+    margin-bottom: 3%;
+    margin-top: 4%;
+}
+
+#passagens-cliente .cards .card .passagem .pdf img {
+    width: 90%;
+}
+
+#passagens-cliente .cards .card .passagem .saida-chegada {
+    color: black;
+    text-align: left;
+    font-weight: lighter;
+    margin-top: -2.5%;
+}
+
+#passagens-cliente .cards .card .passagem .saida-chegada p {
+    margin-left: 5%;
+}
+
+#passagens-cliente .cards .card .passagem .horario, .passagem .cidade, .passagem .id {
+    margin-top: -2.5%;
+}
+
+#passagens-cliente .cards .card .passagem h5 {
+    color: #508364;
+    font-weight: bold;
+    font-size: 95%;
+}
+
+#passagens-cliente .cards .card .passagem p {
+    font-size: 16px;
+    text-align: left;
+    margin-left: 10%;
+}
+
+#passagens-cliente .cards .card .passagem button {
+    background-color:transparent;
+    border-color:#85BEAB;
+    border-radius: 8px;
+    padding: 6%;
+    width: 65%;
+    outline-style: none;
+    margin-top: 4%;
+    margin-bottom: 4.5%;
+    display: flex;
+    justify-content: center;
+    margin-left: 170%;
+}
+
+#passagens-cliente .cards .card .passagem button:hover {
+    opacity: 0.5;
+}
+
+#passagens-cliente .cards .card .space {
+    height: 10%;
+}

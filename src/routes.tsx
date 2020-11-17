@@ -10,6 +10,7 @@ import PaymentData from './pages/Dados-de-pagamento'
 import Payment from './pages/Opcoes-de-pagamento'
 import EditProfile from './pages/Editar-perfil'
 import ReviewTicket from './pages/Revisao-de-compra'
+import ClientTicket from './pages/Passagens-cliente'
 
 function Routes() {
     return ( 
@@ -24,6 +25,7 @@ function Routes() {
                 <Route path="/pagamento" component={Payment} />
                 <Route path="/editar-perfil" component={EditProfile} />
                 <Route path="/revisao-de-compra" component={ReviewTicket} />
+                <Route path="/passagens-cliente" component={ClientTicket} />
             </Switch>
         </BrowserRouter>
     );
