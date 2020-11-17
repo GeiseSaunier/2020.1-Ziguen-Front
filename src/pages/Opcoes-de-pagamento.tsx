@@ -54,6 +54,10 @@ function Payment() {
                 </div>
             </div>
 
+            <div className = "continuar-compra">
+                <button>Continuar Comprando</button>
+            </div>
+
             <div className="footer">
                 <p>Barcos Parceiros</p>
                 <p>&#128674; &#128674; &#128674; &#128674;</p>

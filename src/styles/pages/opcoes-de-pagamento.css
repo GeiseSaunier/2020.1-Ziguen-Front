@@ -7,12 +7,27 @@ h1 {
     margin-top: 3%;
 }
 
+.continuar-compra {
+    display: flex;
+    justify-content: center;
+}
+
+.continuar-compra button {
+    background-color:#21A780;
+    border-color:#21A780;
+    border-radius: 7px;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 1%;
+    outline-style: none;
+}
+
 .formas-de-pagamento {
     margin-top: 4%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-bottom: 6%;
+    margin-bottom: 4%;
     flex-wrap: wrap-reverse;
 }
 
