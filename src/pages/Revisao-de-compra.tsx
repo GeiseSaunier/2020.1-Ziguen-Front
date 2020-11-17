@@ -76,7 +76,7 @@ function ReviewTicket() {
             {/*--------------- Botões ---------------*/}
             <div className = "botoes">
                 <button>Cancelar Compra</button>
-                <button>Finalizar Compra</button>
+                <button id = "finalizar-compra">Finalizar Compra</button>
             </div>
 
             {/*--------------- Footer ---------------*/}

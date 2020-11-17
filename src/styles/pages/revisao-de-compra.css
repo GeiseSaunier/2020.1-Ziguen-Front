@@ -106,7 +106,6 @@ h1 {
 #revisao-de-passagem .botoes {
     display: flex;
     justify-content: center;
-    width: 70%;
     margin-top: 2%;
 }
 
@@ -116,9 +115,12 @@ h1 {
     border-radius: 7px;
     color: #ffffff;
     font-size: 14px;
-    margin-left: 2%;
     padding: 1%;
     outline-style: none;
+}
+
+#revisao-de-passagem .botoes #finalizar-compra {
+    margin-left: 2%;
 }
 
 #revisao-de-passagem .botoes button:hover {
