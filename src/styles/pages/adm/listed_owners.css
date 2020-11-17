@@ -41,3 +41,28 @@
 
     color: #508364;
 }
+
+.title {
+    display: flex;
+    flex-direction: row;
+}
+
+.register-button {
+    border-radius: 50%;
+    background-color: #d9d9d9;
+    border: none;
+    height: 30px;
+    width: 30px;
+    margin-left:15px;
+    margin-top: 6px;
+
+    transition: 0.2s;
+}
+
+.register-button img {
+    height: 30px;
+}
+
+.register-button:hover {
+    background-color: #85BEAB;
+}

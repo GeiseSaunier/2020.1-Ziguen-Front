@@ -7,6 +7,7 @@ import instagramImg from '../../images/instagram.svg'
 import lixo from '../../images/trash-can.png'
 import lapis from '../../images/pencil.png'
 import Barco from '../../images/barco-ilustracao.jpg'
+import plus from '../../images/plus-sign.png'
 
 import '../../styles/pages/adm/listed_trips.css'
 
@@ -45,7 +46,10 @@ function Listed_Trips() {
 
             {/*--------------- Viagens ---------------*/}
             <div className="saudacao">
-                <h1>Viagens</h1>
+                <div className="title">
+                    <h1>Viagens</h1>
+                    <Link to="/register_trip" className="register-button"><img src={plus} alt="Cadastrar Viagem"/></Link>
+                </div>
             
                 <form className="search-bar" action=" " method="post">
                     <input type="search" id="busca" name="q" />

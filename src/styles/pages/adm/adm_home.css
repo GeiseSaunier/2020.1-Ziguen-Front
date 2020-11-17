@@ -4,40 +4,11 @@
     display: flex;
     margin-left: 150px;
     margin-top: 30px;
-}
 
-.dados {
     display: flex;
     justify-content: space-between;
 }
 
-.buttons-top {
-    margin-left: 150px;
-}
-
-.buttons-top .owner-button, .boat-button, .trip-button {
-    text-align: center;
-
-    width: 150px;
-    height: 40px;
-
-    margin-right: 20px;
-    background-color: #85BEAB;
-    border: #85BEAB;
-    border-radius: 10px;
-
-    font-size: 19px;
-    color: #ffffff;
-    font-weight: bold;
-
-    transition: 0.2s;
-}
-
-.buttons-top .owner-button:hover, .boat-button:hover, .trip-button:hover {
-    background-color: #d9d9d9;
-    border: #d9d9d9;
-    color: #000000;
-}
 
 /*------Barra de Busca------*/
 

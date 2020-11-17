@@ -7,6 +7,7 @@ import instagramImg from '../../images/instagram.svg'
 import lixo from '../../images/trash-can.png'
 import lapis from '../../images/pencil.png'
 import lupa from '../../images/lupa.jpg'
+import plus from '../../images/plus-sign.png' 
 
 import '../../styles/pages/adm/listed_owners.css'
 
@@ -27,8 +28,11 @@ function Listed_Owners() {
 
              {/*--------------- Mensagem ao Proprietário ---------------*/}
             <div className="saudacao">
-                <h1>Proprietários</h1>
-            
+                <div className="title">
+                    <h1>Proprietários</h1>
+                    <Link to="/register_owner" className="register-button"><img src={plus} alt="Cadastrar Proprietário"/></Link>
+                </div>
+
                 <form className="search-bar" action=" " method="post">
                     <input type="search" id="busca" name="q" />
                     <button type="submit"><img src={lupa} alt="Lupa"/></button>

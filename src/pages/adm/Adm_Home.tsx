@@ -11,6 +11,7 @@ import barco1 from '../../images/barco-ilustracao.jpg'
 import tickets from '../../images/ticket.jpeg'
 import lixo from '../../images/trash-can.png'
 import lapis from '../../images/pencil.png'
+import plus from '../../images/plus-sign.png'
 
 function Adm_Home() {
     return (
@@ -29,16 +30,11 @@ function Adm_Home() {
 
 
             <div className="saudacao">
-                <h1>Olá, administrador!</h1>
-            </div>
-
-            
-            <div className="dados">
-                <div className="buttons-top">
-                    <button className="owner-button" type="button">Proprietários</button>
-                    <button className="boat-button" type="button">Embarcações</button>
-                    <button className="trip-button" type="button">Viagens</button>
+                <div className="title">
+                    <h1>Embarcações</h1>
+                    <Link to="/register_boat" className="register-button"><img src={plus} alt="Cadastrar Embarcação"/></Link>
                 </div>
+            
                 <form className="search-bar" action=" " method="post">
                     <input type="search" id="busca" name="q" />
                     <button type="submit"><img src={lupa} alt="Lupa"/></button>
