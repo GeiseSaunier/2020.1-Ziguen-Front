@@ -37,8 +37,10 @@ function PaymentData() {
                 <p>&#128674; &#128674; &#128674; &#128674;</p>
                 <p className="hr"></p>
                 <p>Nossas redes sociais</p>
-                <img src={instagramImg} alt="Instagram" className="instagram-logo" />
-                <img src={facebookImg} alt="Facebook" className="facebook-logo" />
+                <div className = "icones">
+                    <img src={instagramImg} alt="Instagram" className="instagram-logo" />
+                    <img src={facebookImg} alt="Facebook" className="facebook-logo" />
+                </div>
                 <p className="hr"></p>
                 <p className="space"></p>
                 <p>© 2020 - Ziguen - Vendas de Passagens Fluviais</p>

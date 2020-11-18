@@ -20,12 +20,12 @@ function ClientTicket() {
                     <Link to="/" className="sobre-link">Sobre</Link>
                     <Link to="/" className="ajuda-link">Ajuda</Link>
                 </div>
-                
+
                 <div className="field">
                     <b><p>PASSAGENS FLUVIAIS</p></b>
                 </div>
             </div>
-            
+
 
             <div className="info">
                 <h1>Olá, Pessoa!</h1>
@@ -63,8 +63,10 @@ function ClientTicket() {
                     </div>
                     <button>Ver mais</button>
                 </div>
-                <button>Continuar comprando</button>
-                <button>Cancelar passagens</button>
+                <div className="botoes">
+                    <button>Continuar comprando</button>
+                    <button id="botao-cancelar">Cancelar passagens</button>
+                </div>
             </div>
             {/*--------------- Footer ---------------*/}
             <div className="footer">
@@ -72,8 +74,10 @@ function ClientTicket() {
                 <p>&#128674; &#128674; &#128674; &#128674;</p>
                 <p className="hr"></p>
                 <p>Nossas redes sociais</p>
-                <img src={instagramImg} alt="Instagram" className="instagram-logo" />
-                <img src={facebookImg} alt="Facebook" className="facebook-logo" />
+                <div className = "icones">
+                    <img src={instagramImg} alt="Instagram" className="instagram-logo" />
+                    <img src={facebookImg} alt="Facebook" className="facebook-logo" />
+                </div>
                 <p className="hr"></p>
                 <p className="space"></p>
                 <p>© 2020 - Ziguen - Vendas de Passagens Fluviais</p>
