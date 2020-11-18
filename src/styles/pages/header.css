@@ -1,50 +1,28 @@
-.top-bar {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
 .top-bar .img-logo {
     width: 10%;
     margin-right: 72%;
 }
 
-.mais-vendidas-link, .login-link, .sobre-link, .ajuda-link, .pagina-inicial-link, .registration-link, .logout-link {
-    position: absolute;
-    right: 0;
-    top: 0;
-    margin-right: 28%;
+.top-bar .header{
+    display: flex;
+    flex-direction: row;
+}
 
-    line-height: 100px;
+.top-bar .navbar {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 6.5%;
+}
+
+.mais-vendidas-link, .login-link, .sobre-link, .ajuda-link, .pagina-inicial-link, .registration-link, .logout-link, .perfil-link {
     color: #508364;
     text-decoration: none;
     font-weight: normal;
-    font-size: 20px;
-
-    display: flex;
-    flex-direction: column;
-
-    text-align: right;
+    font-size: 16px;
 }
 
-.pagina-inicial-link {
-    margin-right: 27.3%;
-}
-
-.registration-link {
-    margin-right: 18%;
-}
-
-.login-link {
-    margin-right: 18%;
-}
-
-.sobre-link {
-    margin-right: 13%;
-}
-
-.ajuda-link {
-    margin-right: 8%;
+.mais-vendidas-link, .login-link, .sobre-link, .pagina-inicial-link, .registration-link, .logout-link, .perfil-link {
+    margin-right: 1%;
 }
 
 .pagina-inicial-link:hover,
@@ -52,6 +30,7 @@
 .login-link:hover,
 .sobre-link:hover,
 .ajuda-link:hover,
+.perfil-link:hover,
 .registration-link:hover
 {
     text-decoration: underline;
@@ -68,6 +47,4 @@
     font-size: 16px;
     font-weight: bolder;
     color: #ffffff;
-    margin-left: 79.6%;
-    margin-top: 0.4%;
 }

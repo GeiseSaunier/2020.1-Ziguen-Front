@@ -18,13 +18,16 @@ function Home() {
     return (
         <div id="home-page">
             {/*--------------- Top Bar ---------------*/}
-            <div className="top-bar">
-                <img src={logoImg} alt="Logo" className="img-logo" />
-                <div className="navbar">
-                    <Link to="/" className="mais-vendidas-link">Mais Vendidas</Link>
-                    <Link to="./Login" className="login-link">Iniciar Sessão</Link>
-                    <Link to="/" className="sobre-link">Sobre</Link>
-                    <Link to="/" className="ajuda-link">Ajuda</Link>
+           <div className="top-bar">
+                <div className = "header">
+                    <img src={logoImg} alt="Logo" className="img-logo" />
+                    <div className="navbar">
+                        <Link to="/" className="mais-vendidas-link">Mais Vendidas</Link>
+                        <Link to="./Login" className="login-link">Iniciar Sessão</Link>
+                        <Link to="/" className="perfil-link">Meu perfil</Link>
+                        <Link to="/" className="sobre-link">Sobre</Link>
+                        <Link to="/" className="ajuda-link">Ajuda</Link>
+                    </div>
                 </div>
                 <div className="field">
                     <b><p>PASSAGENS FLUVIAIS</p></b>
