@@ -67,7 +67,7 @@
 
 /*--------------- Botão detalhes ---------------*/
 
-#passagens-cliente .cards button{
+#passagens-cliente .cards .card button{
     background-color:#21A780;
     border-color:#21A780;
     border-radius: 7px;
@@ -77,6 +77,19 @@
     outline-style: none;
     margin-left: 45%;
     margin-top: 3%;
+}
+
+#passagens-cliente .cards button{
+    display: flex;
+    flex-direction: column;
+    background-color:#21A780;
+    border-color:#21A780;
+    color: #ffffff;
+    font-size: 14px;
+    border-radius: 7px;
+    margin-left: 25%;
+    margin-top: 1%;
+    padding: 1%;
 }
 
 #passagens-cliente .cards button:hover {
