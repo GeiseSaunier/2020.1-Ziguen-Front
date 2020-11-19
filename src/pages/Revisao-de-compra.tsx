@@ -18,8 +18,10 @@ function ReviewTicket() {
                 <div className = "header">
                     <img src={logoImg} alt="Logo" className="img-logo" />
                     <div className="navbar">
+                        <Link to="./Home-Cliente" className="pagina-inicial-link">Página Inicial</Link>
+                        <Link to="./Passagens-cliente" className="minhas-passagens-link">Minhas Passagens</Link>
                         <Link to="/" className="mais-vendidas-link">Mais Vendidas</Link>
-                        <Link to="./Login" className="login-link">Iniciar Sessão</Link>
+                        <Link to="/" className="logout-link">Encerrar Sessão</Link>
                         <Link to="/" className="sobre-link">Sobre</Link>
                         <Link to="/" className="ajuda-link">Ajuda</Link>
                     </div>

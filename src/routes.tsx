@@ -4,6 +4,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Registration from './pages/Registration';
+import ClientHome from './pages/Home-Cliente'
 import Search from './pages/Busca';
 import UnavailableSearch from './pages/Busca-Indisponivel'
 import PaymentData from './pages/Dados-de-pagamento'
@@ -19,6 +20,7 @@ function Routes() {
                 <Route path="/" exact component={Home} />
                 <Route path="/login" component={Login} />
                 <Route path="/registration" component={Registration} />
+                <Route path="/home-cliente" component={ClientHome} />
                 <Route path="/busca" component={Search} />
                 <Route path="/busca-indisponivel" component={UnavailableSearch} />
                 <Route path="/dados-de-pagamento" component={PaymentData} />

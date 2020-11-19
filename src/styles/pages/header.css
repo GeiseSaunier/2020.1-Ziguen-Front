@@ -16,28 +16,28 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 28%;
+    width: 60%;
     margin-right: 6%;
 }
 
-.mais-vendidas-link, .login-link, .sobre-link, .ajuda-link, .pagina-inicial-link, .registration-link, .logout-link, .perfil-link {
+.mais-vendidas-link, .login-link, .sobre-link, .ajuda-link, .home-link, .registration-link, .logout-link, .perfil-link, .pagina-inicial-link, .minhas-passagens-link {
     color: #508364;
     text-decoration: none;
     font-weight: normal;
     font-size: 18px;
 }
 
-.mais-vendidas-link, .login-link, .sobre-link, .pagina-inicial-link, .registration-link, .logout-link, .perfil-link {
-    margin-right: 2%;
+.mais-vendidas-link, .login-link, .sobre-link, .home-link, .registration-link, .logout-link, .perfil-link, .pagina-inicial-link, .minhas-passagens-link  {
+    margin-right: 3%;
 }
 
-.pagina-inicial-link:hover,
+.home-link:hover,
 .mais-vendidas-link:hover,
 .login-link:hover,
 .sobre-link:hover,
 .ajuda-link:hover,
 .perfil-link:hover,
-.registration-link:hover
+.registration-link:hover, .logout-link:hover, .pagina-inicial-link:hover, .minhas-passagens-link:hover
 {
     text-decoration: underline;
     color: #85BEAB;
