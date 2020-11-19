@@ -18,19 +18,18 @@ function Home() {
     return (
         <div id="home-page">
             {/*--------------- Top Bar ---------------*/}
-           <div className="top-bar">
+            <div className="top-bar">
                 <div className = "header">
                     <img src={logoImg} alt="Logo" className="img-logo" />
                     <div className="navbar">
                         <Link to="/" className="mais-vendidas-link">Mais Vendidas</Link>
                         <Link to="./Login" className="login-link">Iniciar Sessão</Link>
-                        <Link to="/" className="perfil-link">Meu perfil</Link>
                         <Link to="/" className="sobre-link">Sobre</Link>
                         <Link to="/" className="ajuda-link">Ajuda</Link>
                     </div>
                 </div>
                 <div className="field">
-                    <b><p>PASSAGENS FLUVIAIS</p></b>
+                    <p>PASSAGENS FLUVIAIS</p>
                 </div>
             </div>
             {/*--------------- Carousel --------------*/}
@@ -55,11 +54,11 @@ function Home() {
                 <div className="input-block">
                     <div className="input-block1">
                         <b><label id="origin">Origem</label></b>
-                        <input id="origin" placeholder="Cidade" type = "search"/>
+                        <input id="origin" placeholder="Cidade" type="search" />
                     </div>
                     <div className="input-block2">
                         <b><label id="destination">Destino</label></b>
-                        <input id="destination" placeholder="Cidade" type = "search"/>
+                        <input id="destination" placeholder="Cidade" type="search" />
                     </div>
                     <div className="input-block3">
                         <b><label id="day">Data</label></b>
@@ -94,7 +93,7 @@ function Home() {
                 <p>&#128674; &#128674; &#128674; &#128674;</p>
                 <p className="hr"></p>
                 <p>Nossas redes sociais</p>
-                <div className = "icones">
+                <div className="icones">
                     <img src={instagramImg} alt="Instagram" className="instagram-logo" />
                     <img src={facebookImg} alt="Facebook" className="facebook-logo" />
                 </div>

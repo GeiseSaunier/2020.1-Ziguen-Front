@@ -1,28 +1,34 @@
-.top-bar .img-logo {
-    width: 10%;
-    margin-right: 72%;
-}
-
-.top-bar .header{
+.top-bar .header {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    width: 100%;
 }
 
-.top-bar .navbar {
+.top-bar .header .img-logo {
+    display: flex;
+    align-items: center;
+    margin-left: 6%;
+}
+
+.top-bar .header .navbar {
     display: flex;
     justify-content: flex-end;
-    margin-right: 6.5%;
+    align-items: center;
+    width: 28%;
+    margin-right: 6%;
 }
 
 .mais-vendidas-link, .login-link, .sobre-link, .ajuda-link, .pagina-inicial-link, .registration-link, .logout-link, .perfil-link {
     color: #508364;
     text-decoration: none;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .mais-vendidas-link, .login-link, .sobre-link, .pagina-inicial-link, .registration-link, .logout-link, .perfil-link {
-    margin-right: 1%;
+    margin-right: 2%;
 }
 
 .pagina-inicial-link:hover,
@@ -39,12 +45,14 @@
 
 .top-bar .field {
     width: 100%;
-    height: 28px;
     background: #508364;
+    text-align: right;
 }
 
 .top-bar .field p {
     font-size: 16px;
-    font-weight: bolder;
+    font-weight: bold;
     color: #ffffff;
+    margin-right: 6%;
+    padding-top: 0.1%;
 }

@@ -15,12 +15,14 @@ function Payment() {
     return (
         <div id="opcoes-de-pagamento">
             <div className="top-bar">
-                <img src={logoImg} alt="Logo" className="img-logo" />
-                <div className="navbar">
-                    <Link to="/" className="pagina-inicial-link">Página Inicial</Link>
-                    <Link to="/" className="registration-link">Cadastrar-se</Link>
-                    <Link to="/" className="sobre-link">Sobre</Link>
-                    <Link to="/" className="ajuda-link">Ajuda</Link>
+                <div className = "header">
+                    <img src={logoImg} alt="Logo" className="img-logo" />
+                    <div className="navbar">
+                        <Link to="/" className="mais-vendidas-link">Mais Vendidas</Link>
+                        <Link to="./Login" className="login-link">Iniciar Sessão</Link>
+                        <Link to="/" className="sobre-link">Sobre</Link>
+                        <Link to="/" className="ajuda-link">Ajuda</Link>
+                    </div>
                 </div>
                 <div className="field">
                     <b><p>PASSAGENS FLUVIAIS</p></b>
