@@ -82,7 +82,9 @@ function Home() {
                         <p>Ex: Preço e informações sobre o banco</p>
                         <div className="space"></div>
                         <div className="space"></div>
-                        <button>Comprar</button>
+                        <div className = "botao-card">
+                            <button>Comprar</button>
+                        </div>
                         <div className="space"></div>
                     </div>
                 </div>

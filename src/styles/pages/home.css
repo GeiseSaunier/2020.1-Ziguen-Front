@@ -19,7 +19,7 @@
     border: none !important;
     font-size: 50px;
     z-index: 1;
-    top: 16%;
+    top: 17%;
     outline-style: none;
 }
 
@@ -127,9 +127,7 @@
 }
 
 #home-page .cards .card .img-barco {
-    width: 97%;
-    margin-left: 4.2px;
-    
+    width: 100%;
 }
 
 #home-page .cards .card h5 {
@@ -147,14 +145,18 @@
     margin-left: 4%;
 }
 
-#home-page .cards .card button {
+#home-page .cards .card .botao-card {
+    display: flex;
+    justify-content: center;
+}
+
+#home-page .cards .card .botao-card button {
     background-color:#21A780;
     border-color:#21A780;
     border-radius: 7px;
     color: #ffffff;
     font-size: 14px;
-    margin-left: 35.5%;
-    padding: 3.5%;
+    padding: 4%;
     outline-style: none;
 }
 
