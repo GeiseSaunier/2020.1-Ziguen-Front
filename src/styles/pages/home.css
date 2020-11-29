@@ -126,8 +126,13 @@
     font-style: italic;
 }
 
-#home-page .cards .card .img-barco {
-    width: 100%;
+#home-page .cards .card .img-card {
+    display: flex;
+    justify-content: center;
+}
+
+#home-page .cards .card .img-card .img-barco{
+    width: 97%;
 }
 
 #home-page .cards .card h5 {

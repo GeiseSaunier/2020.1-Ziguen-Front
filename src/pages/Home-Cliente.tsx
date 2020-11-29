@@ -75,7 +75,9 @@ function ClientHome() {
                 <div className="card">
                     <h4>Nome do barco</h4>
                     <div className="space"></div>
-                    <img src={barcoImg} className="img-barco" alt="barco" />
+                    <div className = "img-card">
+                        <img src={barcoImg} className="img-barco" alt="barco" />
+                    </div>
                     <div className="container">
                         <h5>Título</h5>
                         <div className="space"></div>
@@ -83,7 +85,9 @@ function ClientHome() {
                         <p>Ex: Preço e informações sobre o banco</p>
                         <div className="space"></div>
                         <div className="space"></div>
-                        <button>Comprar</button>
+                        <div className = "botao-card">
+                            <button>Comprar</button>
+                        </div>
                         <div className="space"></div>
                     </div>
                 </div>
