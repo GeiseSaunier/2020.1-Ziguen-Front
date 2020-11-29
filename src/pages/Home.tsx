@@ -74,7 +74,9 @@ function Home() {
                 <div className="card">
                     <h4>Nome do barco</h4>
                     <div className="space"></div>
-                    <img src={barcoImg} className="img-barco" alt="barco" />
+                    <div className = "img-card">
+                        <img src={barcoImg} className="img-barco" alt="barco" />
+                    </div>
                     <div className="container">
                         <h5>Título</h5>
                         <div className="space"></div>
