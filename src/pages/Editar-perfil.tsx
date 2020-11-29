@@ -14,7 +14,7 @@ function EditProfile() {
     return (
         <div id="editar-perfil-page">
             <div className="top-bar">
-                <div className = "header">
+                <div className="header">
                     <img src={logoImg} alt="Logo" className="img-logo" />
                     <div className="navbar">
                         <Link to="./Home-Cliente" className="pagina-inicial-link">Página Inicial</Link>
@@ -30,8 +30,11 @@ function EditProfile() {
                 </div>
             </div>
 
-            <div className="editar-perfil-form">
-                <EditarPerfil_Form />
+            <div className = "edicao-perfil">
+                <h1>Editar Perfil</h1>
+                <div className="editar-perfil-form">
+                    <EditarPerfil_Form />
+                </div>
             </div>
 
             <div className="footer">
@@ -39,7 +42,7 @@ function EditProfile() {
                 <p>&#128674; &#128674; &#128674; &#128674;</p>
                 <p className="hr"></p>
                 <p>Nossas redes sociais</p>
-                <div className = "icones">
+                <div className="icones">
                     <img src={instagramImg} alt="Instagram" className="instagram-logo" />
                     <img src={facebookImg} alt="Facebook" className="facebook-logo" />
                 </div>

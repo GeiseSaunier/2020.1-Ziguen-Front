@@ -14,20 +14,22 @@ export default function EditarPerfil() {
 
         <div className="editar-perfil">
 
-        <Form onSubmit={handleSubmit}>
-            <div id="form">
-                <h1>Editar Perfil</h1><br></br>
-
-                <Input className="input-box" type="email" name="email" placeholder="   E-mail"/><br></br>
-                <Input className="input-box" type="name" name="name" placeholder="   Nome Completo"/><br></br>
-                <Input className="input-box" type="password" name="password" placeholder="   Nova Senha"/><br></br>
-                <Input className="input-box" type="password" name="password" placeholder="   Confirmar Nova Senha"/><br></br>
-                <Input className="input-box" type="cpf" name="cpf" placeholder="   CPF"/><br></br>
-
-                <button className="perfil-button" type="submit">Finalizar</button><br></br>
-
-            </div>
-        </Form>
+            <Form onSubmit={handleSubmit}>
+                <div id="form">
+                    <div className="fields">
+                        <div className="group1">
+                            <Input className="input-box" type="email" name="email" placeholder="   E-mail" /><br></br>
+                            <Input className="input-box" type="name" name="name" placeholder="   Nome Completo" /><br></br>
+                            <Input className="input-box" type="password" name="password" placeholder="   Nova Senha" /><br></br>
+                        </div>
+                        <div className="group2">
+                            <Input className="input-box" type="password" name="password" placeholder="   Confirmar Nova Senha" /><br></br>
+                            <Input className="input-box" type="cpf" name="cpf" placeholder="   CPF" /><br></br>
+                        </div>
+                    </div>
+                    <button className="perfil-button" type="submit">Finalizar</button><br></br>
+                </div>
+            </Form>
 
         </div>
     );
