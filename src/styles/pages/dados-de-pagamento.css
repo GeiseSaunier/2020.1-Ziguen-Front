@@ -1,23 +1,29 @@
-#paymentdata {
-    width: 100%;
-    height: 100%;
-
-    position: relative;
-    justify-content: center;
+.dados-pagamentos {
+    margin-top: 30px;
 }
 
 .dados-pagamento {
+    border: none;
+}
+
+.paymentdata_form {
     display: flex;
     justify-content: center;
-    align-items: center;
+}
 
-    width: 570px;
-    height: 800px;
-    border: 3px solid;
-    border-radius: 20px;
-    border-color: #85BEAB;
-    margin-top: 30px;
-    margin-left: 31.3%;
+#form .fields {
+    display: flex;
+    flex-direction: row;
+}
+
+#form .fields .group1 {
+    margin-right: 30px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .dados-button {

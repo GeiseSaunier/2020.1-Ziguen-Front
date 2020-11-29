@@ -15,7 +15,7 @@ function PaymentData() {
         <div id="payment-data">
             {/*--------------- Top Bar ---------------*/}
             <div className="top-bar">
-                <div className = "header">
+                <div className="header">
                     <img src={logoImg} alt="Logo" className="img-logo" />
                     <div className="navbar">
                         <Link to="./Home-Cliente" className="pagina-inicial-link">Página Inicial</Link>
@@ -31,8 +31,11 @@ function PaymentData() {
                 </div>
             </div>
 
-            <div className="paymentdata_form">
+            <div className = "dados-pagamentos">
+                <h1>Dados de Pagamento</h1>
+                <div className="paymentdata_form">
                     <PaymentData_Form />
+                </div>
             </div>
 
             {/*--------------- Footer ---------------*/}
@@ -41,7 +44,7 @@ function PaymentData() {
                 <p>&#128674; &#128674; &#128674; &#128674;</p>
                 <p className="hr"></p>
                 <p>Nossas redes sociais</p>
-                <div className = "icones">
+                <div className="icones">
                     <img src={instagramImg} alt="Instagram" className="instagram-logo" />
                     <img src={facebookImg} alt="Facebook" className="facebook-logo" />
                 </div>
