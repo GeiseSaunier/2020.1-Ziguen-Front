@@ -9,7 +9,7 @@
     margin-right: 72%;
 }
 
-.mais-vendidas-link, .login-link, .sobre-link, .ajuda-link, .pagina-inicial-link, .registration-link {
+.mais-vendidas-link, .login-link, .sobre-link, .ajuda-link, .pagina-inicial-link, .registration-link, .inicio-link, .sair-link, .proprietario-link {
     position: absolute;
     right: 0;
     top: 0;
@@ -29,6 +29,18 @@
 
 .pagina-inicial-link {
     margin-right: 27.3%;
+}
+
+.proprietario-link {
+    margin-right: 24%;
+}
+
+.inicio-link {
+    margin-right: 17%;
+}
+
+.sair-link {
+    margin-right: 11.5%;
 }
 
 .registration-link {
@@ -52,7 +64,10 @@
 .login-link:hover,
 .sobre-link:hover,
 .ajuda-link:hover,
-.registration-link:hover
+.registration-link:hover,
+.inicio-link:hover,
+.sair-link:hover,
+.proprietario-link:hover
 {
     text-decoration: underline;
     color: #85BEAB;
@@ -68,6 +83,6 @@
     font-size: 16px;
     font-weight: bolder;
     color: #ffffff;
-    margin-left: 79.6%;
+    margin-left: 75%;
     margin-top: 0.4%;
 }
