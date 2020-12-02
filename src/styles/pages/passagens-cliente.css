@@ -1,0 +1,114 @@
+/*--------------- Tela de passagem de cliente ---------------*/
+#passagens-cliente {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+    justify-content: center;
+}
+
+/*--------------- info ---------------*/
+#passagens-cliente .info {
+    color: #6D6D6D;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*--------------- Cards ---------------*/
+#passagens-cliente .cards .card {
+    margin-top: 3%;
+    margin-left: 25%;
+    align-items: center;
+    width: 50%;
+    border: 1px solid#6D6D6D;
+    border-radius: 6px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#passagens-cliente .cards .card .passagem {
+    display: flex;
+    justify-content: space-around;
+}
+
+/*--------------- Card PDF ---------------*/
+#passagens-cliente .cards .card .passagem .pdf button {
+    width: 60%;
+    background-color:transparent;
+    border-color:#85BEAB;
+    border-radius: 8px;
+    /*align-content: center;*/
+    margin-top: 13.5%;
+    margin-left: 55%;
+}
+
+#passagens-cliente .cards .card .passagem .pdf button:hover {
+    opacity: 0.5;
+}
+
+#passagens-cliente .cards .card .passagem .pdf img {
+    width: 80%;
+    margin-top: 4%;
+}
+
+/*--------------- Card texto ---------------*/
+#passagens-cliente .cards .card .passagem h5 {
+    text-align: left;
+    color: #508364;
+    font-weight: bold;
+    font-size: 95%;
+}
+
+#passagens-cliente .cards .card .passagem p {
+    color: black;
+    text-align: left;
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+/*--------------- Botão detalhes ---------------*/
+
+#passagens-cliente .cards .card button {
+    background-color:#21A780;
+    border-color:#21A780;
+    border-radius: 7px;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 2%;
+    outline-style: none;
+    margin-left: 44%;
+    margin-top: 3%;
+}
+
+#passagens-cliente .cards .card button:hover {
+    background-color: #d9d9d9;
+    color: #000000;
+    border-color: #d9d9d9;
+}
+
+#passagens-cliente .cards .botoes {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-right: 25.5%;
+}
+
+#passagens-cliente .cards .botoes button {
+    background-color:#21A780;
+    border-color:#21A780;
+    color: #ffffff;
+    font-size: 14px;
+    border-radius: 7px;
+    margin-top: 3%;
+    padding: 1%;
+}
+
+#passagens-cliente .cards .botoes #botao-cancelar {
+    margin-left: 2%;
+}
+
+#passagens-cliente .cards .botoes button:hover {
+    background-color: #d9d9d9;
+    color: #000000;
+    border-color: #d9d9d9;
+}

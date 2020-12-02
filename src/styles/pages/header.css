@@ -1,24 +1,32 @@
-.top-bar {
+.top-bar .header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    width: 100%;
+}
+
+.top-bar .header .img-logo {
     display: flex;
     align-items: center;
-    flex-direction: column;
+    margin-left: 6%;
 }
 
-.top-bar .img-logo {
-    width: 10%;
-    margin-right: 72%;
+.top-bar .header .navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 60%;
+    margin-right: 6%;
 }
 
-.mais-vendidas-link, .login-link, .sobre-link, .ajuda-link, .pagina-inicial-link, .registration-link, .inicio-link, .sair-link, .proprietario-link {
-    position: absolute;
-    right: 0;
-    top: 0;
-    margin-right: 28%;
 
-    line-height: 100px;
+.mais-vendidas-link, .login-link, .sobre-link, .ajuda-link, .home-link, .registration-link, .logout-link, .perfil-link, .pagina-inicial-link, .minhas-passagens-link {
     color: #508364;
     text-decoration: none;
     font-weight: normal;
+
+ 
     font-size: 20px;
 
     display: flex;
@@ -45,29 +53,22 @@
 
 .registration-link {
     margin-right: 18%;
+
 }
 
-.login-link {
-    margin-right: 18%;
+.mais-vendidas-link, .login-link, .sobre-link, .home-link, .registration-link, .logout-link, .perfil-link, .pagina-inicial-link, .minhas-passagens-link  {
+    margin-right: 3%;
 }
 
-.sobre-link {
-    margin-right: 13%;
-}
-
-.ajuda-link {
-    margin-right: 8%;
-}
-
-.pagina-inicial-link:hover,
+.home-link:hover,
 .mais-vendidas-link:hover,
 .login-link:hover,
 .sobre-link:hover,
 .ajuda-link:hover,
-.registration-link:hover,
-.inicio-link:hover,
-.sair-link:hover,
-.proprietario-link:hover
+
+.perfil-link:hover,
+.registration-link:hover, .logout-link:hover, .pagina-inicial-link:hover, .minhas-passagens-link:hover
+
 {
     text-decoration: underline;
     color: #85BEAB;
@@ -75,14 +76,15 @@
 
 .top-bar .field {
     width: 100%;
-    height: 28px;
     background: #508364;
+    text-align: right;
 }
 
 .top-bar .field p {
     font-size: 16px;
-    font-weight: bolder;
+    font-weight: bold;
     color: #ffffff;
-    margin-left: 75%;
-    margin-top: 0.4%;
+    margin-right: 6%;
+    padding-top: 0.1%;
+
 }

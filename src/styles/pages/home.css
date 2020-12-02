@@ -37,14 +37,14 @@
 
 /*--------------- SEARCH ----------------*/
 
-#home-page .search {
+.search {
     background-color: #85BEAB;
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-#home-page .search p {
+.search p {
     color: #ffffff;
     text-align: center;
     margin-top: 20px;
@@ -53,39 +53,31 @@
 
 /*---------------- SEARCH LABELS ---------------*/
 
-.search .labels {
+.search .input-block label{
     margin-top: 4%;
-    padding-left: 15%;
-}
-
-.search .labels label {
+    margin-bottom: 1%;
     font-size: 16px;
     color: #ffffff;
-}
-
-.search .labels #destination, .search .labels #day {
-    margin-left: 21.2%;
+    display: flex;
+    justify-content: center;
 }
 
 /*---------------- SEARCH INPUTS ---------------*/
 
 .search .input-block {
-    color: #ffffff;
-    padding-left: 13%;
     padding-top: 5px;
+    margin-top: 2%;
     margin-bottom: 4%;
+    display: flex;
+    justify-content: center;
 }
 
 .search .input-block input {
     border-radius: 8px;
     border-color: transparent;
-    padding: 0.3%;
+    padding: 0.5%;
     margin-left: 30px;
     outline-style: none;
-}
-
-.search .input-block #destination, #day{
-    margin-left: 4%;
 }
 
 .input-block::placeholder {
@@ -95,8 +87,9 @@
 .search .input-block button {
     background-color: whitesmoke;
     border-radius: 7px;
-    padding: 0.5%;
-    margin-left: 2%;
+    padding: 8%;
+    margin-top: 39%;
+    margin-left: 100%;
     border-color: transparent;
     color: rgba(0, 0, 0, 0.707);
     font-size: 16px;
@@ -109,7 +102,7 @@
 
 /*--------------- CARDS ---------------*/
 
-.cards .space {
+#home-page .cards .space {
     height: 30px;
 }
 
@@ -119,27 +112,30 @@
     text-align: center;
 }
 
-.cards .card {
+#home-page .cards .card {
     width: 20%;
     border-radius: 6px;
     margin-left: 20.5%;
     border: 1px solid#6D6D6D;
 }
 
-.cards .card h4 {
+#home-page .cards .card h4 {
     color: #508364;
     text-align: center;
     margin-top: 12px;
     font-style: italic;
 }
 
-.cards .card .img-barco {
-    width: 97%;
-    margin-left: 4.2px;
-    
+#home-page .cards .card .img-card {
+    display: flex;
+    justify-content: center;
 }
 
-.cards .card h5 {
+#home-page .cards .card .img-card .img-barco{
+    width: 97%;
+}
+
+#home-page .cards .card h5 {
     color: black;
     text-align: left;
     margin-top: 12px;
@@ -148,24 +144,34 @@
     font-size: 14pt;
 }
 
-.cards .card p {
+#home-page .cards .card p {
     font-size:14px;
     text-align: left;
     margin-left: 4%;
 }
 
-.cards .card button {
+#home-page .cards .card .botao-card {
+    display: flex;
+    justify-content: center;
+}
+
+#home-page .cards .card .botao-card button {
     background-color:#21A780;
     border-color:#21A780;
     border-radius: 7px;
     color: #ffffff;
     font-size: 14px;
-    margin-left: 35.5%;
-    padding: 3.5%;
+    padding: 4%;
     outline-style: none;
 }
 
-.cards .card .space {
+#home-page .cards .card button:hover {
+    background-color: #d9d9d9;
+    color: #000000;
+    border-color: #d9d9d9;
+}
+
+#home-page .cards .card .space {
     height: 15px;
 }
 
