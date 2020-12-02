@@ -1,4 +1,3 @@
-
 .footer {
     position: relative;
     margin-top: 2rem;
@@ -28,16 +27,19 @@
   	overflow: visible;
 }
 
-.footer .instagram-logo {
-    height: 30px;
-    padding-left: 47.5%;
+.footer .icones {
+    display: flex;
+    justify-content: center;
     margin-top: 1%;
 }
 
-.footer .facebook-logo {
+.footer .icones .instagram-logo {
     height: 30px;
-    padding-left: 1%;
-    margin-top: 1%;
+}
+
+.footer .icones .facebook-logo {
+    height: 30px;
+    margin-left: 1%;
 }
 
 .footer .space {

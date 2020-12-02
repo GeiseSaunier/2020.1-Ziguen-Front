@@ -1,0 +1,90 @@
+/*--------------- SEARCH PAGE ---------------*/
+
+#busca {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+    justify-content: center;
+}
+
+/*--------------- CARDS ---------------*/
+
+#busca .cards .card {
+    width: 50%;
+    border-radius: 6px;
+    margin-left: 25%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border: 1px solid#6D6D6D;
+    display: flex;
+    justify-content: center;
+}
+
+#busca .cards .card .container {
+    display: inline-flex;
+    justify-content: center;
+    margin-bottom: 3%;
+    margin-top: 4%;
+}
+
+#busca .cards .card .img-barco {
+    width: 97%;
+    margin-left: 4.2px;
+}
+
+#busca .cards .card .container .titulo {
+    color: black;
+    text-align: left;
+    font-weight: lighter;
+    margin-top: -2.5%;
+}
+
+#busca .cards .card .container .titulo p {
+    margin-left: 5%;
+}
+
+#busca .cards .card .container .informacoes {
+    margin-top: -2.5%;
+    margin-left: 13%;
+}
+
+#busca .cards .card .container .preco {
+    margin-top: -2.5%;
+    margin-left: 13%;
+}
+
+#busca .cards .card .container h5 {
+    color: #508364;
+    font-weight: bold;
+    font-size: 95%;
+}
+
+#busca .cards .card .container p {
+    font-size: 16px;
+    text-align: left;
+    margin-left: 10%;
+}
+
+#busca .cards .card .container button {
+    background-color:#21A780;
+    border-color:#21A780;
+    border-radius: 7px;
+    color: #ffffff;
+    font-size: 14px;
+    margin-left: 25%;
+    padding: 2%;
+    outline-style: none;
+    margin-top: 4%;
+    margin-bottom: 4.5%;
+}
+
+#busca .cards .card .container button:hover {
+    background-color: #d9d9d9;
+    color: #000000;
+    border-color: #d9d9d9;
+}
+
+#busca .cards .card .space {
+    height: 10%;
+}

@@ -14,7 +14,7 @@ import slide2Img from '../images/slide-2-teste.jpg'
 import slide3Img from '../images/slide-3-teste.jpg'
 import barcoImg from '../images/barco-ilustracao.jpg'
 
-function Home() {
+function ClientHome() {
     return (
         <div id="home-page">
             {/*--------------- Top Bar ---------------*/}
@@ -23,7 +23,8 @@ function Home() {
                     <img src={logoImg} alt="Logo" className="img-logo" />
                     <div className="navbar">
                         <Link to="/" className="mais-vendidas-link">Mais Vendidas</Link>
-                        <Link to="./Login" className="login-link">Iniciar Sessão</Link>
+                        <Link to="./Passagens-cliente" className="minhas-passagens-link">Minhas Passagens</Link>
+                        <Link to="./Login" className="logout-link">Encerrar Sessão</Link>
                         <Link to="/" className="sobre-link">Sobre</Link>
                         <Link to="/" className="ajuda-link">Ajuda</Link>
                     </div>
@@ -93,6 +94,9 @@ function Home() {
             </div>
             {/*--------------- Footer ---------------*/}
             <div className="footer">
+                <p>Barcos Parceiros</p>
+                <p>&#128674; &#128674; &#128674; &#128674;</p>
+                <p className="hr"></p>
                 <p>Nossas redes sociais</p>
                 <div className="icones">
                     <img src={instagramImg} alt="Instagram" className="instagram-logo" />
@@ -106,4 +110,4 @@ function Home() {
     )
 }
 
-export default Home;
+export default ClientHome;
