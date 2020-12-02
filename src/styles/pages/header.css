@@ -20,11 +20,40 @@
     margin-right: 6%;
 }
 
+
 .mais-vendidas-link, .login-link, .sobre-link, .ajuda-link, .home-link, .registration-link, .logout-link, .perfil-link, .pagina-inicial-link, .minhas-passagens-link {
     color: #508364;
     text-decoration: none;
     font-weight: normal;
-    font-size: 18px;
+
+ 
+    font-size: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: right;
+}
+
+.pagina-inicial-link {
+    margin-right: 27.3%;
+}
+
+.proprietario-link {
+    margin-right: 24%;
+}
+
+.inicio-link {
+    margin-right: 17%;
+}
+
+.sair-link {
+    margin-right: 11.5%;
+}
+
+.registration-link {
+    margin-right: 18%;
+
 }
 
 .mais-vendidas-link, .login-link, .sobre-link, .home-link, .registration-link, .logout-link, .perfil-link, .pagina-inicial-link, .minhas-passagens-link  {
@@ -36,8 +65,10 @@
 .login-link:hover,
 .sobre-link:hover,
 .ajuda-link:hover,
+
 .perfil-link:hover,
 .registration-link:hover, .logout-link:hover, .pagina-inicial-link:hover, .minhas-passagens-link:hover
+
 {
     text-decoration: underline;
     color: #85BEAB;
@@ -55,4 +86,5 @@
     color: #ffffff;
     margin-right: 6%;
     padding-top: 0.1%;
+
 }
