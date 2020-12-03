@@ -9,7 +9,7 @@
 .top-bar .header .img-logo {
     display: flex;
     align-items: center;
-    margin-left: 6%;
+    margin-left: 10%;
 }
 
 .top-bar .header .navbar {
@@ -21,7 +21,7 @@
 }
 
 
-.mais-vendidas-link, .login-link, .sobre-link, .ajuda-link, .home-link, .registration-link, .logout-link, .perfil-link, .pagina-inicial-link, .minhas-passagens-link {
+.mais-vendidas-link, .login-link, .sobre-link, .ajuda-link, .home-link, .registration-link, .logout-link, .perfil-link, .pagina-inicial-link, .minhas-passagens-link, .inicio-link, .sair-link, .proprietario-link {
     color: #508364;
     text-decoration: none;
     font-weight: normal;
@@ -60,15 +60,27 @@
     margin-right: 3%;
 }
 
+.inicio-link{
+    margin-right: 7%;
+}
+
+.proprietario-link{
+    margin-right: 8%;
+}
+
 .home-link:hover,
 .mais-vendidas-link:hover,
 .login-link:hover,
 .sobre-link:hover,
 .ajuda-link:hover,
-
 .perfil-link:hover,
-.registration-link:hover, .logout-link:hover, .pagina-inicial-link:hover, .minhas-passagens-link:hover
-
+.inicio-link:hover,
+.sair-link:hover,
+.proprietario-link:hover,
+.registration-link:hover, 
+.logout-link:hover, 
+.pagina-inicial-link:hover, 
+.minhas-passagens-link:hover
 {
     text-decoration: underline;
     color: #85BEAB;
@@ -84,7 +96,7 @@
     font-size: 16px;
     font-weight: bold;
     color: #ffffff;
-    margin-right: 6%;
+    margin-right: 12%;
     padding-top: 0.1%;
 
 }

@@ -21,10 +21,8 @@ function Registration() {
                 <div className = "header">
                     <img src={logoImg} alt="Logo" className="img-logo" />
                     <div className="navbar">
-                        <Link to="/" className="home-link">Home</Link>
-                        <Link to="/" className="mais-vendidas-link">Mais Vendidas</Link>
-                        <Link to="/" className="sobre-link">Sobre</Link>
-                        <Link to="/" className="ajuda-link">Ajuda</Link>
+                        <Link to="/" className="home-link">Página Inicial</Link>
+                        <Link to="./about" className="sobre-link">Sobre Nós</Link>
                     </div>
                 </div>
                 <div className="field">
