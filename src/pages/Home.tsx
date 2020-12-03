@@ -24,8 +24,7 @@ function Home() {
                     <div className="navbar">
                         <Link to="/" className="mais-vendidas-link">Mais Vendidas</Link>
                         <Link to="./Login" className="login-link">Iniciar Sessão</Link>
-                        <Link to="/" className="sobre-link">Sobre</Link>
-                        <Link to="/" className="ajuda-link">Ajuda</Link>
+                        <Link to="./about" className="sobre-link">Sobre</Link>
                     </div>
                 </div>
                 <div className="field">

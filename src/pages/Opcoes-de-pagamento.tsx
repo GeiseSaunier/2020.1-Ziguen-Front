@@ -22,8 +22,7 @@ function Payment() {
                         <Link to="./Passagens-cliente" className="minhas-passagens-link">Minhas Passagens</Link>
                         <Link to="/" className="mais-vendidas-link">Mais Vendidas</Link>
                         <Link to="/" className="logout-link">Encerrar Sessão</Link>
-                        <Link to="/" className="sobre-link">Sobre</Link>
-                        <Link to="/" className="ajuda-link">Ajuda</Link>
+                        <Link to="./about" className="sobre-link">Sobre</Link>
                     </div>
                 </div>
                 <div className="field">
