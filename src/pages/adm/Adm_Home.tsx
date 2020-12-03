@@ -21,7 +21,7 @@ function Adm_Home() {
                 <div className="header">
                     <img src={logoImg} alt="Logo" className="img-logo" />
                     <div className="navbar">
-                        <Link to="/" className="inicio-link">Início</Link>
+                        <Link to="/adm_home" className="inicio-link">Início</Link>
                         <Link to="/listed_owners" className="proprietario-link">Proprietário</Link>
                         <Link to="/" className="sair-link">Sair</Link>
                     </div>
