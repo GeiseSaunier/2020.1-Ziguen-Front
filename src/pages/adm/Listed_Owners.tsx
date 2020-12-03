@@ -16,10 +16,12 @@ function Listed_Owners() {
         <div id="listed_owners">
             {/*--------------- Top Bar ---------------*/}
             <div className="top-bar">
-                <img src={logoImg} alt="Logo" className="img-logo" />
-                <div className="navbar">
-                    <Link to="/" className="inicio-link">Início</Link>
-                    <Link to="/" className="sair-link">Sair</Link>
+                <div className="header">
+                    <img src={logoImg} alt="Logo" className="img-logo" />
+                    <div className="navbar">
+                        <Link to="/" className="inicio-link">Início</Link>
+                        <Link to="/" className="sair-link">Sair</Link>
+                    </div>
                 </div>
                 <div className="field">
                     <b><p>PASSAGENS FLUVIAIS</p></b>
@@ -59,8 +61,10 @@ function Listed_Owners() {
              {/*--------------- Footer ---------------*/}
              <div className="footer">
                 <p>Nossas redes sociais</p>
-                <img src={instagramImg} alt="Instagram" className="instagram-logo" />
-                <img src={facebookImg} alt="Facebook" className="facebook-logo" />
+                <div className="icones">
+                    <img src={instagramImg} alt="Instagram" className="instagram-logo" />
+                    <img src={facebookImg} alt="Facebook" className="facebook-logo" />
+                </div>
                 <p className="hr"></p>
                 <p className="space"></p>
                 <p>© 2020 - Ziguen - Vendas de Passagens Fluviais</p>
