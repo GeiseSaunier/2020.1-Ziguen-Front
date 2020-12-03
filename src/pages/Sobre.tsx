@@ -16,9 +16,9 @@ function Sobre() {
                 <div className = "header">
                     <img src={logoImg} alt="Logo" className="img-logo" />
                     <div className="navbar">
-                        <Link to="/" className="mais-vendidas-link">Mais Vendidas</Link>
+                        <Link to="./Home-Cliente" className="pagina-inicial-link">Página Inicial</Link>
                         <Link to="./Login" className="login-link">Iniciar Sessão</Link>
-                        <Link to="/" className="sobre-link">Sobre</Link>
+                        <Link to="/" className="sobre-link">Sobre Nós</Link>
                     </div>
                 </div>
                 <div className="field">
@@ -26,6 +26,11 @@ function Sobre() {
                 </div>
             </div>
 
+            {/*--------------- Texto Sobre Nós ---------------*/}
+            <h1>Sobre Nós</h1>
+            <div className="caixa-texto-sobre">
+                <p className="texto-sobre">Somos estudantes da Universidade de Brasília e idealizamos a Ziguen, uma startup do ramo fluvial que atua no estado do Amazonas. Ela surgiu a partir da necessidade de uma plataforma que facilitasse a compra e venda de passagens de barco entre cidades, de forma digital. Lá, a comercialização de passagens era feita apenas manualmente, o que ocasianava filas e esperas desnecessárias. Por este motivo, viemos para contribuir com a população local nesse processo.</p>
+            </div>
 
             {/*--------------- Footer ---------------*/}
             <div className="footer">
