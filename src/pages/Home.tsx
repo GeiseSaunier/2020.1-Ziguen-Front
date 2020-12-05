@@ -16,18 +16,29 @@ import slide2Img from '../images/slide-2-teste.jpg'
 import slide3Img from '../images/slide-3-teste.jpg'
 import barcoImg from '../images/barco-ilustracao.jpg'
 
-interface Admin {
+interface Trips {
+    origin: string;
+    destiny: string;
+    hour: string;
+    date: string;
+    price: string;
+}
+
+interface Boats {
     name: string;
-    cpf: string;
-    email: string;
 }
 
 function Home() {
 
-    const [trips, setTrips] = useState<Admin[]>([]);
+    const [trips, setTrips] = useState<Trips[]>([]);
+    const [boats, setBoats] = useState<Boats[]>([]);
 
     useEffect(() => {
-        api.get('admins').then(response => {
+        api.get('trips').then(response => {
+            setTrips(response.data);
+            console.log(response);
+        });
+        api.get('boats').then(response => {
             setTrips(response.data);
         });
     },  []);
@@ -83,11 +94,13 @@ function Home() {
                     <Link to="/"><button>Buscar</button></Link>
                 </div>
             </div>
+
+            <h3 className="sugestion">Sugestões para Você!</h3>
+
             {/*--------------- Cards ---------------*/}
-            {trips.map(admin => {
+            {trips.map(trip => {
                 return (
                     <div className="cards">
-                        <h3>Sugestões para Você!</h3>
                         <div className="space"></div>
                         <div className="card">
                             <h4>Nome do barco</h4>
@@ -96,11 +109,12 @@ function Home() {
                                 <img src={barcoImg} className="img-barco" alt="barco" />
                             </div>
                             <div className="container">
-                                <h5>Título</h5>
+                                <h5>{trip.origin} - {trip.destiny}</h5>
                                 <div className="space"></div>
-                                <p>Origem: ${admin.name} </p>
-                                <p>Ex: Preço e informações sobre o banco</p>
+                                <p className="info-name">Data:  </p> <strong className="info">{trip.date}</strong>
+                                <p className="info-name">Horário:  </p> <strong className="info">{trip.hour}</strong>
                                 <div className="space"></div>
+                                <strong className="price">Preço: R$ {trip.price}</strong>
                                 <div className="space"></div>
                                 <div className = "botao-card">
                                     <button>Comprar</button>

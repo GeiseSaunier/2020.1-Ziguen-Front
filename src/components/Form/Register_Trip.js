@@ -19,7 +19,7 @@ export default function Register_Trip() {
                     <div className="group1">
                     <Input className="input-box" type="name" name="origem" placeholder=" Origem"/><br></br>
                     <Input className="input-box" type="name" name="destino" placeholder=" Destino"/><br></br>
-                    <Input className="input-box" type="name" name="embarcacao" placeholder=" Número da Embarcação"/><br></br>
+                    <Input className="input-box" type="name" name="embarcacao" placeholder=" ID da Embarcação"/><br></br>
                     </div>
                     <div>
                     <Input className="input-box" type="name" name="data" placeholder=" Data"/><br></br>

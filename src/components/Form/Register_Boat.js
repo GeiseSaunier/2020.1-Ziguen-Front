@@ -18,11 +18,10 @@ export default function Register_Owner() {
                 <div className="fields">
                     <div className="group1">
                     <Input className="input-box" type="name" name="nome" placeholder=" Nome da Embarcação"/><br></br>
-                    <Input className="input-box" type="name" name="cpf" placeholder=" Número da Embarcação"/><br></br>
                     </div>
                     <div>
                     <Input className="input-box" type="name" name="email" placeholder=" Capacidade"/><br></br>
-                    <Input className="input-box" type="name" name="senha" placeholder=" CPF do Proprietário"/><br></br>
+                    <Input className="input-box" type="name" name="senha" placeholder=" ID do Proprietário"/><br></br>
                     </div>
                 </div>
                 <button className="login-button" type="submit">Cadastrar</button><br></br>
