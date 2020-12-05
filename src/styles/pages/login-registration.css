@@ -1,12 +1,5 @@
-#login-page {
-    width: 100%;
-    height: 100%;
-
-    position: relative;
-    justify-content: center;
-}
-
 .page_filling {
+    width: 98vw;
     height: 650px;
     display: flex;
     align-items: center;
@@ -14,11 +7,11 @@
 }
 
 .purpose {
-    padding: 50px;
+    padding: 30px;
 }
 
 .purpose-text {
-    font-size: 35px;
+    font-size: 28px;
     font-weight: normal;
     text-align: center;
     color:  #6D6D6D;
@@ -31,7 +24,7 @@
 
 .ilustration {
     margin-top: 50px;
-    width: 250px;
+    width: 220px;
 }
 
 .division-bar {

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import logoImg from '../images/logo.png';
 import { Link } from 'react-router-dom';
 import facebookImg from '../images/facebook.svg'
@@ -9,12 +9,30 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 import '../styles/pages/home.css'
 import '../styles/pages/header.css'
 
+import api from '../services/api'
+
 import slide1Img from '../images/slide-1-teste.jpg'
 import slide2Img from '../images/slide-2-teste.jpg'
 import slide3Img from '../images/slide-3-teste.jpg'
 import barcoImg from '../images/barco-ilustracao.jpg'
 
+interface Admin {
+    name: string;
+    cpf: string;
+    email: string;
+}
+
 function Home() {
+
+    const [trips, setTrips] = useState<Admin[]>([]);
+
+    useEffect(() => {
+        api.get('admins').then(response => {
+            setTrips(response.data);
+        });
+    },  []);
+
+
     return (
         <div id="home-page">
             {/*--------------- Top Bar ---------------*/}
@@ -66,29 +84,33 @@ function Home() {
                 </div>
             </div>
             {/*--------------- Cards ---------------*/}
-            <div className="cards">
-                <h3>Sugestões para Você!</h3>
-                <div className="space"></div>
-                <div className="card">
-                    <h4>Nome do barco</h4>
-                    <div className="space"></div>
-                    <div className = "img-card">
-                        <img src={barcoImg} className="img-barco" alt="barco" />
-                    </div>
-                    <div className="container">
-                        <h5>Título</h5>
+            {trips.map(admin => {
+                return (
+                    <div className="cards">
+                        <h3>Sugestões para Você!</h3>
                         <div className="space"></div>
-                        <p>Descrição da passagem.</p>
-                        <p>Ex: Preço e informações sobre o banco</p>
-                        <div className="space"></div>
-                        <div className="space"></div>
-                        <div className = "botao-card">
-                            <button>Comprar</button>
+                        <div className="card">
+                            <h4>Nome do barco</h4>
+                            <div className="space"></div>
+                            <div className = "img-card">
+                                <img src={barcoImg} className="img-barco" alt="barco" />
+                            </div>
+                            <div className="container">
+                                <h5>Título</h5>
+                                <div className="space"></div>
+                                <p>Origem: ${admin.name} </p>
+                                <p>Ex: Preço e informações sobre o banco</p>
+                                <div className="space"></div>
+                                <div className="space"></div>
+                                <div className = "botao-card">
+                                    <button>Comprar</button>
+                                </div>
+                                <div className="space"></div>
+                            </div>
                         </div>
-                        <div className="space"></div>
                     </div>
-                </div>
-            </div>
+                )
+            })}
             {/*--------------- Footer ---------------*/}
             <div className="footer">
                 <p>Nossas redes sociais</p>
