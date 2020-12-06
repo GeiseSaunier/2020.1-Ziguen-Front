@@ -28,8 +28,7 @@ function ClientTicket() {
 
 
             <div className="info">
-                <h1>Olá, Pessoa!</h1>
-                <p>Veja sua lista de passagens</p>
+                <h1>Suas Passagens</h1>
             </div>
             {/*--------------- Cards ---------------*/}
             <div className="cards">
@@ -64,17 +63,15 @@ function ClientTicket() {
                     <button>Ver mais</button>
                 </div>
                 <div className="botoes">
-                    <button>Continuar comprando</button>
-                    <button id="botao-cancelar">Cancelar passagens</button>
+                    <Link to="./Home-Cliente"><button>Continuar comprando</button></Link>
+                    <Link to="./Home-Cliente"><button id="botao-cancelar">Cancelar passagens</button></Link>
+                    
                 </div>
             </div>
             {/*--------------- Footer ---------------*/}
             <div className="footer">
-                <p>Barcos Parceiros</p>
-                <p>&#128674; &#128674; &#128674; &#128674;</p>
-                <p className="hr"></p>
                 <p>Nossas redes sociais</p>
-                <div className = "icones">
+                <div className="icones">
                     <img src={instagramImg} alt="Instagram" className="instagram-logo" />
                     <img src={facebookImg} alt="Facebook" className="facebook-logo" />
                 </div>

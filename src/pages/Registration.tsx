@@ -46,6 +46,8 @@ function Registration() {
                 </div>
             </div>
 
+
+            {/*--------------- Footer ---------------*/}
             <div className="footer">
                 <p>Nossas redes sociais</p>
                 <div className = "icones">
