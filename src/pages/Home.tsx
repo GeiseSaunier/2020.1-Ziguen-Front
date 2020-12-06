@@ -117,7 +117,7 @@ function Home() {
                                 <strong className="price">Preço: R$ {trip.price}</strong>
                                 <div className="space"></div>
                                 <div className = "botao-card">
-                                    <button>Comprar</button>
+                                    <Link to="/Login"><button>Comprar</button></Link>
                                 </div>
                                 <div className="space"></div>
                             </div>
