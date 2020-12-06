@@ -120,6 +120,7 @@
 
 #home-page .cards .card {
     width: 290px;
+    height: 410px;
     border-radius: 6px;
     margin-left: 20.5%;
     border: 1px solid#6D6D6D;
@@ -140,6 +141,7 @@
 
 #home-page .cards .card .img-card .img-barco{
     width: 97%;
+   
 }
 
 #home-page .cards .card h5 {

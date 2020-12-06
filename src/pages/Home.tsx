@@ -22,10 +22,12 @@ interface Trips {
     hour: string;
     date: string;
     price: string;
+    boat_id: string
 }
 
 interface Boats {
     name: string;
+    id: string
 }
 
 function Home() {
@@ -34,14 +36,17 @@ function Home() {
     const [boats, setBoats] = useState<Boats[]>([]);
 
     useEffect(() => {
-        api.get('trips').then(response => {
+        api.get('/trips').then(response => {
             setTrips(response.data);
             console.log(response);
         });
-        api.get('boats').then(response => {
-            setTrips(response.data);
+        api.get('/boats/').then(response1 => {
+            setBoats(response1.data);
+            console.log(response1)
         });
     },  []);
+
+    
 
 
     return (
@@ -98,32 +103,36 @@ function Home() {
             <h3 className="sugestion">Sugestões para Você!</h3>
 
             {/*--------------- Cards ---------------*/}
-            {trips.map(trip => {
-                return (
-                    <div className="cards">
-                        <div className="space"></div>
-                        <div className="card">
-                            <h4>Nome do barco</h4>
+            {trips.map (trip => {
+                    return (
+                        <div className="cards">
                             <div className="space"></div>
-                            <div className = "img-card">
-                                <img src={barcoImg} className="img-barco" alt="barco" />
-                            </div>
-                            <div className="container">
-                                <h5>{trip.origin} - {trip.destiny}</h5>
+                            <div className="card">
+                                {boats.map(boat => {
+                                    return (
+                                        <h4>{boat.id == trip.boat_id ? boat.name : ''}</h4>
+                                    )
+                                })}
                                 <div className="space"></div>
-                                <p className="info-name">Data:  </p> <strong className="info">{trip.date}</strong>
-                                <p className="info-name">Horário:  </p> <strong className="info">{trip.hour}</strong>
-                                <div className="space"></div>
-                                <strong className="price">Preço: R$ {trip.price}</strong>
-                                <div className="space"></div>
-                                <div className = "botao-card">
-                                    <Link to="/Login"><button>Comprar</button></Link>
+                                <div className = "img-card">
+                                    <img src={barcoImg} className="img-barco" alt="barco" />
                                 </div>
-                                <div className="space"></div>
+                                <div className="container">
+                                    <h5>{trip.origin} - {trip.destiny}</h5>
+                                    <div className="space"></div>
+                                    <p className="info-name">Data:  </p> <strong className="info">{trip.date}</strong>
+                                    <p className="info-name">Horário:  </p> <strong className="info">{trip.hour}</strong>
+                                    <div className="space"></div>
+                                    <strong className="price">Preço: R$ {trip.price}</strong>
+                                    <div className="space"></div>
+                                    <div className = "botao-card">
+                                        <Link to="/Login"><button>Comprar</button></Link>
+                                    </div>
+                                    <div className="space"></div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                )
+                    )
             })}
             {/*--------------- Footer ---------------*/}
             <div className="footer">
