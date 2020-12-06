@@ -63,8 +63,9 @@ function ClientTicket() {
                     <button>Ver mais</button>
                 </div>
                 <div className="botoes">
-                    <button>Continuar comprando</button>
-                    <button id="botao-cancelar">Cancelar passagens</button>
+                    <Link to="./Home-Cliente"><button>Continuar comprando</button></Link>
+                    <Link to="./Home-Cliente"><button id="botao-cancelar">Cancelar passagens</button></Link>
+                    
                 </div>
             </div>
             {/*--------------- Footer ---------------*/}
