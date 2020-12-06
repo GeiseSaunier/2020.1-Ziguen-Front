@@ -52,6 +52,7 @@ function Home() {
                     <img src={logoImg} alt="Logo" className="img-logo" />
                     <div className="navbar">
                         <Link to="./Login" className="login-link">Iniciar Sessão</Link>
+                        <Link to="./Registration" className="mais-vendidas-link">Criar Cadastro</Link>
                         <Link to="./about" className="sobre-link">Sobre Nós</Link>
                     </div>
                 </div>
