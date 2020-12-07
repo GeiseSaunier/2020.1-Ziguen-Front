@@ -13,7 +13,7 @@ function ClientTicket() {
         <div id="passagens-cliente">
             {/*--------------- Top Bar ---------------*/}
             <div className="top-bar">
-                <div className = "header">
+                <div className="header">
                     <img src={logoImg} alt="Logo" className="img-logo" />
                     <div className="navbar">
                         <Link to="./Home-Cliente" className="pagina-inicial-link">Página Inicial</Link>
@@ -25,8 +25,6 @@ function ClientTicket() {
                     <b><p>PASSAGENS FLUVIAIS</p></b>
                 </div>
             </div>
-
-
             <div className="info">
                 <h1>Suas Passagens</h1>
             </div>
@@ -62,11 +60,10 @@ function ClientTicket() {
                     </div>
                     <button>Ver mais</button>
                 </div>
-                <div className="botoes">
-                    <Link to="./Home-Cliente"><button>Continuar comprando</button></Link>
-                    <Link to="./Home-Cliente"><button id="botao-cancelar">Cancelar passagens</button></Link>
-                    
-                </div>
+            </div>
+            <div className="botoes">
+                <Link to="./Home-Cliente"><button>Continuar comprando</button></Link>
+                <Link to="./Home-Cliente"><button id="botao-cancelar">Cancelar passagens</button></Link>
             </div>
             {/*--------------- Footer ---------------*/}
             <div className="footer">

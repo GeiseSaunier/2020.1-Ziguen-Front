@@ -1,8 +1,6 @@
 #revisao-de-passagem {
     width: 100%;
     height: 100%;
-
-    position: relative;
     justify-content: center;
 }
 
@@ -11,14 +9,16 @@ h1 {
 }
 
 /*--------------- CARDS ---------------*/
+#revisao-de-passagem .cards {
+    display: flex;
+    justify-content: center;
+}
 
 #revisao-de-passagem .cards .card {
     width: 50%;
     border-radius: 6px;
-    margin-left: 25%;
     border: 1px solid#6D6D6D;
     display: flex;
-    justify-content: center;
     flex-direction: column;
 }
 

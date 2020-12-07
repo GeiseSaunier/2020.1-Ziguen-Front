@@ -6,7 +6,6 @@ import instagramImg from '../images/instagram.svg'
 
 import '../styles/pages/busca.css'
 import '../styles/pages/header.css'
-import '../styles/pages/home.css'
 
 function Search() {
     return (

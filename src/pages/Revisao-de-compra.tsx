@@ -8,7 +8,6 @@ import pdfImg from '../images/pdf.png'
 
 import '../styles/pages/revisao-de-compra.css'
 import '../styles/pages/header.css'
-import '../styles/pages/home.css'
 
 function ReviewTicket() {
     return (
@@ -31,7 +30,6 @@ function ReviewTicket() {
             <h1>Detalhes da Compra</h1>
             {/*--------------- Cards ---------------*/}
             <div className="cards">
-                <div className = "space"></div>
                 <div className="card">
                     <div className="container">
                         <div className = "titulo">
@@ -80,7 +78,6 @@ function ReviewTicket() {
                 <button>Cancelar Compra</button>
                 <button id = "finalizar-compra">Finalizar Compra</button>
             </div>
-
             {/*--------------- Footer ---------------*/}
             <div className="footer">
                 <p>Nossas redes sociais</p>

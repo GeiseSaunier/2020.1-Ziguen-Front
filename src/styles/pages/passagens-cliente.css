@@ -19,14 +19,11 @@
 #passagens-cliente .cards {
     display: flex;
     justify-content: center;
-    flex-direction: column;
 }
 
 #passagens-cliente .cards .card {
-    margin-top: 3%;
-    margin-left: 5%;
     align-items: center;
-    width: 450px;
+    width: 700px;
     border: 1px solid#6D6D6D;
     border-radius: 6px;
     padding-top: 1%;
@@ -96,30 +93,30 @@
     border-color: #d9d9d9;
 }
 
-#passagens-cliente .cards .botoes {
+#passagens-cliente .botoes {
     display: flex;
     justify-content: center;
     flex-direction: row;
     margin-top: 15px;
 }
 
-#passagens-cliente .cards .botoes button {
+#passagens-cliente .botoes button {
     background-color:#21A780;
     border-color:#21A780;
     color: #ffffff;
     font-size: 14px;
     border-radius: 7px;
     margin-top: 3%;
-    padding: 1%;
+    padding: 5%;
 
     transition: 0.2s;
 }
 
-#passagens-cliente .cards .botoes #botao-cancelar {
+#passagens-cliente .botoes #botao-cancelar {
     margin-left: 5%;
 }
 
-#passagens-cliente .cards .botoes button:hover {
+#passagens-cliente .botoes button:hover {
     background-color: #d9d9d9;
     color: #000000;
     border-color: #d9d9d9;
