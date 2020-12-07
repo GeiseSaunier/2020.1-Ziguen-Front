@@ -19,6 +19,20 @@ export default function Login() {
             email:data.email,
             password:data.password
         }
+
+        console.log(travelerData)
+
+        if(travelerData.email == "admin@gmail"){
+            try{
+                const response =  await api.post('/sessions', travelerData); 
+                console.log(response)
+                history.push('/adm_home')
+                return  alert('Longin feito com sucesso');
+            }catch(err){
+               return  alert('Email ou senha incorretos.');
+            }
+
+        }
         
         try{
             const response =  await api.post('/sessions/trav', travelerData); 
