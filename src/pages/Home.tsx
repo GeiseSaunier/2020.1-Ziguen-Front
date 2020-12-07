@@ -44,16 +44,16 @@ function Home() {
             setBoats(response1.data);
             console.log(response1)
         });
-    },  []);
+    }, []);
 
-    
+
 
 
     return (
         <div id="home-page">
             {/*--------------- Top Bar ---------------*/}
             <div className="top-bar">
-                <div className = "header">
+                <div className="header">
                     <img src={logoImg} alt="Logo" className="img-logo" />
                     <div className="navbar">
                         <Link to="./Login" className="login-link">Iniciar Sessão</Link>
@@ -102,12 +102,13 @@ function Home() {
             </div>
 
             <h3 className="sugestion">Sugestões para Você!</h3>
+            <div className="space"></div>
 
             {/*--------------- Cards ---------------*/}
-            {trips.map (trip => {
+            <div className = "content">
+                {trips.map(trip => {
                     return (
                         <div className="cards">
-                            <div className="space"></div>
                             <div className="card">
                                 {boats.map(boat => {
                                     return (
@@ -115,7 +116,7 @@ function Home() {
                                     )
                                 })}
                                 <div className="space"></div>
-                                <div className = "img-card">
+                                <div className="img-card">
                                     <img src={barcoImg} className="img-barco" alt="barco" />
                                 </div>
                                 <div className="container">
@@ -126,7 +127,7 @@ function Home() {
                                     <div className="space"></div>
                                     <strong className="price">Preço: R$ {trip.price}</strong>
                                     <div className="space"></div>
-                                    <div className = "botao-card">
+                                    <div className="botao-card">
                                         <Link to="/Login"><button>Comprar</button></Link>
                                     </div>
                                     <div className="space"></div>
@@ -134,7 +135,8 @@ function Home() {
                             </div>
                         </div>
                     )
-            })}
+                })}
+            </div>
             {/*--------------- Footer ---------------*/}
             <div className="footer">
                 <p>Nossas redes sociais</p>
