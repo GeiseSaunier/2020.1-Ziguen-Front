@@ -15,6 +15,7 @@ import slide1Img from '../images/slide-1-teste.jpg'
 import slide2Img from '../images/slide-2-teste.jpg'
 import slide3Img from '../images/slide-3-teste.jpg'
 import barcoImg from '../images/barco-ilustracao.jpg'
+import { stringify } from 'querystring';
 
 interface Trips {
     origin: string;
@@ -37,10 +38,29 @@ function Home() {
     const [origin, setOrigin] = useState('');
     const [destiny, setDestiny] = useState('');
     const [date, setDate] = useState ('');
-    const [search, setSearch] = useState([])
 
     useEffect(() => {
-        api.get('/trips').then(response => {
+
+        const params = {
+            title: '',
+        };
+        const params2 = {
+            title: '',
+        };
+        const params3 = {
+            title: '',
+        };
+        if(origin){
+            params.title = origin;
+        }
+        if(destiny){
+            params.title = destiny;
+        }
+        if(date){
+            params.title = date;
+        }
+
+        api.get('/trips', { params}).then(response => {
             setTrips(response.data);
             //console.log(response);
         });
@@ -48,20 +68,9 @@ function Home() {
             setBoats(response1.data);
             //console.log(response1)
         });
-        const passagens = api.get('/trips').then(response2 => {
-            setTrips(response2.data);
-            console.log(origin)
-            console.log(setOrigin)
-            console.log(passagens);
-            console.log(response2)
-        });
-    }, []);
 
-    /*useEffect(() => {
-        api.get('/trips').then(response2 => {
-            setSearch(response2.data);
-        });
-    }, );*/
+    }, [origin]);
+
 
     return (
         <div id="home-page">
@@ -101,17 +110,17 @@ function Home() {
                 <div className="input-block">
                     <div className="input-block1">
                         <b><label id="origin">Origem</label></b>
-                        <input id="origin" placeholder="Cidade" type="search" value = {origin} onChange = {(ev) => setOrigin(ev.target.value)}/>
+                        <input value={origin} onChange={(ev) => setOrigin(ev.target.value)}  id="origin" placeholder="Cidade" type="search"/>
                     </div>
                     <div className="input-block2">
                         <b><label id="destination">Destino</label></b>
-                        <input id="destination" placeholder="Cidade" type="search" value = {destiny} onChange = {(ev) => setDestiny(ev.target.value)}/>
+                        <input value={destiny} onChange={(ev) => setDestiny(ev.target.value)} id="destination" placeholder="Cidade" type="search" />
                     </div>
                     <div className="input-block3">
                         <b><label id="day">Data</label></b>
-                        <input id="day" placeholder="dd/mm/aa" type="date" value = {date} onChange = {(ev) => setDate(ev.target.value)}/>
+                        <input value={date} onChange={(ev) => setDate(ev.target.value)} id="day" placeholder="dd/mm/aa" type="search" />
                     </div>
-                    <Link to="/"><button>Buscar</button></Link>
+                    <Link to="/" ><button >Buscar</button></Link>
                 </div>
             </div>
 
