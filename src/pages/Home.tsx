@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import logoImg from '../images/logo.png';
 import { Link } from 'react-router-dom';
 import facebookImg from '../images/facebook.svg'
@@ -9,20 +9,78 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 import '../styles/pages/home.css'
 import '../styles/pages/header.css'
 
+import api from '../services/api'
+
 import slide1Img from '../images/slide-1-teste.jpg'
 import slide2Img from '../images/slide-2-teste.jpg'
 import slide3Img from '../images/slide-3-teste.jpg'
 import barcoImg from '../images/barco-ilustracao.jpg'
+import { stringify } from 'querystring';
+
+interface Trips {
+    origin: string;
+    destiny: string;
+    hour: string;
+    date: string;
+    price: string;
+    boat_id: string
+}
+
+interface Boats {
+    name: string;
+    id: string
+}
 
 function Home() {
+
+    const [trips, setTrips] = useState<Trips[]>([]);
+    const [boats, setBoats] = useState<Boats[]>([]);
+    const [origin, setOrigin] = useState('');
+    const [destiny, setDestiny] = useState('');
+    const [date, setDate] = useState ('');
+
+    useEffect(() => {
+
+        const params = {
+            title: '',
+        };
+        const params2 = {
+            title: '',
+        };
+        const params3 = {
+            title: '',
+        };
+        if(origin){
+            params.title = origin;
+        }
+        if(destiny){
+            params.title = destiny;
+        }
+        if(date){
+            params.title = date;
+        }
+
+        api.get('/trips', { params}).then(response => {
+            setTrips(response.data);
+            //console.log(response);
+        });
+        api.get('/boats/').then(response1 => {
+            setBoats(response1.data);
+            //console.log(response1)
+        });
+
+    }, [origin]);
+
+
     return (
         <div id="home-page">
             {/*--------------- Top Bar ---------------*/}
             <div className="top-bar">
-                <div className = "header">
+                <div className="header">
                     <img src={logoImg} alt="Logo" className="img-logo" />
                     <div className="navbar">
                         <Link to="./Login" className="login-link">Iniciar Sessão</Link>
+                        <Link to="./Registration" className="mais-vendidas-link">Criar Cadastro</Link>
                         <Link to="./about" className="sobre-link">Sobre Nós</Link>
                     </div>
                 </div>
@@ -52,41 +110,56 @@ function Home() {
                 <div className="input-block">
                     <div className="input-block1">
                         <b><label id="origin">Origem</label></b>
-                        <input id="origin" placeholder="Cidade" type="search" />
+                        <input value={origin} onChange={(ev) => setOrigin(ev.target.value)}  id="origin" placeholder="Cidade" type="search"/>
                     </div>
                     <div className="input-block2">
                         <b><label id="destination">Destino</label></b>
-                        <input id="destination" placeholder="Cidade" type="search" />
+                        <input value={destiny} onChange={(ev) => setDestiny(ev.target.value)} id="destination" placeholder="Cidade" type="search" />
                     </div>
                     <div className="input-block3">
                         <b><label id="day">Data</label></b>
-                        <input id="day" placeholder="dd/mm/aa" type="date" />
+                        <input value={date} onChange={(ev) => setDate(ev.target.value)} id="day" placeholder="dd/mm/aa" type="search" />
                     </div>
-                    <Link to="/"><button>Buscar</button></Link>
+                    <Link to="/" ><button >Buscar</button></Link>
                 </div>
             </div>
+
+            <h3 className="sugestion">Sugestões para Você!</h3>
+            <div className="space"></div>
+
             {/*--------------- Cards ---------------*/}
-            <div className="cards">
-                <h3>Sugestões para Você!</h3>
-                <div className="space"></div>
-                <div className="card">
-                    <h4>Nome do barco</h4>
-                    <div className="space"></div>
-                    <div className = "img-card">
-                        <img src={barcoImg} className="img-barco" alt="barco" />
-                    </div>
-                    <div className="container">
-                        <h5>Título</h5>
-                        <div className="space"></div>
-                        <p>Descrição da passagem.</p>
-                        <p>Ex: Preço e informações sobre o banco</p>
-                        <div className="space"></div>
-                        <div className="space"></div>
-                        <div className = "botao-card">
-                            <button>Comprar</button>
-                        </div>
-                        <div className="space"></div>
-                    </div>
+            <div className = "box">
+                <div className="content">
+                    {trips.map(trip => {
+                        return (
+                            <div className="cards">
+                                <div className="card">
+                                    {boats.map(boat => {
+                                        return (
+                                            <h4>{boat.id == trip.boat_id ? boat.name : ''}</h4>
+                                        )
+                                    })}
+                                    <div className="space"></div>
+                                    <div className="img-card">
+                                        <img src={barcoImg} className="img-barco" alt="barco" />
+                                    </div>
+                                    <div className="container">
+                                        <h5>{trip.origin} - {trip.destiny}</h5>
+                                        <div className="space"></div>
+                                        <p className="info-name">Data:  </p> <strong className="info">{trip.date}</strong>
+                                        <p className="info-name">Horário:  </p> <strong className="info">{trip.hour}</strong>
+                                        <div className="space"></div>
+                                        <strong className="price">Preço: R$ {trip.price}</strong>
+                                        <div className="space"></div>
+                                        <div className="botao-card">
+                                            <Link to="/Login"><button>Comprar</button></Link>
+                                        </div>
+                                        <div className="space"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        )
+                    })}
                 </div>
             </div>
             {/*--------------- Footer ---------------*/}

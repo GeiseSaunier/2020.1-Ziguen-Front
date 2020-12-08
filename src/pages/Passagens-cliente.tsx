@@ -13,23 +13,22 @@ function ClientTicket() {
         <div id="passagens-cliente">
             {/*--------------- Top Bar ---------------*/}
             <div className="top-bar">
-                <div className = "header">
+                <div className="header">
                     <img src={logoImg} alt="Logo" className="img-logo" />
                     <div className="navbar">
                         <Link to="./Home-Cliente" className="pagina-inicial-link">Página Inicial</Link>
                         <Link to="/" className="logout-link">Encerrar Sessão</Link>
-                        <Link to="./about" className="sobre-link">Sobre Nós</Link>
                     </div>
                 </div>
                 <div className="field">
                     <b><p>PASSAGENS FLUVIAIS</p></b>
                 </div>
             </div>
-
-
+            <div className = "hello">
+                <h1>Olá, Fulano!</h1>
+            </div>
             <div className="info">
-                <h1>Olá, Pessoa!</h1>
-                <p>Veja sua lista de passagens</p>
+                <h1>Suas Passagens</h1>
             </div>
             {/*--------------- Cards ---------------*/}
             <div className="cards">
@@ -61,20 +60,17 @@ function ClientTicket() {
                             <button><img src={pdfImg} alt="Gerar PDF" /></button>
                         </div>
                     </div>
-                    <button>Ver mais</button>
+                    <Link to="./Revisao-de-compra"><button>Ver mais</button></Link>
                 </div>
-                <div className="botoes">
-                    <button>Continuar comprando</button>
-                    <button id="botao-cancelar">Cancelar passagens</button>
-                </div>
+            </div>
+            <div className="botoes">
+                <Link to="./Home-Cliente"><button>Continuar comprando</button></Link>
+                <Link to="./Home-Cliente"><button id="botao-cancelar">Cancelar passagens</button></Link>
             </div>
             {/*--------------- Footer ---------------*/}
             <div className="footer">
-                <p>Barcos Parceiros</p>
-                <p>&#128674; &#128674; &#128674; &#128674;</p>
-                <p className="hr"></p>
                 <p>Nossas redes sociais</p>
-                <div className = "icones">
+                <div className="icones">
                     <img src={instagramImg} alt="Instagram" className="instagram-logo" />
                     <img src={facebookImg} alt="Facebook" className="facebook-logo" />
                 </div>

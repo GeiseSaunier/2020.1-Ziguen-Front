@@ -19,7 +19,6 @@ function UnavailableSearch() {
                         <Link to="./Home-Cliente" className="pagina-inicial-link">Página Inicial</Link>
                         <Link to="./Passagens-cliente" className="minhas-passagens-link">Minhas Passagens</Link>
                         <Link to="/" className="logout-link">Encerrar Sessão</Link>
-                        <Link to="./about" className="sobre-link">Sobre Nós</Link>
                     </div>
                 </div>
                 <div className="field">
@@ -51,13 +50,11 @@ function UnavailableSearch() {
                 <p>Tente Novamente.</p>
                 <p><Link to = "/"></Link></p>
             </div>
+            
             {/*--------------- Footer ---------------*/}
             <div className="footer">
-                <p>Barcos Parceiros</p>
-                <p>&#128674; &#128674; &#128674; &#128674;</p>
-                <p className="hr"></p>
                 <p>Nossas redes sociais</p>
-                <div className = "icones">
+                <div className="icones">
                     <img src={instagramImg} alt="Instagram" className="instagram-logo" />
                     <img src={facebookImg} alt="Facebook" className="facebook-logo" />
                 </div>

@@ -6,28 +6,26 @@ import instagramImg from '../images/instagram.svg'
 
 import '../styles/pages/busca.css'
 import '../styles/pages/header.css'
-import '../styles/pages/home.css'
 
 function Search() {
-    return (
-        <div id="busca">
-            {/*--------------- Top Bar ---------------*/}
-            <div className="top-bar">
+        return(
+        <div id = "busca" >
+                {/*--------------- Top Bar ---------------*/ }
+                <div className = "top-bar" >
                 <div className = "header">
                     <img src={logoImg} alt="Logo" className="img-logo" />
                     <div className="navbar">
                         <Link to="./Home-Cliente" className="pagina-inicial-link">Página Inicial</Link>
                         <Link to="./Passagens-cliente" className="minhas-passagens-link">Minhas Passagens</Link>
                         <Link to="/" className="logout-link">Encerrar Sessão</Link>
-                        <Link to="./about" className="sobre-link">Sobre Nós</Link>
                     </div>
                 </div>
                 <div className="field">
                     <b><p>PASSAGENS FLUVIAIS</p></b>
                 </div>
             </div>
-            {/*--------------- Search ---------------*/}
-            <div className="search">
+        {/*--------------- Search ---------------*/ }
+        <div className = "search" >
                 <b><p>Encontre suas passagens de Barco:</p></b>
                 <div className="input-block">
                     <div className="input-block1">
@@ -44,9 +42,9 @@ function Search() {
                     </div>
                     <Link to="/"><button>Buscar</button></Link>
                 </div>
-            </div>
-            {/*--------------- Cards ---------------*/}
-            <div className="cards">
+            </div >
+        {/*--------------- Cards ---------------*/ }
+        <div className = "cards" >
                 <div className = "space"></div>
                 <div className="card">
                     <div className="container">
@@ -68,22 +66,20 @@ function Search() {
                         <button>Comprar</button>
                     </div>
                 </div>
-            </div>
-            {/*--------------- Footer ---------------*/}
-            <div className="footer">
-                <p>Barcos Parceiros</p>
-                <p>&#128674; &#128674; &#128674; &#128674;</p>
-                <p className="hr"></p>
+            </div >
+
+        {/*--------------- Footer ---------------*/ }
+        <div className = "footer" >
                 <p>Nossas redes sociais</p>
-                <div className = "icones">
+                <div className="icones">
                     <img src={instagramImg} alt="Instagram" className="instagram-logo" />
                     <img src={facebookImg} alt="Facebook" className="facebook-logo" />
                 </div>
                 <p className="hr"></p>
                 <p className="space"></p>
                 <p>© 2020 - Ziguen - Vendas de Passagens Fluviais</p>
-            </div>
-        </div>
+            </div >
+        </div >
     )
 }
 

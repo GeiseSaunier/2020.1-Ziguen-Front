@@ -8,7 +8,6 @@ import pdfImg from '../images/pdf.png'
 
 import '../styles/pages/revisao-de-compra.css'
 import '../styles/pages/header.css'
-import '../styles/pages/home.css'
 
 function ReviewTicket() {
     return (
@@ -21,7 +20,6 @@ function ReviewTicket() {
                         <Link to="./Home-Cliente" className="pagina-inicial-link">Página Inicial</Link>
                         <Link to="./Passagens-cliente" className="minhas-passagens-link">Minhas Passagens</Link>
                         <Link to="/" className="logout-link">Encerrar Sessão</Link>
-                        <Link to="./about" className="sobre-link">Sobre Nós</Link>
                     </div>
                 </div>
                 <div className="field">
@@ -31,7 +29,6 @@ function ReviewTicket() {
             <h1>Detalhes da Compra</h1>
             {/*--------------- Cards ---------------*/}
             <div className="cards">
-                <div className = "space"></div>
                 <div className="card">
                     <div className="container">
                         <div className = "titulo">
@@ -80,14 +77,10 @@ function ReviewTicket() {
                 <button>Cancelar Compra</button>
                 <button id = "finalizar-compra">Finalizar Compra</button>
             </div>
-
             {/*--------------- Footer ---------------*/}
             <div className="footer">
-                <p>Barcos Parceiros</p>
-                <p>&#128674; &#128674; &#128674; &#128674;</p>
-                <p className="hr"></p>
                 <p>Nossas redes sociais</p>
-                <div className = "icones">
+                <div className="icones">
                     <img src={instagramImg} alt="Instagram" className="instagram-logo" />
                     <img src={facebookImg} alt="Facebook" className="facebook-logo" />
                 </div>

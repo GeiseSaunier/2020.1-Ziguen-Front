@@ -7,6 +7,10 @@
     justify-content: center;
 }
 
+#passagens-cliente .hello h1 {
+    font-size: 40px;
+}
+
 /*--------------- info ---------------*/
 #passagens-cliente .info {
     color: #6D6D6D;
@@ -15,11 +19,15 @@
 }
 
 /*--------------- Cards ---------------*/
+
+#passagens-cliente .cards {
+    display: flex;
+    justify-content: center;
+}
+
 #passagens-cliente .cards .card {
-    margin-top: 3%;
-    margin-left: 25%;
     align-items: center;
-    width: 50%;
+    width: 700px;
     border: 1px solid#6D6D6D;
     border-radius: 6px;
     padding-top: 1%;
@@ -39,7 +47,8 @@
     border-radius: 8px;
     /*align-content: center;*/
     margin-top: 13.5%;
-    margin-left: 55%;
+
+    transition: 0.2s;
 }
 
 #passagens-cliente .cards .card .passagem .pdf button:hover {
@@ -78,6 +87,8 @@
     outline-style: none;
     margin-left: 44%;
     margin-top: 3%;
+
+    transition: 0.2s;
 }
 
 #passagens-cliente .cards .card button:hover {
@@ -86,28 +97,30 @@
     border-color: #d9d9d9;
 }
 
-#passagens-cliente .cards .botoes {
+#passagens-cliente .botoes {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    margin-right: 25.5%;
+    margin-top: 15px;
 }
 
-#passagens-cliente .cards .botoes button {
+#passagens-cliente .botoes button {
     background-color:#21A780;
     border-color:#21A780;
     color: #ffffff;
     font-size: 14px;
     border-radius: 7px;
     margin-top: 3%;
-    padding: 1%;
+    padding: 5%;
+
+    transition: 0.2s;
 }
 
-#passagens-cliente .cards .botoes #botao-cancelar {
-    margin-left: 2%;
+#passagens-cliente .botoes #botao-cancelar {
+    margin-left: 5%;
 }
 
-#passagens-cliente .cards .botoes button:hover {
+#passagens-cliente .botoes button:hover {
     background-color: #d9d9d9;
     color: #000000;
     border-color: #d9d9d9;

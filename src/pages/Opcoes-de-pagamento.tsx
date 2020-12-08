@@ -21,7 +21,6 @@ function Payment() {
                         <Link to="./Home-Cliente" className="pagina-inicial-link">Página Inicial</Link>
                         <Link to="./Passagens-cliente" className="minhas-passagens-link">Minhas Passagens</Link>
                         <Link to="/" className="logout-link">Encerrar Sessão</Link>
-                        <Link to="./about" className="sobre-link">Sobre Nós</Link>
                     </div>
                 </div>
                 <div className="field">
@@ -39,10 +38,10 @@ function Payment() {
                     </div>
                     <img src = {cartaoImg} alt="cartao"/>
                     <select name="Escolha o cartão que deseja utilizar" id="escolha-cartao">
-                        <option value="1">Cartão A</option>
-                        <option value="2">Cartão B</option>
+                        <option value="1">XXXX.XXXX.1234</option>
+                        <option value="2">XXXX.XXXX.5678</option>
                     </select>
-                    <button>Cadastrar novo cartão</button>
+                    <button><Link to = "./Dados-de-pagamento" className = "cadastro-dados">Cadastrar novo cartão</Link></button>
                     <button>Revisar Dados e Finalizar Compra</button>
                 </div>
                 <div className="division-bar"></div>
@@ -60,12 +59,10 @@ function Payment() {
                 <button>Continuar Comprando</button>
             </div>
 
+            {/*--------------- Footer ---------------*/}
             <div className="footer">
-                <p>Barcos Parceiros</p>
-                <p>&#128674; &#128674; &#128674; &#128674;</p>
-                <p className="hr"></p>
                 <p>Nossas redes sociais</p>
-                <div className = "icones">
+                <div className="icones">
                     <img src={instagramImg} alt="Instagram" className="instagram-logo" />
                     <img src={facebookImg} alt="Facebook" className="facebook-logo" />
                 </div>
