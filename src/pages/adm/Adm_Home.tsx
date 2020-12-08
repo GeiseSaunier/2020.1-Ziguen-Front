@@ -39,6 +39,7 @@ function Adm_Home() {
                     <img src={logoImg} alt="Logo" className="img-logo" />
                     <div className="navbar">
                         <Link to="/adm_home" className="inicio-link">Início</Link>
+                        <Link to="/listed_trips" className="inicio-link">Viagens</Link>
                         <Link to="/" className="sair-link">Sair</Link>
                     </div>
                 </div>
@@ -72,7 +73,7 @@ function Adm_Home() {
                             <strong>{boat.name}</strong>
 
                             <div className="buttons_boat">
-                                <button className="trips-button" type="button"><img src={tickets} alt="Viagens"/></button>
+                                {/*<button className="trips-button" type="button"><img src={tickets} alt="Viagens"/></button>*/}
                                 <button className="delete-boat-button" type="button"><img src={lixo} alt="Deletar"/></button>
                                 <button className="edit-boat-button" type="button"><img src={lapis} alt="Editar"/></button>
                             </div>

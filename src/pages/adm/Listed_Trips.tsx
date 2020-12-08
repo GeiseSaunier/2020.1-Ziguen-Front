@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+
+import api from '../../services/api'
 
 import logoImg from '../../images/logo.png';
 import facebookImg from '../../images/facebook.svg'
@@ -13,7 +15,29 @@ import '../../styles/pages/adm/listed_trips.css'
 
 import lupa from '../../images/lupa.jpg'
 
+interface Trips {
+    id: string;
+    origin: string;
+    destiny: string;
+    hour: string;
+    date: string;
+    user_id: string;
+    price: string;
+    boat_id: string;
+}
+
+
 function Listed_Trips() {
+
+    const [trips, setTrips] = useState<Trips[]>([]);
+
+    useEffect(() => {
+        api.get('/trips/').then(response1 => {
+            setTrips(response1.data);
+            console.log(response1)
+        });
+    }, []);
+
     return (
         <div id="listed_trips">
             {/*--------------- Top Bar ---------------*/}
@@ -29,7 +53,7 @@ function Listed_Trips() {
                     <b><p>PASSAGENS FLUVIAIS</p></b>
                 </div>
             </div>
-
+            {/*
             <div className="boats">
                 <div className="boat-info">
                     <div className="boat-image">
@@ -45,7 +69,7 @@ function Listed_Trips() {
                     </div>
                 </div>
             </div>
-
+            /*}
             {/*--------------- Viagens ---------------*/}
             <div className="saudacao">
                 <div className="title">
@@ -58,33 +82,37 @@ function Listed_Trips() {
                     <button type="submit"><img src={lupa} alt="Lupa"/></button>
                 </form>
             </div>
-                {/*--------------- Viagens listadas ---------------*/}
-            <div className="boats">
-                <div className="boat">
-                    <div className="num_identification">
-                        <strong>#0000</strong>
-                    </div>
+            {/*--------------- Viagens listadas ---------------*/}
+            {trips.map(trip => {
+                return (        
+                    
+                    <div className="boats">
+                        <div className="boat">
+                            <div className="num_identification">
+                                <strong>#{trip.id}</strong>
+                            </div>
 
-                    <div className="data-trip">
-                        <strong>Origem: <p> Maués</p></strong>
-                        <strong>Destino: <p> Parintins</p></strong>
-                    </div>
-                    <div className="data-trip">
-                        <strong>Data: <p>10/10/2021</p></strong>
-                        <strong>Horário: <p>12:00</p></strong>
-                    </div>
-                    <div className="data-trip">
-                        <strong>Valor: <p>R$ 50,00</p></strong>
-                        <strong>Passagens disponíveis: <p>45</p></strong>
-                    </div>
+                            <div className="data-trip">
+                                <strong>Origem: <p> {trip.origin}</p></strong>
+                                <strong>Destino: <p> {trip.destiny}</p></strong>
+                            </div>
+                            <div className="data-trip">
+                                <strong>Data: <p>{trip.date}</p></strong>
+                                <strong>Horário: <p>{trip.hour}</p></strong>
+                            </div>
+                            <div className="data-trip">
+                                <strong>Valor: <p>R$ {trip.price}</p></strong>
+                                <strong> ID da Embarcação: <p>{trip.boat_id}</p></strong>
+                            </div>
 
-                    <div className="buttons_boat">
-                        <button className="delete-boat-button" type="button"><img src={lixo} alt="Deletar"/></button>
-                        <button className="edit-boat-button" type="button"><img src={lapis} alt="Editar"/></button>
+                            <div className="buttons_boat">
+                                <button className="delete-boat-button" type="button"><img src={lixo} alt="Deletar"/></button>
+                                <button className="edit-boat-button" type="button"><img src={lapis} alt="Editar"/></button>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-
+                )
+            })}
             {/*--------------- Footer ---------------*/}
             <div className="footer">
                 <p>Nossas redes sociais</p>
