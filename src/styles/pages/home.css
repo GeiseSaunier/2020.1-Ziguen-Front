@@ -108,13 +108,19 @@
     text-align: center;
 }
 
-.content {
+.box {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
-.cards {
-    display: inline-flex;
+.box .content {
+    display: flexbox;
+}
+
+.box .content .cards {
+    display: inline-block;
+    margin-left: 10%;
+    margin-bottom: 3%;
 }
 
 #home-page .space {

@@ -128,37 +128,39 @@ function Home() {
             <div className="space"></div>
 
             {/*--------------- Cards ---------------*/}
-            <div className = "content">
-                {trips.map(trip => {
-                    return (
-                        <div className="cards">
-                            <div className="card">
-                                {boats.map(boat => {
-                                    return (
-                                        <h4>{boat.id == trip.boat_id ? boat.name : ''}</h4>
-                                    )
-                                })}
-                                <div className="space"></div>
-                                <div className="img-card">
-                                    <img src={barcoImg} className="img-barco" alt="barco" />
-                                </div>
-                                <div className="container">
-                                    <h5>{trip.origin} - {trip.destiny}</h5>
+            <div className = "box">
+                <div className="content">
+                    {trips.map(trip => {
+                        return (
+                            <div className="cards">
+                                <div className="card">
+                                    {boats.map(boat => {
+                                        return (
+                                            <h4>{boat.id == trip.boat_id ? boat.name : ''}</h4>
+                                        )
+                                    })}
                                     <div className="space"></div>
-                                    <p className="info-name">Data:  </p> <strong className="info">{trip.date}</strong>
-                                    <p className="info-name">Horário:  </p> <strong className="info">{trip.hour}</strong>
-                                    <div className="space"></div>
-                                    <strong className="price">Preço: R$ {trip.price}</strong>
-                                    <div className="space"></div>
-                                    <div className="botao-card">
-                                        <Link to="/Login"><button>Comprar</button></Link>
+                                    <div className="img-card">
+                                        <img src={barcoImg} className="img-barco" alt="barco" />
                                     </div>
-                                    <div className="space"></div>
+                                    <div className="container">
+                                        <h5>{trip.origin} - {trip.destiny}</h5>
+                                        <div className="space"></div>
+                                        <p className="info-name">Data:  </p> <strong className="info">{trip.date}</strong>
+                                        <p className="info-name">Horário:  </p> <strong className="info">{trip.hour}</strong>
+                                        <div className="space"></div>
+                                        <strong className="price">Preço: R$ {trip.price}</strong>
+                                        <div className="space"></div>
+                                        <div className="botao-card">
+                                            <Link to="/Login"><button>Comprar</button></Link>
+                                        </div>
+                                        <div className="space"></div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    )
-                })}
+                        )
+                    })}
+                </div>
             </div>
             {/*--------------- Footer ---------------*/}
             <div className="footer">
