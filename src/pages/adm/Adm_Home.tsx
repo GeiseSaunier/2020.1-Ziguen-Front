@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import '../../styles/pages/adm/adm_home.css'
+
+import api from '../../services/api'
 
 import logoImg from '../../images/logo.png';
 import facebookImg from '../../images/facebook.svg'
@@ -13,7 +15,22 @@ import lixo from '../../images/trash-can.png'
 import lapis from '../../images/pencil.png'
 import plus from '../../images/plus-sign.png'
 
+interface Boats {
+    name: string;
+    id: string
+}
+
 function Adm_Home() {
+
+    const [boats, setBoats] = useState<Boats[]>([]);
+
+    useEffect(() => {
+        api.get('/boats/').then(response1 => {
+            setBoats(response1.data);
+            console.log(response1)
+        });
+    }, []);
+
     return (
         <div id="adm_home">
             {/*--------------- Top Bar ---------------*/}
@@ -45,22 +62,25 @@ function Adm_Home() {
             </div>
 
             {/*---------Embarcação--------*/}
-            <div className="boats">
-                <div className="boat">
-                    <div className="num_identification">
-                        <strong>#0000</strong>
-                    </div>
-                    <img className="boat_photo" src={barco1} alt="Foto Barco"/>
-                    <strong>Embarcação / Proprietário</strong>
+            {boats.map(boat => {
+                return (        
+                    <div className="boats">
+                        <div className="boat">
+                            <div className="num_identification">
+                                <strong>#{boat.id}</strong>
+                            </div>
+                            <img className="boat_photo" src={barco1} alt="Foto Barco"/>
+                            <strong>{boat.name}</strong>
 
-                    <div className="buttons_boat">
-                        <button className="trips-button" type="button"><img src={tickets} alt="Viagens"/></button>
-                        <button className="delete-boat-button" type="button"><img src={lixo} alt="Deletar"/></button>
-                        <button className="edit-boat-button" type="button"><img src={lapis} alt="Editar"/></button>
+                            <div className="buttons_boat">
+                                <button className="trips-button" type="button"><img src={tickets} alt="Viagens"/></button>
+                                <button className="delete-boat-button" type="button"><img src={lixo} alt="Deletar"/></button>
+                                <button className="edit-boat-button" type="button"><img src={lapis} alt="Editar"/></button>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-
+                )
+            })}
             {/*--------------- Footer ---------------*/}
             <div className="footer">
                 <p>Nossas redes sociais</p>
