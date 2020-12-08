@@ -11,13 +11,14 @@
     display: flex;
     justify-content: center;
 
-    margin-top: -150px;
+    margin-top: -220px;
     margin-bottom: -150px;
 }
 
 #form .fields {
     display: flex;
     flex-direction: row;
+    margin-bottom: 30px;
 }
 
 #form .fields .group1 {
