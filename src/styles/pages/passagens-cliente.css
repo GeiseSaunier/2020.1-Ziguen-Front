@@ -7,6 +7,10 @@
     justify-content: center;
 }
 
+#passagens-cliente .hello h1 {
+    font-size: 40px;
+}
+
 /*--------------- info ---------------*/
 #passagens-cliente .info {
     color: #6D6D6D;

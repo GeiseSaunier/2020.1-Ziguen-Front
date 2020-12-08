@@ -34,20 +34,34 @@ function Home() {
 
     const [trips, setTrips] = useState<Trips[]>([]);
     const [boats, setBoats] = useState<Boats[]>([]);
+    const [origin, setOrigin] = useState('');
+    const [destiny, setDestiny] = useState('');
+    const [date, setDate] = useState ('');
+    const [search, setSearch] = useState([])
 
     useEffect(() => {
         api.get('/trips').then(response => {
             setTrips(response.data);
-            console.log(response);
+            //console.log(response);
         });
         api.get('/boats/').then(response1 => {
             setBoats(response1.data);
-            console.log(response1)
+            //console.log(response1)
+        });
+        const passagens = api.get('/trips').then(response2 => {
+            setTrips(response2.data);
+            console.log(origin)
+            console.log(setOrigin)
+            console.log(passagens);
+            console.log(response2)
         });
     }, []);
 
-
-
+    /*useEffect(() => {
+        api.get('/trips').then(response2 => {
+            setSearch(response2.data);
+        });
+    }, );*/
 
     return (
         <div id="home-page">
@@ -87,15 +101,15 @@ function Home() {
                 <div className="input-block">
                     <div className="input-block1">
                         <b><label id="origin">Origem</label></b>
-                        <input id="origin" placeholder="Cidade" type="search" />
+                        <input id="origin" placeholder="Cidade" type="search" value = {origin} onChange = {(ev) => setOrigin(ev.target.value)}/>
                     </div>
                     <div className="input-block2">
                         <b><label id="destination">Destino</label></b>
-                        <input id="destination" placeholder="Cidade" type="search" />
+                        <input id="destination" placeholder="Cidade" type="search" value = {destiny} onChange = {(ev) => setDestiny(ev.target.value)}/>
                     </div>
                     <div className="input-block3">
                         <b><label id="day">Data</label></b>
-                        <input id="day" placeholder="dd/mm/aa" type="date" />
+                        <input id="day" placeholder="dd/mm/aa" type="date" value = {date} onChange = {(ev) => setDate(ev.target.value)}/>
                     </div>
                     <Link to="/"><button>Buscar</button></Link>
                 </div>

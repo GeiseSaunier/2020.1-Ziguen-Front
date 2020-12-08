@@ -24,6 +24,9 @@ function ClientTicket() {
                     <b><p>PASSAGENS FLUVIAIS</p></b>
                 </div>
             </div>
+            <div className = "hello">
+                <h1>Olá, Fulano!</h1>
+            </div>
             <div className="info">
                 <h1>Suas Passagens</h1>
             </div>
@@ -57,7 +60,7 @@ function ClientTicket() {
                             <button><img src={pdfImg} alt="Gerar PDF" /></button>
                         </div>
                     </div>
-                    <button>Ver mais</button>
+                    <Link to="./Revisao-de-compra"><button>Ver mais</button></Link>
                 </div>
             </div>
             <div className="botoes">

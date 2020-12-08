@@ -8,10 +8,10 @@ import '../styles/pages/busca.css'
 import '../styles/pages/header.css'
 
 function Search() {
-    return (
-        <div id="busca">
-            {/*--------------- Top Bar ---------------*/}
-            <div className="top-bar">
+        return(
+        <div id = "busca" >
+                {/*--------------- Top Bar ---------------*/ }
+                <div className = "top-bar" >
                 <div className = "header">
                     <img src={logoImg} alt="Logo" className="img-logo" />
                     <div className="navbar">
@@ -24,8 +24,8 @@ function Search() {
                     <b><p>PASSAGENS FLUVIAIS</p></b>
                 </div>
             </div>
-            {/*--------------- Search ---------------*/}
-            <div className="search">
+        {/*--------------- Search ---------------*/ }
+        <div className = "search" >
                 <b><p>Encontre suas passagens de Barco:</p></b>
                 <div className="input-block">
                     <div className="input-block1">
@@ -42,9 +42,9 @@ function Search() {
                     </div>
                     <Link to="/"><button>Buscar</button></Link>
                 </div>
-            </div>
-            {/*--------------- Cards ---------------*/}
-            <div className="cards">
+            </div >
+        {/*--------------- Cards ---------------*/ }
+        <div className = "cards" >
                 <div className = "space"></div>
                 <div className="card">
                     <div className="container">
@@ -66,10 +66,10 @@ function Search() {
                         <button>Comprar</button>
                     </div>
                 </div>
-            </div>
-            
-            {/*--------------- Footer ---------------*/}
-            <div className="footer">
+            </div >
+
+        {/*--------------- Footer ---------------*/ }
+        <div className = "footer" >
                 <p>Nossas redes sociais</p>
                 <div className="icones">
                     <img src={instagramImg} alt="Instagram" className="instagram-logo" />
@@ -78,8 +78,8 @@ function Search() {
                 <p className="hr"></p>
                 <p className="space"></p>
                 <p>© 2020 - Ziguen - Vendas de Passagens Fluviais</p>
-            </div>
-        </div>
+            </div >
+        </div >
     )
 }
 
