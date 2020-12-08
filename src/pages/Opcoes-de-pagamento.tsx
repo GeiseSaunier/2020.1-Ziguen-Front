@@ -38,10 +38,10 @@ function Payment() {
                     </div>
                     <img src = {cartaoImg} alt="cartao"/>
                     <select name="Escolha o cartão que deseja utilizar" id="escolha-cartao">
-                        <option value="1">Cartão A</option>
-                        <option value="2">Cartão B</option>
+                        <option value="1">XXXX.XXXX.1234</option>
+                        <option value="2">XXXX.XXXX.5678</option>
                     </select>
-                    <button>Cadastrar novo cartão</button>
+                    <button><Link to = "./Dados-de-pagamento" className = "cadastro-dados">Cadastrar novo cartão</Link></button>
                     <button>Revisar Dados e Finalizar Compra</button>
                 </div>
                 <div className="division-bar"></div>

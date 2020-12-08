@@ -49,6 +49,11 @@ h1 {
     margin-bottom: 5%;
 }
 
+.formas-de-pagamento .cartao-de-credito .cadastro-dados {
+    color: #ffffff;
+    text-decoration: none;
+}
+
 .formas-de-pagamento select {
     height: 35px;
     font-size: 18px;
