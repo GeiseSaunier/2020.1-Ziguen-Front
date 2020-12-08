@@ -22,6 +22,7 @@ function Registration() {
                     <img src={logoImg} alt="Logo" className="img-logo" />
                     <div className="navbar">
                         <Link to="/" className="home-link">Página Inicial</Link>
+                        <Link to="./Login" className="login-link">Iniciar Sessão</Link>
                         <Link to="./about" className="sobre-link">Sobre Nós</Link>
                     </div>
                 </div>

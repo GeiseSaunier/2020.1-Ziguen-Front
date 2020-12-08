@@ -16,9 +16,8 @@ function Sobre() {
                 <div className = "header">
                     <img src={logoImg} alt="Logo" className="img-logo" />
                     <div className="navbar">
-                        <Link to="./Home-Cliente" className="pagina-inicial-link">Página Inicial</Link>
+                        <Link to="/" className="pagina-inicial-link">Página Inicial</Link>
                         <Link to="./Login" className="login-link">Iniciar Sessão</Link>
-                        <Link to="/" className="sobre-link">Sobre Nós</Link>
                     </div>
                 </div>
                 <div className="field">

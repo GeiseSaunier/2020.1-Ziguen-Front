@@ -124,7 +124,7 @@ function ClientHome() {
                                     <strong className="price">Preço: R$ {trip.price}</strong>
                                     <div className="space"></div>
                                     <div className="botao-card">
-                                        <Link to="/Login"><button>Comprar</button></Link>
+                                        <Link to="/pagamento"><button>Comprar</button></Link>
                                     </div>
                                     <div className="space"></div>
                                 </div>

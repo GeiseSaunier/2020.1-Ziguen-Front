@@ -18,7 +18,6 @@ function Search() {
                         <Link to="./Home-Cliente" className="pagina-inicial-link">Página Inicial</Link>
                         <Link to="./Passagens-cliente" className="minhas-passagens-link">Minhas Passagens</Link>
                         <Link to="/" className="logout-link">Encerrar Sessão</Link>
-                        <Link to="./about" className="sobre-link">Sobre Nós</Link>
                     </div>
                 </div>
                 <div className="field">
