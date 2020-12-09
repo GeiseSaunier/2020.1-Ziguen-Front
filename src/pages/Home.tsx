@@ -118,7 +118,7 @@ function Home() {
                     </div>
                     <div className="input-block3">
                         <b><label id="day">Data</label></b>
-                        <input value={date} onChange={(ev) => setDate(ev.target.value)} id="day" placeholder="dd/mm/aa" type="search" />
+                        <input value={date} onChange={(ev) => setDate(ev.target.value)} id="day" placeholder="dd/mm/aa" type="date" />
                     </div>
                     <Link to="/" ><button >Buscar</button></Link>
                 </div>
