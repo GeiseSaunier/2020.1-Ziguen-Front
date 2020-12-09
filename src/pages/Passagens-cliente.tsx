@@ -24,9 +24,6 @@ function ClientTicket() {
                     <b><p>PASSAGENS FLUVIAIS</p></b>
                 </div>
             </div>
-            <div className = "hello">
-                <h1>Olá, Fulano!</h1>
-            </div>
             <div className="info">
                 <h1>Suas Passagens</h1>
             </div>
