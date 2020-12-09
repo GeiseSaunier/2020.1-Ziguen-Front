@@ -118,6 +118,11 @@ h1 {
     outline-style: none;
 }
 
+#revisao-de-passagem .botoes #finalizar-compra .botao-finalizar {
+    color: #ffffff;
+    text-decoration: none;
+}
+
 #revisao-de-passagem .botoes #finalizar-compra {
     margin-left: 2%;
 }

@@ -42,7 +42,7 @@ function Payment() {
                         <option value="2">XXXX.XXXX.5678</option>
                     </select>
                     <button><Link to = "./Dados-de-pagamento" className = "cadastro-dados">Cadastrar novo cartão</Link></button>
-                    <button>Revisar Dados e Finalizar Compra</button>
+                    <Link to = "./Revisao-de-compra"><button>Revisar Dados e Finalizar Compra</button></Link>
                 </div>
                 <div className="division-bar"></div>
                 <div className = "boleto-bancario">
@@ -56,7 +56,7 @@ function Payment() {
             </div>
 
             <div className = "continuar-compra">
-                <button>Continuar Comprando</button>
+                <Link to = "./Home-Cliente"><button>Continuar Comprando</button></Link>
             </div>
 
             {/*--------------- Footer ---------------*/}
